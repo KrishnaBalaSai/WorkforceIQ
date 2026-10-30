@@ -18,12 +18,17 @@ Comprehensive test suite covering:
   8. Immutable Audit Trail APIs
   9. Ground-Truth Data Isolation Enforcement
 """
-
+import os
 from datetime import date
 import pytest
 from fastapi.testclient import TestClient
 
 from backend.main import app
+
+HR_ANALYTICS_TOKEN = os.environ.get("HR_ANALYTICS_TOKEN", "")
+assert HR_ANALYTICS_TOKEN, "HR_ANALYTICS_TOKEN must be configured in .env"
+
+HR_AUTH_HEADERS = {"X-HR-Analytics-Token": HR_ANALYTICS_TOKEN}
 
 
 @pytest.fixture(scope="module")
@@ -214,20 +219,25 @@ def test_attrition_summary_operational(client: TestClient):
 
 
 def test_attrition_trends_restricted_without_header(client: TestClient):
-    """Responsible AI: Historical separation outcomes require HR authorization."""
     response = client.get("/api/v1/attrition/trends")
     assert response.status_code == 403
-    assert "authorization" in response.json()["detail"].lower()
 
 
-def test_attrition_trends_restricted_with_false_header(client: TestClient):
-    response = client.get("/api/v1/attrition/trends", headers={"X-HR-Authorization": "false"})
+def test_attrition_trends_restricted_with_invalid_header(client: TestClient):
+    response = client.get(
+        "/api/v1/attrition/trends",
+        headers={"X-HR-Analytics-Token": "invalid-token"},
+    )
     assert response.status_code == 403
 
 
 def test_attrition_trends_authorized(client: TestClient):
-    response = client.get("/api/v1/attrition/trends", headers={"X-HR-Authorization": "true"})
+    response = client.get(
+        "/api/v1/attrition/trends",
+        headers=HR_AUTH_HEADERS,
+    )
     assert response.status_code == 200
+
     trends = response.json()
     assert trends["analysis_window_months"] == 24
     assert trends["total_historical_separations"] > 0

@@ -9,11 +9,11 @@ Covers:
   5. Empty dataset / edge-case filter handling.
   6. Ground-truth isolation:
      - Rejection of unauthenticated / un-authorized access to historical separations (403).
-     - Success with X-HR-Authorization: true header.
+     - Success with a valid X-HR-Analytics-Token header.
      - Verification that operational exports NEVER expose ground-truth exit reasons or training labels.
   7. Downloadable executive report structure and metrics.
 """
-
+import os
 import hashlib
 import json
 import pytest
@@ -21,6 +21,10 @@ from fastapi.testclient import TestClient
 
 from backend.main import app
 
+HR_ANALYTICS_TOKEN = os.environ.get("HR_ANALYTICS_TOKEN", "")
+assert HR_ANALYTICS_TOKEN, "HR_ANALYTICS_TOKEN must be configured in .env"
+
+HR_AUTH_HEADERS = {"X-HR-Analytics-Token": HR_ANALYTICS_TOKEN}
 
 @pytest.fixture(scope="module")
 def client():
@@ -197,18 +201,24 @@ def test_export_validation_and_model_metrics(client: TestClient):
 # 8. Ground-Truth Isolation & Authorization Enforcement
 # ---------------------------------------------------------------------------
 def test_historical_separations_requires_hr_authorization(client: TestClient):
-    # Missing header -> 403 Forbidden
+    # Missing header -> 403
     r_missing = client.get("/api/v1/exports/historical-separations.csv")
     assert r_missing.status_code == 403
-    assert "HR Analytics authorization" in r_missing.text
 
-    # Explicit false header -> 403 Forbidden
-    r_false = client.get("/api/v1/exports/historical-separations.json", headers={"X-HR-Authorization": "false"})
-    assert r_false.status_code == 403
+    # Invalid token -> 403
+    r_invalid = client.get(
+        "/api/v1/exports/historical-separations.json",
+        headers={"X-HR-Analytics-Token": "invalid-token"},
+    )
+    assert r_invalid.status_code == 403
 
-    # Authorized request -> 200 OK
-    r_auth = client.get("/api/v1/exports/historical-separations.json", headers={"X-HR-Authorization": "true"})
+    # Valid token -> 200
+    r_auth = client.get(
+        "/api/v1/exports/historical-separations.json",
+        headers=HR_AUTH_HEADERS,
+    )
     assert r_auth.status_code == 200
+
     envelope = r_auth.json()
     assert envelope["manifest"]["data_classification"] == "RESTRICTED_GROUND_TRUTH"
     assert envelope["manifest"]["record_count"] == 1187

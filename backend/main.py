@@ -54,6 +54,10 @@ async def lifespan(app: FastAPI):
     logger.info("Shutting down WorkforceIQ REST API...")
 
 
+# API Documentation Configuration
+environment = os.environ.get("ENVIRONMENT", "development").strip().lower()
+is_development = environment == "development"
+
 app = FastAPI(
     title="WorkforceIQ API",
     description=(
@@ -62,9 +66,9 @@ app = FastAPI(
         "human-in-the-loop intervention governance, and 12-pillar data validation."
     ),
     version="1.0.0",
-    docs_url="/docs",
-    redoc_url="/redoc",
-    openapi_url="/openapi.json",
+    docs_url="/docs" if is_development else None,
+    redoc_url="/redoc" if is_development else None,
+    openapi_url="/openapi.json" if is_development else None,
     lifespan=lifespan,
 )
 
@@ -73,37 +77,32 @@ app = FastAPI(
 # ---------------------------------------------------------------------------
 
 # CORS Configuration
-origins = os.environ.get(
-    "CORS_ORIGINS",
-    "http://localhost:3000,http://localhost:5173,http://127.0.0.1:3000,http://127.0.0.1:5173",
-).split(",")
+origins = [
+    origin.strip()
+    for origin in os.environ.get(
+        "CORS_ORIGINS",
+        "http://localhost:3000,http://localhost:5173,http://127.0.0.1:3000,http://127.0.0.1:5173",
+    ).split(",")
+    if origin.strip()
+]
+
+if not origins or "*" in origins:
+    raise RuntimeError(
+        "CORS_ORIGINS must contain explicit allowed origins. Wildcard origins are not permitted."
+    )
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins if origins != ["*"] else ["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_origins=origins,
+    allow_credentials=False,
+    allow_methods=["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+    allow_headers=[
+        "Accept",
+        "Authorization",
+        "Content-Type",
+        "X-HR-Analytics-Token",
+    ],
 )
-
-
-@app.middleware("http")
-async def add_process_time_and_log_header(request: Request, call_next):
-    """
-    Middleware that computes response execution time and logs requests.
-    """
-    start_time = time.perf_counter()
-    response = await call_next(request)
-    process_time = time.perf_counter() - start_time
-    response.headers["X-Process-Time"] = f"{process_time:.4f}s"
-    logger.info(
-        "%s %s - %d (%.4fs)",
-        request.method,
-        request.url.path,
-        response.status_code,
-        process_time,
-    )
-    return response
 
 
 # ---------------------------------------------------------------------------
@@ -112,11 +111,19 @@ async def add_process_time_and_log_header(request: Request, call_next):
 
 @app.exception_handler(ValueError)
 async def value_error_handler(request: Request, exc: ValueError):
-    """Handles domain validation errors as 422 Unprocessable Entity."""
-    logger.warning("Validation error on %s: %s", request.url.path, str(exc))
+    """Handles domain validation errors without exposing internal details."""
+    logger.warning(
+        "Validation error on %s: %s",
+        request.url.path,
+        exc,
+        exc_info=True,
+    )
     return JSONResponse(
         status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
-        content={"detail": str(exc), "error_type": "ValueError"},
+        content={
+            "detail": "The supplied value is invalid.",
+            "error_type": "ValueError",
+        },
     )
 
 
@@ -166,8 +173,8 @@ def root() -> Dict[str, str]:
     return {
         "service": "WorkforceIQ – AI-Powered Workforce Retention Intelligence Platform",
         "version": "1.0.0",
-        "docs_url": "/docs",
-        "redoc_url": "/redoc",
+        "docs_url": "/docs" if is_development else None,
+        "redoc_url": "/redoc" if is_development else None,
         "health_check": "/health",
     }
 

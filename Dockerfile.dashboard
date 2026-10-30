@@ -13,6 +13,10 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 
 WORKDIR /app
 
+# Create a dedicated non-root application user
+RUN groupadd --system workforceiq && \
+    useradd --system --gid workforceiq --home-dir /app workforceiq
+
 RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     && rm -rf /var/lib/apt/lists/*
@@ -22,6 +26,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy dashboard application
 COPY dashboard/ ./dashboard/
+
+# Transfer application ownership and switch to non-root user
+RUN chown -R workforceiq:workforceiq /app
+USER workforceiq
 
 EXPOSE 8501
 

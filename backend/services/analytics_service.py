@@ -145,11 +145,13 @@ def get_historical_attrition_trends(
 ) -> AttritionTrend:
     """
     Historical departure ledger analysis (Access-controlled).
-    Reads from exit_records strictly for authorized retrospective analytics.
+    Reads from exit_records strictly for authorized retrospective
+    analytics.
     """
     if not is_authorized:
         raise PermissionError(
-            "Access to historical separation outcomes requires HR Analytics authorization."
+            "Access to historical separation outcomes requires HR "
+            "Analytics authorization."
         )
 
     # Monthly separation counts

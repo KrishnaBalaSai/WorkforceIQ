@@ -14,12 +14,20 @@ import logging
 import os
 from pathlib import Path
 from typing import Any, Dict, List, Optional
+from altair.datasets import data
 import httpx
 
 logger = logging.getLogger("workforceiq.dashboard_client")
 
-API_BASE_URL = os.environ.get("BACKEND_URL", "http://127.0.0.1:8000")
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
+from dotenv import load_dotenv
+
+load_dotenv(PROJECT_ROOT / ".env")
+
+API_BASE_URL = os.environ.get("BACKEND_URL", "http://127.0.0.1:8000")
+HR_ANALYTICS_TOKEN = os.environ.get("HR_ANALYTICS_TOKEN", "")
+
 ARTIFACTS_DIR = PROJECT_ROOT / "ml" / "artifacts"
 MANIFESTS_DIR = PROJECT_ROOT / "data" / "manifests"
 
@@ -102,19 +110,59 @@ class DashboardAPIClient:
             session.close()
 
     def get_historical_attrition_trends(self) -> Dict[str, Any]:
-        """Historical outcomes requiring X-HR-Authorization header."""
-        headers = {"X-HR-Authorization": "true"}
-        data = self._get("/api/v1/attrition/trends", headers=headers)
-        if data:
-            return data
-        from backend.database import get_session
-        from backend.services.analytics_service import get_historical_attrition_trends
-        session = next(get_session())
+        """Fetch historical outcomes using HR Analytics token authorization."""
+        if not HR_ANALYTICS_TOKEN:
+            logger.warning("HR Analytics token is not configured.")
+            return {}
+
+        headers = {"X-HR-Analytics-Token": HR_ANALYTICS_TOKEN}
+        url = f"{self.base_url}/api/v1/attrition/trends"
+
         try:
-            res = get_historical_attrition_trends(session, is_authorized=True)
-            return res.model_dump() if hasattr(res, "model_dump") else res.dict()
-        finally:
-            session.close()
+            with httpx.Client(timeout=self.timeout) as client:
+                response = client.get(url, headers=headers)
+
+            if response.status_code == 200:
+                return response.json()
+
+            # Do not bypass an explicit API rejection or other HTTP error.
+            logger.warning(
+                "Historical attrition API returned status %s.",
+                response.status_code,
+            )
+            return {}
+
+        except (httpx.ConnectError, httpx.ConnectTimeout):
+            # The API is unreachable (for example, standalone Streamlit/test mode).
+            # Permit local access only after verifying the configured HR token.
+            logger.info("API unavailable. Checking authorized local access.")
+
+            from backend.auth import verify_hr_token
+            from backend.database import get_session
+            from backend.services.analytics_service import (
+                get_historical_attrition_trends as get_trends,
+            )
+
+            if not verify_hr_token(
+                HR_ANALYTICS_TOKEN,
+                request_path="dashboard/local-historical-attrition",
+            ):
+                return {}
+
+            session = next(get_session())
+            try:
+                result = get_trends(session, is_authorized=True)
+                return (
+                    result.model_dump()
+                    if hasattr(result, "model_dump")
+                    else result.dict()
+                )
+            finally:
+                session.close()
+
+        except Exception:
+            logger.exception("Unable to retrieve historical attrition trends.")
+            return {}
 
     # -----------------------------------------------------------------------
     # Departments & Headcount
@@ -529,7 +577,11 @@ class DashboardAPIClient:
 
     def get_export_csv(self, dataset_name: str, params: Optional[Dict[str, Any]] = None, is_hr_authorized: bool = False) -> str:
         """Retrieves raw CSV export content."""
-        headers = {"X-HR-Authorization": "true"} if is_hr_authorized else None
+        headers = (
+            {"X-HR-Analytics-Token": HR_ANALYTICS_TOKEN}
+            if is_hr_authorized and HR_ANALYTICS_TOKEN
+            else None
+        )
         try:
             url = f"{self.base_url}/api/v1/exports/{dataset_name}.csv"
             with httpx.Client(timeout=self.timeout) as client:
@@ -562,7 +614,9 @@ class DashboardAPIClient:
             elif dataset_name == "model-metrics":
                 rows = svc.get_model_metrics_dataset()
             elif dataset_name == "historical-separations":
-                rows = svc.get_historical_separations_dataset(is_hr_authorized=is_hr_authorized)
+                if not is_hr_authorized or not HR_ANALYTICS_TOKEN:
+                    raise PermissionError("Valid HR Analytics authorization is required.")
+                rows = svc.get_historical_separations_dataset(is_hr_authorized=True)
             else:
                 rows = []
             return svc.format_csv(rows)

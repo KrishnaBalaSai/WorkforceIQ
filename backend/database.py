@@ -138,8 +138,9 @@ def check_database_health() -> dict:
             with eng.connect() as conn:
                 conn.execute(text("SELECT 1"))
             result["postgresql_reachable"] = True
-        except Exception as exc:
-            result["postgresql_error"] = str(exc)
+        except Exception:
+            logger.exception("PostgreSQL health check failed.")
+            result["postgresql_error"] = "Database connection unavailable."
 
     # Always report CSV fallback state
     csv_count = len(list(DATA_GENERATED_DIR.glob("*.csv"))) if DATA_GENERATED_DIR.exists() else 0

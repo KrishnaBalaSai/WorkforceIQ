@@ -28,6 +28,7 @@ from datetime import date
 import json
 from typing import Any, Dict, List, Optional
 from fastapi import APIRouter, Depends, Header, HTTPException, Query, Response
+from backend.auth import verify_hr_token
 from fastapi.responses import JSONResponse, PlainTextResponse
 from sqlalchemy.orm import Session
 
@@ -124,7 +125,7 @@ def get_export_catalog():
                 "id": "historical-separations",
                 "name": "Historical Separation Records",
                 "classification": "RESTRICTED_GROUND_TRUTH",
-                "description": "Requires HR Analytics authorization header (X-HR-Authorization: true).",
+                "description": "Requires a valid X-HR-Analytics-Token header for HR Analytics authorization.",
                 "endpoints": ["/api/v1/exports/historical-separations.csv", "/api/v1/exports/historical-separations.json"],
             },
         ],
@@ -359,37 +360,72 @@ def export_model_metrics_json(session: Session = Depends(get_session)):
 # ---------------------------------------------------------------------------
 # 9. Restricted HR Historical Separations Export (Ground-Truth Protection)
 # ---------------------------------------------------------------------------
-@router.get("/historical-separations.csv", summary="Export Historical Separation Records as CSV (HR Restricted)")
+
+@router.get(
+    "/historical-separations.csv",
+    summary="Export Historical Separation Records as CSV (HR Restricted)",
+)
 def export_historical_separations_csv(
-    x_hr_authorization: str = Header(default="false", alias="X-HR-Authorization"),
+    x_hr_analytics_token: str = Header(
+        default="",
+        alias="X-HR-Analytics-Token",
+        description="Provide a valid HR Analytics authorization token.",
+    ),
     session: Session = Depends(get_session),
 ):
-    is_authorized = x_hr_authorization.lower() == "true"
+    is_authorized = verify_hr_token(
+        x_hr_analytics_token,
+        request_path="/api/v1/exports/historical-separations.csv",
+    )
+
+    if not is_authorized:
+        raise HTTPException(
+            status_code=403,
+            detail="Access denied. Valid HR Analytics authorization is required.",
+        )
+
     service = ExportService(session)
-    try:
-        data = service.get_historical_separations_dataset(is_hr_authorized=is_authorized)
-    except PermissionError as exc:
-        raise HTTPException(status_code=403, detail=str(exc))
+    data = service.get_historical_separations_dataset(is_hr_authorized=True)
 
     csv_str = service.format_csv(data)
     return _csv_response(csv_str, "workforceiq_historical_separations_restricted.csv")
 
 
-@router.get("/historical-separations.json", response_model=ExportEnvelope, summary="Export Historical Separation Records as JSON (HR Restricted)")
+@router.get(
+    "/historical-separations.json",
+    response_model=ExportEnvelope,
+    summary="Export Historical Separation Records as JSON (HR Restricted)",
+)
 def export_historical_separations_json(
-    x_hr_authorization: str = Header(default="false", alias="X-HR-Authorization"),
+    x_hr_analytics_token: str = Header(
+        default="",
+        alias="X-HR-Analytics-Token",
+        description="Provide a valid HR Analytics authorization token.",
+    ),
     session: Session = Depends(get_session),
 ):
-    is_authorized = x_hr_authorization.lower() == "true"
+    is_authorized = verify_hr_token(
+        x_hr_analytics_token,
+        request_path="/api/v1/exports/historical-separations.json",
+    )
+
+    if not is_authorized:
+        raise HTTPException(
+            status_code=403,
+            detail="Access denied. Valid HR Analytics authorization is required.",
+        )
+
     service = ExportService(session)
-    try:
-        data = service.get_historical_separations_dataset(is_hr_authorized=is_authorized)
-    except PermissionError as exc:
-        raise HTTPException(status_code=403, detail=str(exc))
+    data = service.get_historical_separations_dataset(is_hr_authorized=True)
 
     payload_bytes = json.dumps(data, default=str).encode("utf-8")
-    return service.build_export_envelope("historical_separations", "json", data, payload_bytes, data_classification="RESTRICTED_GROUND_TRUTH")
-
+    return service.build_export_envelope(
+        "historical_separations",
+        "json",
+        data,
+        payload_bytes,
+        data_classification="RESTRICTED_GROUND_TRUTH",
+    )
 
 # ---------------------------------------------------------------------------
 # 10. Executive Downloadable Report

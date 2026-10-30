@@ -39,8 +39,6 @@ htmlcov/
 Thumbs.db
 
 # Sensitive ground-truth data - do not publish
-data/ground_truth/attrition_labels.csv
-data/ground_truth/anomaly_manifest.csv
 
 # Sensitive ground-truth data - do not publish
 data/ground_truth/
