@@ -1,0 +1,326 @@
+[
+  {
+    "project_id": "PRJ-ENG-001",
+    "department_id": "DEP-ENG-01",
+    "name": "ENG - Global Revenue Expansion",
+    "priority": "MEDIUM",
+    "start_date": "2023-11-11",
+    "end_date": "2027-06-22",
+    "is_billable": true
+  },
+  {
+    "project_id": "PRJ-ENG-002",
+    "department_id": "DEP-ENG-01",
+    "name": "ENG - Enterprise Data Fabric",
+    "priority": "MEDIUM",
+    "start_date": "2024-05-08",
+    "end_date": "2027-05-29",
+    "is_billable": true
+  },
+  {
+    "project_id": "PRJ-ENG-003",
+    "department_id": "DEP-ENG-01",
+    "name": "ENG - Security Zero-Trust Overhaul",
+    "priority": "MEDIUM",
+    "start_date": "2024-06-27",
+    "end_date": "2027-02-28",
+    "is_billable": true
+  },
+  {
+    "project_id": "PRJ-ENG-004",
+    "department_id": "DEP-ENG-01",
+    "name": "ENG - Continuous CI/CD Delivery Pipeline",
+    "priority": "MEDIUM",
+    "start_date": "2024-07-10",
+    "end_date": "2027-05-08",
+    "is_billable": true
+  },
+  {
+    "project_id": "PRJ-ENG-005",
+    "department_id": "DEP-ENG-01",
+    "name": "ENG - Enterprise Data Fabric",
+    "priority": "MEDIUM",
+    "start_date": "2023-11-05",
+    "end_date": "2027-09-16",
+    "is_billable": true
+  },
+  {
+    "project_id": "PRJ-AIR-006",
+    "department_id": "DEP-AIR-02",
+    "name": "AIR - Autonomous Agents Framework",
+    "priority": "HIGH",
+    "start_date": "2023-11-08",
+    "end_date": "2027-07-26",
+    "is_billable": true
+  },
+  {
+    "project_id": "PRJ-AIR-007",
+    "department_id": "DEP-AIR-02",
+    "name": "AIR - Autonomous Agents Framework",
+    "priority": "MEDIUM",
+    "start_date": "2024-06-19",
+    "end_date": "2027-09-20",
+    "is_billable": false
+  },
+  {
+    "project_id": "PRJ-AIR-008",
+    "department_id": "DEP-AIR-02",
+    "name": "AIR - Continuous CI/CD Delivery Pipeline",
+    "priority": "CRITICAL",
+    "start_date": "2024-05-11",
+    "end_date": "2027-10-18",
+    "is_billable": true
+  },
+  {
+    "project_id": "PRJ-AIR-009",
+    "department_id": "DEP-AIR-02",
+    "name": "AIR - Autonomous Agents Framework",
+    "priority": "MEDIUM",
+    "start_date": "2024-01-23",
+    "end_date": "2027-08-30",
+    "is_billable": true
+  },
+  {
+    "project_id": "PRJ-PRD-010",
+    "department_id": "DEP-PRD-03",
+    "name": "PRD - Core Platform Modernization",
+    "priority": "CRITICAL",
+    "start_date": "2024-06-30",
+    "end_date": "2027-08-14",
+    "is_billable": true
+  },
+  {
+    "project_id": "PRJ-PRD-011",
+    "department_id": "DEP-PRD-03",
+    "name": "PRD - Core Platform Modernization",
+    "priority": "MEDIUM",
+    "start_date": "2024-07-28",
+    "end_date": "2027-08-06",
+    "is_billable": true
+  },
+  {
+    "project_id": "PRJ-PRD-012",
+    "department_id": "DEP-PRD-03",
+    "name": "PRD - Enterprise Data Fabric",
+    "priority": "MEDIUM",
+    "start_date": "2024-08-31",
+    "end_date": "2027-03-21",
+    "is_billable": true
+  },
+  {
+    "project_id": "PRJ-PRD-013",
+    "department_id": "DEP-PRD-03",
+    "name": "PRD - Continuous CI/CD Delivery Pipeline",
+    "priority": "CRITICAL",
+    "start_date": "2023-12-28",
+    "end_date": "2027-10-01",
+    "is_billable": true
+  },
+  {
+    "project_id": "PRJ-PRD-014",
+    "department_id": "DEP-PRD-03",
+    "name": "PRD - Security Zero-Trust Overhaul",
+    "priority": "MEDIUM",
+    "start_date": "2024-08-03",
+    "end_date": "2027-08-04",
+    "is_billable": true
+  },
+  {
+    "project_id": "PRJ-SAL-015",
+    "department_id": "DEP-SAL-04",
+    "name": "SAL - Strategic Partner Integrations",
+    "priority": "MEDIUM",
+    "start_date": "2024-08-31",
+    "end_date": "2027-10-01",
+    "is_billable": true
+  },
+  {
+    "project_id": "PRJ-SAL-016",
+    "department_id": "DEP-SAL-04",
+    "name": "SAL - Core Platform Modernization",
+    "priority": "CRITICAL",
+    "start_date": "2024-06-12",
+    "end_date": "2027-07-03",
+    "is_billable": true
+  },
+  {
+    "project_id": "PRJ-SAL-017",
+    "department_id": "DEP-SAL-04",
+    "name": "SAL - Security Zero-Trust Overhaul",
+    "priority": "HIGH",
+    "start_date": "2024-02-26",
+    "end_date": "2027-02-19",
+    "is_billable": true
+  },
+  {
+    "project_id": "PRJ-SAL-018",
+    "department_id": "DEP-SAL-04",
+    "name": "SAL - Next-Gen ML Inference Engine",
+    "priority": "CRITICAL",
+    "start_date": "2024-08-18",
+    "end_date": "2027-06-27",
+    "is_billable": true
+  },
+  {
+    "project_id": "PRJ-SAL-019",
+    "department_id": "DEP-SAL-04",
+    "name": "SAL - Core Platform Modernization",
+    "priority": "HIGH",
+    "start_date": "2023-12-19",
+    "end_date": "2027-02-05",
+    "is_billable": true
+  },
+  {
+    "project_id": "PRJ-MKT-020",
+    "department_id": "DEP-MKT-05",
+    "name": "MKT - Core Platform Modernization",
+    "priority": "CRITICAL",
+    "start_date": "2024-01-11",
+    "end_date": "2027-07-21",
+    "is_billable": true
+  },
+  {
+    "project_id": "PRJ-MKT-021",
+    "department_id": "DEP-MKT-05",
+    "name": "MKT - Global Revenue Expansion",
+    "priority": "CRITICAL",
+    "start_date": "2023-11-22",
+    "end_date": "2027-10-17",
+    "is_billable": true
+  },
+  {
+    "project_id": "PRJ-MKT-022",
+    "department_id": "DEP-MKT-05",
+    "name": "MKT - Customer Retention Analytics",
+    "priority": "HIGH",
+    "start_date": "2024-04-12",
+    "end_date": "2027-06-09",
+    "is_billable": true
+  },
+  {
+    "project_id": "PRJ-MKT-023",
+    "department_id": "DEP-MKT-05",
+    "name": "MKT - Strategic Partner Integrations",
+    "priority": "CRITICAL",
+    "start_date": "2023-11-23",
+    "end_date": "2027-07-29",
+    "is_billable": true
+  },
+  {
+    "project_id": "PRJ-CUS-024",
+    "department_id": "DEP-CUS-06",
+    "name": "CUS - Autonomous Agents Framework",
+    "priority": "MEDIUM",
+    "start_date": "2024-06-17",
+    "end_date": "2027-10-12",
+    "is_billable": true
+  },
+  {
+    "project_id": "PRJ-CUS-025",
+    "department_id": "DEP-CUS-06",
+    "name": "CUS - Cloud Cost Optimization",
+    "priority": "CRITICAL",
+    "start_date": "2024-01-15",
+    "end_date": "2027-04-16",
+    "is_billable": false
+  },
+  {
+    "project_id": "PRJ-CUS-026",
+    "department_id": "DEP-CUS-06",
+    "name": "CUS - Core Platform Modernization",
+    "priority": "CRITICAL",
+    "start_date": "2024-01-11",
+    "end_date": "2027-06-14",
+    "is_billable": false
+  },
+  {
+    "project_id": "PRJ-CUS-027",
+    "department_id": "DEP-CUS-06",
+    "name": "CUS - Security Zero-Trust Overhaul",
+    "priority": "CRITICAL",
+    "start_date": "2024-05-08",
+    "end_date": "2027-04-02",
+    "is_billable": true
+  },
+  {
+    "project_id": "PRJ-PPL-028",
+    "department_id": "DEP-PPL-07",
+    "name": "PPL - Strategic Partner Integrations",
+    "priority": "MEDIUM",
+    "start_date": "2023-11-20",
+    "end_date": "2027-04-14",
+    "is_billable": true
+  },
+  {
+    "project_id": "PRJ-PPL-029",
+    "department_id": "DEP-PPL-07",
+    "name": "PPL - Continuous CI/CD Delivery Pipeline",
+    "priority": "CRITICAL",
+    "start_date": "2024-08-24",
+    "end_date": "2027-09-06",
+    "is_billable": true
+  },
+  {
+    "project_id": "PRJ-PPL-030",
+    "department_id": "DEP-PPL-07",
+    "name": "PPL - Next-Gen ML Inference Engine",
+    "priority": "HIGH",
+    "start_date": "2024-05-31",
+    "end_date": "2027-08-24",
+    "is_billable": true
+  },
+  {
+    "project_id": "PRJ-PPL-031",
+    "department_id": "DEP-PPL-07",
+    "name": "PPL - Global Revenue Expansion",
+    "priority": "MEDIUM",
+    "start_date": "2024-07-09",
+    "end_date": "2027-05-09",
+    "is_billable": true
+  },
+  {
+    "project_id": "PRJ-FIN-032",
+    "department_id": "DEP-FIN-08",
+    "name": "FIN - Global Revenue Expansion",
+    "priority": "HIGH",
+    "start_date": "2024-02-21",
+    "end_date": "2027-10-28",
+    "is_billable": true
+  },
+  {
+    "project_id": "PRJ-FIN-033",
+    "department_id": "DEP-FIN-08",
+    "name": "FIN - Continuous CI/CD Delivery Pipeline",
+    "priority": "MEDIUM",
+    "start_date": "2024-08-22",
+    "end_date": "2027-04-17",
+    "is_billable": true
+  },
+  {
+    "project_id": "PRJ-FIN-034",
+    "department_id": "DEP-FIN-08",
+    "name": "FIN - Enterprise Data Fabric",
+    "priority": "MEDIUM",
+    "start_date": "2024-02-09",
+    "end_date": "2027-03-02",
+    "is_billable": false
+  },
+  {
+    "project_id": "PRJ-FIN-035",
+    "department_id": "DEP-FIN-08",
+    "name": "FIN - Customer Retention Analytics",
+    "priority": "HIGH",
+    "start_date": "2024-05-04",
+    "end_date": "2027-04-14",
+    "is_billable": false
+  },
+  {
+    "project_id": "PRJ-FIN-036",
+    "department_id": "DEP-FIN-08",
+    "name": "FIN - Global Revenue Expansion",
+    "priority": "HIGH",
+    "start_date": "2024-05-30",
+    "end_date": "2027-08-16",
+    "is_billable": true
+  }
+]

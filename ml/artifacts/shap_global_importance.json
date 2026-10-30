@@ -1,0 +1,219 @@
+{
+  "model_version": "v2.0.0-prospective",
+  "algorithm": "RandomForest",
+  "total_features": 30,
+  "evaluation_samples": 40960,
+  "ranked_features": [
+    {
+      "rank": 1,
+      "feature": "latest_sentiment_score",
+      "human_label": "Sentiment Score (Surveys & Feedback)",
+      "mean_abs_shap": 0.12664,
+      "importance_pct": 40.37
+    },
+    {
+      "rank": 2,
+      "feature": "latest_burnout_risk",
+      "human_label": "Burnout Risk Index",
+      "mean_abs_shap": 0.047613,
+      "importance_pct": 15.18
+    },
+    {
+      "rank": 3,
+      "feature": "avg_job_satisfaction",
+      "human_label": "Engagement (Average Job Satisfaction)",
+      "mean_abs_shap": 0.035955,
+      "importance_pct": 11.46
+    },
+    {
+      "rank": 4,
+      "feature": "avg_work_life_balance",
+      "human_label": "Well-Being (Work-Life Balance Score)",
+      "mean_abs_shap": 0.029172,
+      "importance_pct": 9.3
+    },
+    {
+      "rank": 5,
+      "feature": "tenure_months",
+      "human_label": "Tenure (Months)",
+      "mean_abs_shap": 0.017391,
+      "importance_pct": 5.54
+    },
+    {
+      "rank": 6,
+      "feature": "avg_weekly_logged_hours",
+      "human_label": "Workload Intensity (Average Weekly Hours)",
+      "mean_abs_shap": 0.013267,
+      "importance_pct": 4.23
+    },
+    {
+      "rank": 7,
+      "feature": "compa_ratio",
+      "human_label": "Compa-Ratio (Salary vs. Market Midpoint)",
+      "mean_abs_shap": 0.0079,
+      "importance_pct": 2.52
+    },
+    {
+      "rank": 8,
+      "feature": "base_salary",
+      "human_label": "Base Salary (USD)",
+      "mean_abs_shap": 0.005894,
+      "importance_pct": 1.88
+    },
+    {
+      "rank": 9,
+      "feature": "department_id_DEP-ENG-01",
+      "human_label": "Department: Engineering",
+      "mean_abs_shap": 0.003717,
+      "importance_pct": 1.18
+    },
+    {
+      "rank": 10,
+      "feature": "work_location_REMOTE",
+      "human_label": "Work Arrangement: Remote",
+      "mean_abs_shap": 0.003336,
+      "importance_pct": 1.06
+    },
+    {
+      "rank": 11,
+      "feature": "department_id_DEP-MKT-05",
+      "human_label": "Department: Marketing & Growth",
+      "mean_abs_shap": 0.003133,
+      "importance_pct": 1.0
+    },
+    {
+      "rank": 12,
+      "feature": "grade_level",
+      "human_label": "Job Grade Level",
+      "mean_abs_shap": 0.003074,
+      "importance_pct": 0.98
+    },
+    {
+      "rank": 13,
+      "feature": "department_id_DEP-CUS-06",
+      "human_label": "Department: Customer Success",
+      "mean_abs_shap": 0.002435,
+      "importance_pct": 0.78
+    },
+    {
+      "rank": 14,
+      "feature": "promotions_count",
+      "human_label": "Career Velocity (Promotion Count)",
+      "mean_abs_shap": 0.001992,
+      "importance_pct": 0.64
+    },
+    {
+      "rank": 15,
+      "feature": "department_id_DEP-AIR-02",
+      "human_label": "Department: AI Research",
+      "mean_abs_shap": 0.001825,
+      "importance_pct": 0.58
+    },
+    {
+      "rank": 16,
+      "feature": "work_location_HYBRID",
+      "human_label": "Work Arrangement: Hybrid",
+      "mean_abs_shap": 0.001184,
+      "importance_pct": 0.38
+    },
+    {
+      "rank": 17,
+      "feature": "avg_weekly_logged_hours_missing_indicator",
+      "human_label": "Weekly Hours (Missingness Indicator)",
+      "mean_abs_shap": 0.001062,
+      "importance_pct": 0.34
+    },
+    {
+      "rank": 18,
+      "feature": "latest_sentiment_score_missing_indicator",
+      "human_label": "Sentiment (Missingness Indicator)",
+      "mean_abs_shap": 0.001046,
+      "importance_pct": 0.33
+    },
+    {
+      "rank": 19,
+      "feature": "work_location_ONSITE",
+      "human_label": "Work Arrangement: On-Site",
+      "mean_abs_shap": 0.001023,
+      "importance_pct": 0.33
+    },
+    {
+      "rank": 20,
+      "feature": "department_id_DEP-FIN-08",
+      "human_label": "Department: Finance & Legal",
+      "mean_abs_shap": 0.001011,
+      "importance_pct": 0.32
+    },
+    {
+      "rank": 21,
+      "feature": "employment_type_FULL_TIME",
+      "human_label": "Employment: Full-Time",
+      "mean_abs_shap": 0.000828,
+      "importance_pct": 0.26
+    },
+    {
+      "rank": 22,
+      "feature": "department_id_DEP-PRD-03",
+      "human_label": "Department: Product Management",
+      "mean_abs_shap": 0.000799,
+      "importance_pct": 0.25
+    },
+    {
+      "rank": 23,
+      "feature": "department_id_DEP-SAL-04",
+      "human_label": "Department: Sales & Accounts",
+      "mean_abs_shap": 0.000772,
+      "importance_pct": 0.25
+    },
+    {
+      "rank": 24,
+      "feature": "department_id_DEP-PPL-07",
+      "human_label": "Department: People & HR",
+      "mean_abs_shap": 0.000744,
+      "importance_pct": 0.24
+    },
+    {
+      "rank": 25,
+      "feature": "avg_job_satisfaction_missing_indicator",
+      "human_label": "Job Satisfaction (Missingness Indicator)",
+      "mean_abs_shap": 0.000537,
+      "importance_pct": 0.17
+    },
+    {
+      "rank": 26,
+      "feature": "latest_burnout_risk_missing_indicator",
+      "human_label": "Burnout Risk (Missingness Indicator)",
+      "mean_abs_shap": 0.000453,
+      "importance_pct": 0.14
+    },
+    {
+      "rank": 27,
+      "feature": "avg_work_life_balance_missing_indicator",
+      "human_label": "Work-Life Balance (Missingness Indicator)",
+      "mean_abs_shap": 0.000388,
+      "importance_pct": 0.12
+    },
+    {
+      "rank": 28,
+      "feature": "employment_type_PART_TIME",
+      "human_label": "Employment: Part-Time",
+      "mean_abs_shap": 0.000248,
+      "importance_pct": 0.08
+    },
+    {
+      "rank": 29,
+      "feature": "employment_type_CONTRACTOR",
+      "human_label": "Employment: Contractor",
+      "mean_abs_shap": 0.000238,
+      "importance_pct": 0.08
+    },
+    {
+      "rank": 30,
+      "feature": "employment_type_INTERN",
+      "human_label": "Employment: Intern",
+      "mean_abs_shap": 3.8e-05,
+      "importance_pct": 0.01
+    }
+  ],
+  "responsible_ai_disclaimer": "This flight-risk score and SHAP explanation reflect statistical associations learned from historical organizational data. They do NOT imply causal attribution. These metrics are advisory signals designed exclusively to support human-led retention dialogues, workload rebalancing, and career coaching. Automated employment decisions based on this signal are strictly prohibited."
+}

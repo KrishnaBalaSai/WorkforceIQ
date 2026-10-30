@@ -1,0 +1,42 @@
+# WorkforceIQ – Production and Development Dependencies
+# Python 3.12+
+
+# Core Web Framework & API
+fastapi==0.162.0
+uvicorn==0.54.0
+pydantic==2.14.2
+pydantic-core==2.50.2
+python-multipart==0.0.32
+starlette==1.10.0
+httpx==0.28.1
+
+# Database & ORM
+SQLAlchemy==2.1.6
+psycopg2-binary==2.9.13
+python-dotenv==1.2.4
+
+# Data Processing & Numerical
+pandas==3.1.0
+numpy==2.5.4
+scipy==1.18.1
+pyarrow==26.0.0
+python-dateutil==3.0.0
+
+# Machine Learning & Explainability
+scikit-learn==1.9.1
+shap==0.54.1
+joblib==1.6.0
+matplotlib==3.11.2
+
+# Synthetic Data Generation
+Faker==40.44.0
+tqdm==4.70.1
+
+# Analytics Dashboard
+streamlit==1.66.1
+plotly==7.1.0
+altair==6.3.0
+
+# Testing & Quality Assurance
+pytest==9.2.0
+anyio==4.15.1

@@ -1,0 +1,73 @@
+{
+  "overall_status": "PASSED",
+  "total_pillars": 12,
+  "passed_pillars": 12,
+  "failed_pillars": 0,
+  "pillar_results": {
+    "1_primary_key_uniqueness": {
+      "status": "PASSED",
+      "tables_checked": 14,
+      "failed_tables": []
+    },
+    "2_foreign_key_integrity": {
+      "status": "PASSED",
+      "relationships_verified": 8,
+      "failed_relationships": []
+    },
+    "3_allowed_enum_validation": {
+      "status": "PASSED",
+      "enums_verified": 8,
+      "failed_enums": []
+    },
+    "4_date_ordering": {
+      "status": "PASSED",
+      "date_pairs_verified": 3,
+      "failed_checks": []
+    },
+    "5_effective_date_consistency": {
+      "status": "PASSED",
+      "active_records_audited": 8813,
+      "failed_scd_checks": []
+    },
+    "6_duplicate_detection": {
+      "status": "PASSED",
+      "duplicate_issues": []
+    },
+    "7_arithmetic_reconciliation": {
+      "status": "PASSED",
+      "compa_ratio_reconciled": true,
+      "performance_goals_correlation": 0.9051,
+      "failed_checks": []
+    },
+    "8_lifecycle_transition_validation": {
+      "status": "PASSED",
+      "total_terminated": 1118,
+      "matched_in_exit_records": 1118,
+      "failed_checks": []
+    },
+    "9_missing_value_handling": {
+      "status": "PASSED",
+      "columns_audited": 6,
+      "unexpected_null_counts": {}
+    },
+    "10_attrition_outcome_consistency": {
+      "status": "PASSED",
+      "exit_records_voluntary_count": 970,
+      "attrition_labels_voluntary_count": 970,
+      "exact_match": true
+    },
+    "11_temporal_leakage_detection": {
+      "status": "PASSED",
+      "forbidden_features_detected": [],
+      "clean_derived_columns": 14
+    },
+    "12_valid_joins_across_entities": {
+      "status": "PASSED",
+      "active_employee_comp_join_complete": true,
+      "terminated_employee_exit_join_complete": true,
+      "assignment_project_join_complete": true,
+      "active_joined_count": 8813,
+      "exit_joined_count": 1118
+    }
+  }
+}

@@ -1,0 +1,364 @@
+{
+  "generated_at": "2026-10-30T20:46:04.785468",
+  "seed": 20261022,
+  "employee_count": 150,
+  "run_1_dir": "C:\\Users\\sai\\AppData\\Local\\Temp\\wfiq_run1__gedb4sz",
+  "run_2_dir": "C:\\Users\\sai\\AppData\\Local\\Temp\\wfiq_run2_hi3dmg0f",
+  "run_1_elapsed_s": 0.2,
+  "run_2_elapsed_s": 0.15,
+  "reproducible": true,
+  "checksum_comparison": {
+    "files_compared": 19,
+    "matches": 19,
+    "mismatches": 0,
+    "details": [
+      {
+        "file": "generated/attrition_risk_scores.csv",
+        "run_1_sha256": "355722f8dd4d58ef2e479a8f90f162784fedf95812a43623fb5d997b26066236",
+        "run_2_sha256": "355722f8dd4d58ef2e479a8f90f162784fedf95812a43623fb5d997b26066236",
+        "match": true
+      },
+      {
+        "file": "generated/compensation_records.csv",
+        "run_1_sha256": "2629728310776995d369cbec76d2a345d0bd176e94721109932e086de0692c38",
+        "run_2_sha256": "2629728310776995d369cbec76d2a345d0bd176e94721109932e086de0692c38",
+        "match": true
+      },
+      {
+        "file": "generated/data_anomalies.csv",
+        "run_1_sha256": "23de396832f105bbd5083766dc317a0c330ac0d67eeb65b6ba52bb07246e1c5f",
+        "run_2_sha256": "23de396832f105bbd5083766dc317a0c330ac0d67eeb65b6ba52bb07246e1c5f",
+        "match": true
+      },
+      {
+        "file": "generated/departments.csv",
+        "run_1_sha256": "a89dacac6b24d5b1116b423f35809827819c6fe6510e6b908f92480b526f11d1",
+        "run_2_sha256": "a89dacac6b24d5b1116b423f35809827819c6fe6510e6b908f92480b526f11d1",
+        "match": true
+      },
+      {
+        "file": "generated/derived_workforce_features.csv",
+        "run_1_sha256": "a9a43de8abc8356de134940f643c2b107b52413fa36b21e4cfe439ca3df4977b",
+        "run_2_sha256": "a9a43de8abc8356de134940f643c2b107b52413fa36b21e4cfe439ca3df4977b",
+        "match": true
+      },
+      {
+        "file": "generated/employee_history.csv",
+        "run_1_sha256": "c5cf45aa453e7f80be12c58294b320618ef86414d1ad5d723508ae972bd94cb9",
+        "run_2_sha256": "c5cf45aa453e7f80be12c58294b320618ef86414d1ad5d723508ae972bd94cb9",
+        "match": true
+      },
+      {
+        "file": "generated/employee_skills.csv",
+        "run_1_sha256": "2b0ea3e66bce360a77ae62219ee1a894b5c43d808fcaa384f51c84e5939124ac",
+        "run_2_sha256": "2b0ea3e66bce360a77ae62219ee1a894b5c43d808fcaa384f51c84e5939124ac",
+        "match": true
+      },
+      {
+        "file": "generated/employees.csv",
+        "run_1_sha256": "c9ec3162a5207b7b45c27f061ddd02489aeff27f06a3d94451c5e39e54eb734a",
+        "run_2_sha256": "c9ec3162a5207b7b45c27f061ddd02489aeff27f06a3d94451c5e39e54eb734a",
+        "match": true
+      },
+      {
+        "file": "generated/engagement_surveys.csv",
+        "run_1_sha256": "a2e8ee3b98e08d9c4786bb2d5b0d7c0df4fa23aa14ee1d9fc6c5f830f624eda6",
+        "run_2_sha256": "a2e8ee3b98e08d9c4786bb2d5b0d7c0df4fa23aa14ee1d9fc6c5f830f624eda6",
+        "match": true
+      },
+      {
+        "file": "generated/job_roles.csv",
+        "run_1_sha256": "2523e891242d18cca32fee4ed9607f121230d06f34fe0d343dc68fd5eb1f1d82",
+        "run_2_sha256": "2523e891242d18cca32fee4ed9607f121230d06f34fe0d343dc68fd5eb1f1d82",
+        "match": true
+      },
+      {
+        "file": "generated/performance_evaluations.csv",
+        "run_1_sha256": "aa100467fdfc51ab0339b3c58933326b5b1c30fa6f2aa9b2f8074dff8ec109ec",
+        "run_2_sha256": "aa100467fdfc51ab0339b3c58933326b5b1c30fa6f2aa9b2f8074dff8ec109ec",
+        "match": true
+      },
+      {
+        "file": "generated/project_assignments.csv",
+        "run_1_sha256": "fe76be552e20bf3e8e1f4e5fc53bfd363fb7b3ce52932359e890966e00a9af41",
+        "run_2_sha256": "fe76be552e20bf3e8e1f4e5fc53bfd363fb7b3ce52932359e890966e00a9af41",
+        "match": true
+      },
+      {
+        "file": "generated/projects.csv",
+        "run_1_sha256": "839e6cd471ac308d4912ca56f7089d15f189d0871e0d4f684a7a11c6fb79f4b1",
+        "run_2_sha256": "839e6cd471ac308d4912ca56f7089d15f189d0871e0d4f684a7a11c6fb79f4b1",
+        "match": true
+      },
+      {
+        "file": "generated/retention_interventions.csv",
+        "run_1_sha256": "02673c3c2f4968f5e221982af24b180172672a5270c4307d9b8180176ae5c8b8",
+        "run_2_sha256": "02673c3c2f4968f5e221982af24b180172672a5270c4307d9b8180176ae5c8b8",
+        "match": true
+      },
+      {
+        "file": "generated/skills.csv",
+        "run_1_sha256": "9f3d2e7da3283a90168b529d897404e2d85c27989e59b91b3dbc48ba96b2ddb0",
+        "run_2_sha256": "9f3d2e7da3283a90168b529d897404e2d85c27989e59b91b3dbc48ba96b2ddb0",
+        "match": true
+      },
+      {
+        "file": "generated/time_off_records.csv",
+        "run_1_sha256": "5bdaeb1aa5f3d04c931e3155332e02f2363b9fcb2bfebbc07082a35d65c3edb0",
+        "run_2_sha256": "5bdaeb1aa5f3d04c931e3155332e02f2363b9fcb2bfebbc07082a35d65c3edb0",
+        "match": true
+      },
+      {
+        "file": "ground_truth/anomaly_manifest.csv",
+        "run_1_sha256": "3d4fa44c2db8974e9b65a254c9fc3a56e4b7cdcc76320a265ad154861571ba62",
+        "run_2_sha256": "3d4fa44c2db8974e9b65a254c9fc3a56e4b7cdcc76320a265ad154861571ba62",
+        "match": true
+      },
+      {
+        "file": "ground_truth/attrition_labels.csv",
+        "run_1_sha256": "7c99085cdefd4be36fb0a7d50f89da746662467ea82cca0236c1bf34629fd1ab",
+        "run_2_sha256": "7c99085cdefd4be36fb0a7d50f89da746662467ea82cca0236c1bf34629fd1ab",
+        "match": true
+      },
+      {
+        "file": "ground_truth/exit_records.csv",
+        "run_1_sha256": "0e13d2d719b0753336fa7c069c7a6b70a841a07d9912676b2945d988ffb356dc",
+        "run_2_sha256": "0e13d2d719b0753336fa7c069c7a6b70a841a07d9912676b2945d988ffb356dc",
+        "match": true
+      }
+    ]
+  },
+  "record_count_comparison": {
+    "tables_compared": 19,
+    "matches": 19,
+    "mismatches": 0,
+    "details": [
+      {
+        "file": "generated/attrition_risk_scores.csv",
+        "run_1_rows": 1124,
+        "run_2_rows": 1124,
+        "match": true
+      },
+      {
+        "file": "generated/compensation_records.csv",
+        "run_1_rows": 167,
+        "run_2_rows": 167,
+        "match": true
+      },
+      {
+        "file": "generated/data_anomalies.csv",
+        "run_1_rows": 8,
+        "run_2_rows": 8,
+        "match": true
+      },
+      {
+        "file": "generated/departments.csv",
+        "run_1_rows": 8,
+        "run_2_rows": 8,
+        "match": true
+      },
+      {
+        "file": "generated/derived_workforce_features.csv",
+        "run_1_rows": 150,
+        "run_2_rows": 150,
+        "match": true
+      },
+      {
+        "file": "generated/employee_history.csv",
+        "run_1_rows": 167,
+        "run_2_rows": 167,
+        "match": true
+      },
+      {
+        "file": "generated/employee_skills.csv",
+        "run_1_rows": 559,
+        "run_2_rows": 559,
+        "match": true
+      },
+      {
+        "file": "generated/employees.csv",
+        "run_1_rows": 150,
+        "run_2_rows": 150,
+        "match": true
+      },
+      {
+        "file": "generated/engagement_surveys.csv",
+        "run_1_rows": 1039,
+        "run_2_rows": 1039,
+        "match": true
+      },
+      {
+        "file": "generated/job_roles.csv",
+        "run_1_rows": 120,
+        "run_2_rows": 120,
+        "match": true
+      },
+      {
+        "file": "generated/performance_evaluations.csv",
+        "run_1_rows": 551,
+        "run_2_rows": 551,
+        "match": true
+      },
+      {
+        "file": "generated/project_assignments.csv",
+        "run_1_rows": 906,
+        "run_2_rows": 906,
+        "match": true
+      },
+      {
+        "file": "generated/projects.csv",
+        "run_1_rows": 36,
+        "run_2_rows": 36,
+        "match": true
+      },
+      {
+        "file": "generated/retention_interventions.csv",
+        "run_1_rows": 21,
+        "run_2_rows": 21,
+        "match": true
+      },
+      {
+        "file": "generated/skills.csv",
+        "run_1_rows": 12,
+        "run_2_rows": 12,
+        "match": true
+      },
+      {
+        "file": "generated/time_off_records.csv",
+        "run_1_rows": 266,
+        "run_2_rows": 266,
+        "match": true
+      },
+      {
+        "file": "ground_truth/anomaly_manifest.csv",
+        "run_1_rows": 8,
+        "run_2_rows": 8,
+        "match": true
+      },
+      {
+        "file": "ground_truth/attrition_labels.csv",
+        "run_1_rows": 150,
+        "run_2_rows": 150,
+        "match": true
+      },
+      {
+        "file": "ground_truth/exit_records.csv",
+        "run_1_rows": 17,
+        "run_2_rows": 17,
+        "match": true
+      }
+    ]
+  },
+  "id_comparison": {
+    "employees": {
+      "run_1_sample": [
+        "EMP-000001",
+        "EMP-000002",
+        "EMP-000003",
+        "EMP-000004",
+        "EMP-000005"
+      ],
+      "run_2_sample": [
+        "EMP-000001",
+        "EMP-000002",
+        "EMP-000003",
+        "EMP-000004",
+        "EMP-000005"
+      ],
+      "match": true
+    },
+    "departments": {
+      "run_1_sample": [
+        "DEP-ENG-01",
+        "DEP-AIR-02",
+        "DEP-PRD-03",
+        "DEP-SAL-04",
+        "DEP-MKT-05"
+      ],
+      "run_2_sample": [
+        "DEP-ENG-01",
+        "DEP-AIR-02",
+        "DEP-PRD-03",
+        "DEP-SAL-04",
+        "DEP-MKT-05"
+      ],
+      "match": true
+    },
+    "job_roles": {
+      "run_1_sample": [
+        "ROLE-SWE-01",
+        "ROLE-SWE-02",
+        "ROLE-SWE-03",
+        "ROLE-SWE-04",
+        "ROLE-SWE-05"
+      ],
+      "run_2_sample": [
+        "ROLE-SWE-01",
+        "ROLE-SWE-02",
+        "ROLE-SWE-03",
+        "ROLE-SWE-04",
+        "ROLE-SWE-05"
+      ],
+      "match": true
+    },
+    "compensation_records": {
+      "run_1_sample": [
+        "a2829697-a755-47b7-98b7-e6f40ce635a3",
+        "7a7d5619-be25-4135-adba-ed3dc9e72316",
+        "8c438a77-23af-4051-8bbf-b31d3946e5c6",
+        "81d601c9-6699-496d-91e5-0c63c445cde8",
+        "e9c30877-1379-48cc-9757-8f72d6c3fc38"
+      ],
+      "run_2_sample": [
+        "a2829697-a755-47b7-98b7-e6f40ce635a3",
+        "7a7d5619-be25-4135-adba-ed3dc9e72316",
+        "8c438a77-23af-4051-8bbf-b31d3946e5c6",
+        "81d601c9-6699-496d-91e5-0c63c445cde8",
+        "e9c30877-1379-48cc-9757-8f72d6c3fc38"
+      ],
+      "match": true
+    },
+    "exit_records": {
+      "run_1_sample": [
+        "870d1b3e-75e9-4bb0-a270-e56dfc255e31",
+        "baeb3508-db58-4e7b-b630-760dc333dabe",
+        "948781e5-9b7d-4b65-a7ef-38623d8503e4",
+        "70efc7d9-af5d-44fb-a99a-3dbe156aefcc",
+        "994fe67b-caab-4ad1-93c2-e05923d1d1c1"
+      ],
+      "run_2_sample": [
+        "870d1b3e-75e9-4bb0-a270-e56dfc255e31",
+        "baeb3508-db58-4e7b-b630-760dc333dabe",
+        "948781e5-9b7d-4b65-a7ef-38623d8503e4",
+        "70efc7d9-af5d-44fb-a99a-3dbe156aefcc",
+        "994fe67b-caab-4ad1-93c2-e05923d1d1c1"
+      ],
+      "match": true
+    }
+  },
+  "statistics_comparison": {
+    "all_match": true,
+    "details": {
+      "salary_mean": {
+        "run_1": 197264.3837,
+        "run_2": 197264.3837,
+        "match": true
+      },
+      "salary_std": {
+        "run_1": 141633.4089,
+        "run_2": 141633.4089,
+        "match": true
+      },
+      "voluntary_attrition_rate": {
+        "run_1": 0.093333,
+        "run_2": 0.093333,
+        "match": true
+      },
+      "sentiment_mean": {
+        "run_1": 0.174601,
+        "run_2": 0.174601,
+        "match": true
+      }
+    }
+  }
+}

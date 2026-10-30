@@ -1,0 +1,1202 @@
+[
+  {
+    "role_id": "ROLE-SWE-01",
+    "department_id": "DEP-ENG-01",
+    "title": "Associate Software Engineer",
+    "grade_level": 1,
+    "min_salary": 45000.0,
+    "mid_salary": 55000.0,
+    "max_salary": 65000.0,
+    "is_exempt": false
+  },
+  {
+    "role_id": "ROLE-SWE-02",
+    "department_id": "DEP-ENG-01",
+    "title": "Junior Software Engineer",
+    "grade_level": 2,
+    "min_salary": 55000.0,
+    "mid_salary": 68000.0,
+    "max_salary": 80000.0,
+    "is_exempt": false
+  },
+  {
+    "role_id": "ROLE-SWE-03",
+    "department_id": "DEP-ENG-01",
+    "title": "Mid-Level Software Engineer",
+    "grade_level": 3,
+    "min_salary": 70000.0,
+    "mid_salary": 85000.0,
+    "max_salary": 100000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-SWE-04",
+    "department_id": "DEP-ENG-01",
+    "title": "Senior I Software Engineer",
+    "grade_level": 4,
+    "min_salary": 85000.0,
+    "mid_salary": 105000.0,
+    "max_salary": 125000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-SWE-05",
+    "department_id": "DEP-ENG-01",
+    "title": "Senior II Software Engineer",
+    "grade_level": 5,
+    "min_salary": 105000.0,
+    "mid_salary": 130000.0,
+    "max_salary": 155000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-SWE-06",
+    "department_id": "DEP-ENG-01",
+    "title": "Lead / Staff Software Engineer",
+    "grade_level": 6,
+    "min_salary": 125000.0,
+    "mid_salary": 155000.0,
+    "max_salary": 185000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-SWE-07",
+    "department_id": "DEP-ENG-01",
+    "title": "Senior Staff Software Engineer",
+    "grade_level": 7,
+    "min_salary": 145000.0,
+    "mid_salary": 180000.0,
+    "max_salary": 215000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-SWE-08",
+    "department_id": "DEP-ENG-01",
+    "title": "Principal Software Engineer",
+    "grade_level": 8,
+    "min_salary": 170000.0,
+    "mid_salary": 210000.0,
+    "max_salary": 255000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-SWE-09",
+    "department_id": "DEP-ENG-01",
+    "title": "Senior Principal Software Engineer",
+    "grade_level": 9,
+    "min_salary": 195000.0,
+    "mid_salary": 245000.0,
+    "max_salary": 295000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-SWE-10",
+    "department_id": "DEP-ENG-01",
+    "title": "Manager, Software Engineer",
+    "grade_level": 10,
+    "min_salary": 225000.0,
+    "mid_salary": 285000.0,
+    "max_salary": 345000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-SWE-11",
+    "department_id": "DEP-ENG-01",
+    "title": "Senior Manager, Software Engineer",
+    "grade_level": 11,
+    "min_salary": 260000.0,
+    "mid_salary": 330000.0,
+    "max_salary": 400000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-SWE-12",
+    "department_id": "DEP-ENG-01",
+    "title": "Director of Software Engineering",
+    "grade_level": 12,
+    "min_salary": 300000.0,
+    "mid_salary": 380000.0,
+    "max_salary": 465000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-SWE-13",
+    "department_id": "DEP-ENG-01",
+    "title": "Senior Director, Software Engineering",
+    "grade_level": 13,
+    "min_salary": 350000.0,
+    "mid_salary": 450000.0,
+    "max_salary": 550000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-SWE-14",
+    "department_id": "DEP-ENG-01",
+    "title": "Vice President of Software Engineering",
+    "grade_level": 14,
+    "min_salary": 420000.0,
+    "mid_salary": 540000.0,
+    "max_salary": 660000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-SWE-15",
+    "department_id": "DEP-ENG-01",
+    "title": "Chief Software Officer",
+    "grade_level": 15,
+    "min_salary": 500000.0,
+    "mid_salary": 650000.0,
+    "max_salary": 850000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-AIML-01",
+    "department_id": "DEP-AIR-02",
+    "title": "Associate AI Research Scientist",
+    "grade_level": 1,
+    "min_salary": 45000.0,
+    "mid_salary": 55000.0,
+    "max_salary": 65000.0,
+    "is_exempt": false
+  },
+  {
+    "role_id": "ROLE-AIML-02",
+    "department_id": "DEP-AIR-02",
+    "title": "Junior AI Research Scientist",
+    "grade_level": 2,
+    "min_salary": 55000.0,
+    "mid_salary": 68000.0,
+    "max_salary": 80000.0,
+    "is_exempt": false
+  },
+  {
+    "role_id": "ROLE-AIML-03",
+    "department_id": "DEP-AIR-02",
+    "title": "Mid-Level AI Research Scientist",
+    "grade_level": 3,
+    "min_salary": 70000.0,
+    "mid_salary": 85000.0,
+    "max_salary": 100000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-AIML-04",
+    "department_id": "DEP-AIR-02",
+    "title": "Senior I AI Research Scientist",
+    "grade_level": 4,
+    "min_salary": 85000.0,
+    "mid_salary": 105000.0,
+    "max_salary": 125000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-AIML-05",
+    "department_id": "DEP-AIR-02",
+    "title": "Senior II AI Research Scientist",
+    "grade_level": 5,
+    "min_salary": 105000.0,
+    "mid_salary": 130000.0,
+    "max_salary": 155000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-AIML-06",
+    "department_id": "DEP-AIR-02",
+    "title": "Lead / Staff AI Research Scientist",
+    "grade_level": 6,
+    "min_salary": 125000.0,
+    "mid_salary": 155000.0,
+    "max_salary": 185000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-AIML-07",
+    "department_id": "DEP-AIR-02",
+    "title": "Senior Staff AI Research Scientist",
+    "grade_level": 7,
+    "min_salary": 145000.0,
+    "mid_salary": 180000.0,
+    "max_salary": 215000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-AIML-08",
+    "department_id": "DEP-AIR-02",
+    "title": "Principal AI Research Scientist",
+    "grade_level": 8,
+    "min_salary": 170000.0,
+    "mid_salary": 210000.0,
+    "max_salary": 255000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-AIML-09",
+    "department_id": "DEP-AIR-02",
+    "title": "Senior Principal AI Research Scientist",
+    "grade_level": 9,
+    "min_salary": 195000.0,
+    "mid_salary": 245000.0,
+    "max_salary": 295000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-AIML-10",
+    "department_id": "DEP-AIR-02",
+    "title": "Manager, AI Research Scientist",
+    "grade_level": 10,
+    "min_salary": 225000.0,
+    "mid_salary": 285000.0,
+    "max_salary": 345000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-AIML-11",
+    "department_id": "DEP-AIR-02",
+    "title": "Senior Manager, AI Research Scientist",
+    "grade_level": 11,
+    "min_salary": 260000.0,
+    "mid_salary": 330000.0,
+    "max_salary": 400000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-AIML-12",
+    "department_id": "DEP-AIR-02",
+    "title": "Director of AI & Machine Learning Research",
+    "grade_level": 12,
+    "min_salary": 300000.0,
+    "mid_salary": 380000.0,
+    "max_salary": 465000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-AIML-13",
+    "department_id": "DEP-AIR-02",
+    "title": "Senior Director, AI & Machine Learning Research",
+    "grade_level": 13,
+    "min_salary": 350000.0,
+    "mid_salary": 450000.0,
+    "max_salary": 550000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-AIML-14",
+    "department_id": "DEP-AIR-02",
+    "title": "Vice President of AI & Machine Learning Research",
+    "grade_level": 14,
+    "min_salary": 420000.0,
+    "mid_salary": 540000.0,
+    "max_salary": 660000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-AIML-15",
+    "department_id": "DEP-AIR-02",
+    "title": "Chief AI Officer",
+    "grade_level": 15,
+    "min_salary": 500000.0,
+    "mid_salary": 650000.0,
+    "max_salary": 850000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-PRD-01",
+    "department_id": "DEP-PRD-03",
+    "title": "Associate Product Manager",
+    "grade_level": 1,
+    "min_salary": 45000.0,
+    "mid_salary": 55000.0,
+    "max_salary": 65000.0,
+    "is_exempt": false
+  },
+  {
+    "role_id": "ROLE-PRD-02",
+    "department_id": "DEP-PRD-03",
+    "title": "Junior Product Manager",
+    "grade_level": 2,
+    "min_salary": 55000.0,
+    "mid_salary": 68000.0,
+    "max_salary": 80000.0,
+    "is_exempt": false
+  },
+  {
+    "role_id": "ROLE-PRD-03",
+    "department_id": "DEP-PRD-03",
+    "title": "Mid-Level Product Manager",
+    "grade_level": 3,
+    "min_salary": 70000.0,
+    "mid_salary": 85000.0,
+    "max_salary": 100000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-PRD-04",
+    "department_id": "DEP-PRD-03",
+    "title": "Senior I Product Manager",
+    "grade_level": 4,
+    "min_salary": 85000.0,
+    "mid_salary": 105000.0,
+    "max_salary": 125000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-PRD-05",
+    "department_id": "DEP-PRD-03",
+    "title": "Senior II Product Manager",
+    "grade_level": 5,
+    "min_salary": 105000.0,
+    "mid_salary": 130000.0,
+    "max_salary": 155000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-PRD-06",
+    "department_id": "DEP-PRD-03",
+    "title": "Lead / Staff Product Manager",
+    "grade_level": 6,
+    "min_salary": 125000.0,
+    "mid_salary": 155000.0,
+    "max_salary": 185000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-PRD-07",
+    "department_id": "DEP-PRD-03",
+    "title": "Senior Staff Product Manager",
+    "grade_level": 7,
+    "min_salary": 145000.0,
+    "mid_salary": 180000.0,
+    "max_salary": 215000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-PRD-08",
+    "department_id": "DEP-PRD-03",
+    "title": "Principal Product Manager",
+    "grade_level": 8,
+    "min_salary": 170000.0,
+    "mid_salary": 210000.0,
+    "max_salary": 255000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-PRD-09",
+    "department_id": "DEP-PRD-03",
+    "title": "Senior Principal Product Manager",
+    "grade_level": 9,
+    "min_salary": 195000.0,
+    "mid_salary": 245000.0,
+    "max_salary": 295000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-PRD-10",
+    "department_id": "DEP-PRD-03",
+    "title": "Manager, Product Manager",
+    "grade_level": 10,
+    "min_salary": 225000.0,
+    "mid_salary": 285000.0,
+    "max_salary": 345000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-PRD-11",
+    "department_id": "DEP-PRD-03",
+    "title": "Senior Manager, Product Manager",
+    "grade_level": 11,
+    "min_salary": 260000.0,
+    "mid_salary": 330000.0,
+    "max_salary": 400000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-PRD-12",
+    "department_id": "DEP-PRD-03",
+    "title": "Director of Product Management",
+    "grade_level": 12,
+    "min_salary": 300000.0,
+    "mid_salary": 380000.0,
+    "max_salary": 465000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-PRD-13",
+    "department_id": "DEP-PRD-03",
+    "title": "Senior Director, Product Management",
+    "grade_level": 13,
+    "min_salary": 350000.0,
+    "mid_salary": 450000.0,
+    "max_salary": 550000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-PRD-14",
+    "department_id": "DEP-PRD-03",
+    "title": "Vice President of Product Management",
+    "grade_level": 14,
+    "min_salary": 420000.0,
+    "mid_salary": 540000.0,
+    "max_salary": 660000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-PRD-15",
+    "department_id": "DEP-PRD-03",
+    "title": "Chief Officer (Product Management)",
+    "grade_level": 15,
+    "min_salary": 500000.0,
+    "mid_salary": 650000.0,
+    "max_salary": 850000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-SAL-01",
+    "department_id": "DEP-SAL-04",
+    "title": "Associate Account Executive",
+    "grade_level": 1,
+    "min_salary": 45000.0,
+    "mid_salary": 55000.0,
+    "max_salary": 65000.0,
+    "is_exempt": false
+  },
+  {
+    "role_id": "ROLE-SAL-02",
+    "department_id": "DEP-SAL-04",
+    "title": "Junior Account Executive",
+    "grade_level": 2,
+    "min_salary": 55000.0,
+    "mid_salary": 68000.0,
+    "max_salary": 80000.0,
+    "is_exempt": false
+  },
+  {
+    "role_id": "ROLE-SAL-03",
+    "department_id": "DEP-SAL-04",
+    "title": "Mid-Level Account Executive",
+    "grade_level": 3,
+    "min_salary": 70000.0,
+    "mid_salary": 85000.0,
+    "max_salary": 100000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-SAL-04",
+    "department_id": "DEP-SAL-04",
+    "title": "Senior I Account Executive",
+    "grade_level": 4,
+    "min_salary": 85000.0,
+    "mid_salary": 105000.0,
+    "max_salary": 125000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-SAL-05",
+    "department_id": "DEP-SAL-04",
+    "title": "Senior II Account Executive",
+    "grade_level": 5,
+    "min_salary": 105000.0,
+    "mid_salary": 130000.0,
+    "max_salary": 155000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-SAL-06",
+    "department_id": "DEP-SAL-04",
+    "title": "Lead / Staff Account Executive",
+    "grade_level": 6,
+    "min_salary": 125000.0,
+    "mid_salary": 155000.0,
+    "max_salary": 185000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-SAL-07",
+    "department_id": "DEP-SAL-04",
+    "title": "Senior Staff Account Executive",
+    "grade_level": 7,
+    "min_salary": 145000.0,
+    "mid_salary": 180000.0,
+    "max_salary": 215000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-SAL-08",
+    "department_id": "DEP-SAL-04",
+    "title": "Principal Account Executive",
+    "grade_level": 8,
+    "min_salary": 170000.0,
+    "mid_salary": 210000.0,
+    "max_salary": 255000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-SAL-09",
+    "department_id": "DEP-SAL-04",
+    "title": "Senior Principal Account Executive",
+    "grade_level": 9,
+    "min_salary": 195000.0,
+    "mid_salary": 245000.0,
+    "max_salary": 295000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-SAL-10",
+    "department_id": "DEP-SAL-04",
+    "title": "Manager, Account Executive",
+    "grade_level": 10,
+    "min_salary": 225000.0,
+    "mid_salary": 285000.0,
+    "max_salary": 345000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-SAL-11",
+    "department_id": "DEP-SAL-04",
+    "title": "Senior Manager, Account Executive",
+    "grade_level": 11,
+    "min_salary": 260000.0,
+    "mid_salary": 330000.0,
+    "max_salary": 400000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-SAL-12",
+    "department_id": "DEP-SAL-04",
+    "title": "Director of Enterprise Sales",
+    "grade_level": 12,
+    "min_salary": 300000.0,
+    "mid_salary": 380000.0,
+    "max_salary": 465000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-SAL-13",
+    "department_id": "DEP-SAL-04",
+    "title": "Senior Director, Enterprise Sales",
+    "grade_level": 13,
+    "min_salary": 350000.0,
+    "mid_salary": 450000.0,
+    "max_salary": 550000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-SAL-14",
+    "department_id": "DEP-SAL-04",
+    "title": "Vice President of Enterprise Sales",
+    "grade_level": 14,
+    "min_salary": 420000.0,
+    "mid_salary": 540000.0,
+    "max_salary": 660000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-SAL-15",
+    "department_id": "DEP-SAL-04",
+    "title": "Chief Officer (Enterprise Sales)",
+    "grade_level": 15,
+    "min_salary": 500000.0,
+    "mid_salary": 650000.0,
+    "max_salary": 850000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-MKT-01",
+    "department_id": "DEP-MKT-05",
+    "title": "Associate Marketing Manager",
+    "grade_level": 1,
+    "min_salary": 45000.0,
+    "mid_salary": 55000.0,
+    "max_salary": 65000.0,
+    "is_exempt": false
+  },
+  {
+    "role_id": "ROLE-MKT-02",
+    "department_id": "DEP-MKT-05",
+    "title": "Junior Marketing Manager",
+    "grade_level": 2,
+    "min_salary": 55000.0,
+    "mid_salary": 68000.0,
+    "max_salary": 80000.0,
+    "is_exempt": false
+  },
+  {
+    "role_id": "ROLE-MKT-03",
+    "department_id": "DEP-MKT-05",
+    "title": "Mid-Level Marketing Manager",
+    "grade_level": 3,
+    "min_salary": 70000.0,
+    "mid_salary": 85000.0,
+    "max_salary": 100000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-MKT-04",
+    "department_id": "DEP-MKT-05",
+    "title": "Senior I Marketing Manager",
+    "grade_level": 4,
+    "min_salary": 85000.0,
+    "mid_salary": 105000.0,
+    "max_salary": 125000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-MKT-05",
+    "department_id": "DEP-MKT-05",
+    "title": "Senior II Marketing Manager",
+    "grade_level": 5,
+    "min_salary": 105000.0,
+    "mid_salary": 130000.0,
+    "max_salary": 155000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-MKT-06",
+    "department_id": "DEP-MKT-05",
+    "title": "Lead / Staff Marketing Manager",
+    "grade_level": 6,
+    "min_salary": 125000.0,
+    "mid_salary": 155000.0,
+    "max_salary": 185000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-MKT-07",
+    "department_id": "DEP-MKT-05",
+    "title": "Senior Staff Marketing Manager",
+    "grade_level": 7,
+    "min_salary": 145000.0,
+    "mid_salary": 180000.0,
+    "max_salary": 215000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-MKT-08",
+    "department_id": "DEP-MKT-05",
+    "title": "Principal Marketing Manager",
+    "grade_level": 8,
+    "min_salary": 170000.0,
+    "mid_salary": 210000.0,
+    "max_salary": 255000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-MKT-09",
+    "department_id": "DEP-MKT-05",
+    "title": "Senior Principal Marketing Manager",
+    "grade_level": 9,
+    "min_salary": 195000.0,
+    "mid_salary": 245000.0,
+    "max_salary": 295000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-MKT-10",
+    "department_id": "DEP-MKT-05",
+    "title": "Manager, Marketing Manager",
+    "grade_level": 10,
+    "min_salary": 225000.0,
+    "mid_salary": 285000.0,
+    "max_salary": 345000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-MKT-11",
+    "department_id": "DEP-MKT-05",
+    "title": "Senior Manager, Marketing Manager",
+    "grade_level": 11,
+    "min_salary": 260000.0,
+    "mid_salary": 330000.0,
+    "max_salary": 400000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-MKT-12",
+    "department_id": "DEP-MKT-05",
+    "title": "Director of Growth & Product Marketing",
+    "grade_level": 12,
+    "min_salary": 300000.0,
+    "mid_salary": 380000.0,
+    "max_salary": 465000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-MKT-13",
+    "department_id": "DEP-MKT-05",
+    "title": "Senior Director, Growth & Product Marketing",
+    "grade_level": 13,
+    "min_salary": 350000.0,
+    "mid_salary": 450000.0,
+    "max_salary": 550000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-MKT-14",
+    "department_id": "DEP-MKT-05",
+    "title": "Vice President of Growth & Product Marketing",
+    "grade_level": 14,
+    "min_salary": 420000.0,
+    "mid_salary": 540000.0,
+    "max_salary": 660000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-MKT-15",
+    "department_id": "DEP-MKT-05",
+    "title": "Chief Officer (Growth & Product Marketing)",
+    "grade_level": 15,
+    "min_salary": 500000.0,
+    "mid_salary": 650000.0,
+    "max_salary": 850000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-CSM-01",
+    "department_id": "DEP-CUS-06",
+    "title": "Associate Customer Success Manager",
+    "grade_level": 1,
+    "min_salary": 45000.0,
+    "mid_salary": 55000.0,
+    "max_salary": 65000.0,
+    "is_exempt": false
+  },
+  {
+    "role_id": "ROLE-CSM-02",
+    "department_id": "DEP-CUS-06",
+    "title": "Junior Customer Success Manager",
+    "grade_level": 2,
+    "min_salary": 55000.0,
+    "mid_salary": 68000.0,
+    "max_salary": 80000.0,
+    "is_exempt": false
+  },
+  {
+    "role_id": "ROLE-CSM-03",
+    "department_id": "DEP-CUS-06",
+    "title": "Mid-Level Customer Success Manager",
+    "grade_level": 3,
+    "min_salary": 70000.0,
+    "mid_salary": 85000.0,
+    "max_salary": 100000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-CSM-04",
+    "department_id": "DEP-CUS-06",
+    "title": "Senior I Customer Success Manager",
+    "grade_level": 4,
+    "min_salary": 85000.0,
+    "mid_salary": 105000.0,
+    "max_salary": 125000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-CSM-05",
+    "department_id": "DEP-CUS-06",
+    "title": "Senior II Customer Success Manager",
+    "grade_level": 5,
+    "min_salary": 105000.0,
+    "mid_salary": 130000.0,
+    "max_salary": 155000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-CSM-06",
+    "department_id": "DEP-CUS-06",
+    "title": "Lead / Staff Customer Success Manager",
+    "grade_level": 6,
+    "min_salary": 125000.0,
+    "mid_salary": 155000.0,
+    "max_salary": 185000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-CSM-07",
+    "department_id": "DEP-CUS-06",
+    "title": "Senior Staff Customer Success Manager",
+    "grade_level": 7,
+    "min_salary": 145000.0,
+    "mid_salary": 180000.0,
+    "max_salary": 215000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-CSM-08",
+    "department_id": "DEP-CUS-06",
+    "title": "Principal Customer Success Manager",
+    "grade_level": 8,
+    "min_salary": 170000.0,
+    "mid_salary": 210000.0,
+    "max_salary": 255000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-CSM-09",
+    "department_id": "DEP-CUS-06",
+    "title": "Senior Principal Customer Success Manager",
+    "grade_level": 9,
+    "min_salary": 195000.0,
+    "mid_salary": 245000.0,
+    "max_salary": 295000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-CSM-10",
+    "department_id": "DEP-CUS-06",
+    "title": "Manager, Customer Success Manager",
+    "grade_level": 10,
+    "min_salary": 225000.0,
+    "mid_salary": 285000.0,
+    "max_salary": 345000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-CSM-11",
+    "department_id": "DEP-CUS-06",
+    "title": "Senior Manager, Customer Success Manager",
+    "grade_level": 11,
+    "min_salary": 260000.0,
+    "mid_salary": 330000.0,
+    "max_salary": 400000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-CSM-12",
+    "department_id": "DEP-CUS-06",
+    "title": "Director of Customer Success & Services",
+    "grade_level": 12,
+    "min_salary": 300000.0,
+    "mid_salary": 380000.0,
+    "max_salary": 465000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-CSM-13",
+    "department_id": "DEP-CUS-06",
+    "title": "Senior Director, Customer Success & Services",
+    "grade_level": 13,
+    "min_salary": 350000.0,
+    "mid_salary": 450000.0,
+    "max_salary": 550000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-CSM-14",
+    "department_id": "DEP-CUS-06",
+    "title": "Vice President of Customer Success & Services",
+    "grade_level": 14,
+    "min_salary": 420000.0,
+    "mid_salary": 540000.0,
+    "max_salary": 660000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-CSM-15",
+    "department_id": "DEP-CUS-06",
+    "title": "Chief Officer (Customer Success & Services)",
+    "grade_level": 15,
+    "min_salary": 500000.0,
+    "mid_salary": 650000.0,
+    "max_salary": 850000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-PPL-01",
+    "department_id": "DEP-PPL-07",
+    "title": "Associate People Partner",
+    "grade_level": 1,
+    "min_salary": 45000.0,
+    "mid_salary": 55000.0,
+    "max_salary": 65000.0,
+    "is_exempt": false
+  },
+  {
+    "role_id": "ROLE-PPL-02",
+    "department_id": "DEP-PPL-07",
+    "title": "Junior People Partner",
+    "grade_level": 2,
+    "min_salary": 55000.0,
+    "mid_salary": 68000.0,
+    "max_salary": 80000.0,
+    "is_exempt": false
+  },
+  {
+    "role_id": "ROLE-PPL-03",
+    "department_id": "DEP-PPL-07",
+    "title": "Mid-Level People Partner",
+    "grade_level": 3,
+    "min_salary": 70000.0,
+    "mid_salary": 85000.0,
+    "max_salary": 100000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-PPL-04",
+    "department_id": "DEP-PPL-07",
+    "title": "Senior I People Partner",
+    "grade_level": 4,
+    "min_salary": 85000.0,
+    "mid_salary": 105000.0,
+    "max_salary": 125000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-PPL-05",
+    "department_id": "DEP-PPL-07",
+    "title": "Senior II People Partner",
+    "grade_level": 5,
+    "min_salary": 105000.0,
+    "mid_salary": 130000.0,
+    "max_salary": 155000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-PPL-06",
+    "department_id": "DEP-PPL-07",
+    "title": "Lead / Staff People Partner",
+    "grade_level": 6,
+    "min_salary": 125000.0,
+    "mid_salary": 155000.0,
+    "max_salary": 185000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-PPL-07",
+    "department_id": "DEP-PPL-07",
+    "title": "Senior Staff People Partner",
+    "grade_level": 7,
+    "min_salary": 145000.0,
+    "mid_salary": 180000.0,
+    "max_salary": 215000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-PPL-08",
+    "department_id": "DEP-PPL-07",
+    "title": "Principal People Partner",
+    "grade_level": 8,
+    "min_salary": 170000.0,
+    "mid_salary": 210000.0,
+    "max_salary": 255000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-PPL-09",
+    "department_id": "DEP-PPL-07",
+    "title": "Senior Principal People Partner",
+    "grade_level": 9,
+    "min_salary": 195000.0,
+    "mid_salary": 245000.0,
+    "max_salary": 295000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-PPL-10",
+    "department_id": "DEP-PPL-07",
+    "title": "Manager, People Partner",
+    "grade_level": 10,
+    "min_salary": 225000.0,
+    "mid_salary": 285000.0,
+    "max_salary": 345000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-PPL-11",
+    "department_id": "DEP-PPL-07",
+    "title": "Senior Manager, People Partner",
+    "grade_level": 11,
+    "min_salary": 260000.0,
+    "mid_salary": 330000.0,
+    "max_salary": 400000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-PPL-12",
+    "department_id": "DEP-PPL-07",
+    "title": "Director of People Operations & HR",
+    "grade_level": 12,
+    "min_salary": 300000.0,
+    "mid_salary": 380000.0,
+    "max_salary": 465000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-PPL-13",
+    "department_id": "DEP-PPL-07",
+    "title": "Senior Director, People Operations & HR",
+    "grade_level": 13,
+    "min_salary": 350000.0,
+    "mid_salary": 450000.0,
+    "max_salary": 550000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-PPL-14",
+    "department_id": "DEP-PPL-07",
+    "title": "Vice President of People Operations & HR",
+    "grade_level": 14,
+    "min_salary": 420000.0,
+    "mid_salary": 540000.0,
+    "max_salary": 660000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-PPL-15",
+    "department_id": "DEP-PPL-07",
+    "title": "Chief Officer (People Operations & HR)",
+    "grade_level": 15,
+    "min_salary": 500000.0,
+    "mid_salary": 650000.0,
+    "max_salary": 850000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-FIN-01",
+    "department_id": "DEP-FIN-08",
+    "title": "Associate Financial Analyst",
+    "grade_level": 1,
+    "min_salary": 45000.0,
+    "mid_salary": 55000.0,
+    "max_salary": 65000.0,
+    "is_exempt": false
+  },
+  {
+    "role_id": "ROLE-FIN-02",
+    "department_id": "DEP-FIN-08",
+    "title": "Junior Financial Analyst",
+    "grade_level": 2,
+    "min_salary": 55000.0,
+    "mid_salary": 68000.0,
+    "max_salary": 80000.0,
+    "is_exempt": false
+  },
+  {
+    "role_id": "ROLE-FIN-03",
+    "department_id": "DEP-FIN-08",
+    "title": "Mid-Level Financial Analyst",
+    "grade_level": 3,
+    "min_salary": 70000.0,
+    "mid_salary": 85000.0,
+    "max_salary": 100000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-FIN-04",
+    "department_id": "DEP-FIN-08",
+    "title": "Senior I Financial Analyst",
+    "grade_level": 4,
+    "min_salary": 85000.0,
+    "mid_salary": 105000.0,
+    "max_salary": 125000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-FIN-05",
+    "department_id": "DEP-FIN-08",
+    "title": "Senior II Financial Analyst",
+    "grade_level": 5,
+    "min_salary": 105000.0,
+    "mid_salary": 130000.0,
+    "max_salary": 155000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-FIN-06",
+    "department_id": "DEP-FIN-08",
+    "title": "Lead / Staff Financial Analyst",
+    "grade_level": 6,
+    "min_salary": 125000.0,
+    "mid_salary": 155000.0,
+    "max_salary": 185000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-FIN-07",
+    "department_id": "DEP-FIN-08",
+    "title": "Senior Staff Financial Analyst",
+    "grade_level": 7,
+    "min_salary": 145000.0,
+    "mid_salary": 180000.0,
+    "max_salary": 215000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-FIN-08",
+    "department_id": "DEP-FIN-08",
+    "title": "Principal Financial Analyst",
+    "grade_level": 8,
+    "min_salary": 170000.0,
+    "mid_salary": 210000.0,
+    "max_salary": 255000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-FIN-09",
+    "department_id": "DEP-FIN-08",
+    "title": "Senior Principal Financial Analyst",
+    "grade_level": 9,
+    "min_salary": 195000.0,
+    "mid_salary": 245000.0,
+    "max_salary": 295000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-FIN-10",
+    "department_id": "DEP-FIN-08",
+    "title": "Manager, Financial Analyst",
+    "grade_level": 10,
+    "min_salary": 225000.0,
+    "mid_salary": 285000.0,
+    "max_salary": 345000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-FIN-11",
+    "department_id": "DEP-FIN-08",
+    "title": "Senior Manager, Financial Analyst",
+    "grade_level": 11,
+    "min_salary": 260000.0,
+    "mid_salary": 330000.0,
+    "max_salary": 400000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-FIN-12",
+    "department_id": "DEP-FIN-08",
+    "title": "Director of Finance, Accounting & Legal",
+    "grade_level": 12,
+    "min_salary": 300000.0,
+    "mid_salary": 380000.0,
+    "max_salary": 465000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-FIN-13",
+    "department_id": "DEP-FIN-08",
+    "title": "Senior Director, Finance, Accounting & Legal",
+    "grade_level": 13,
+    "min_salary": 350000.0,
+    "mid_salary": 450000.0,
+    "max_salary": 550000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-FIN-14",
+    "department_id": "DEP-FIN-08",
+    "title": "Vice President of Finance, Accounting & Legal",
+    "grade_level": 14,
+    "min_salary": 420000.0,
+    "mid_salary": 540000.0,
+    "max_salary": 660000.0,
+    "is_exempt": true
+  },
+  {
+    "role_id": "ROLE-FIN-15",
+    "department_id": "DEP-FIN-08",
+    "title": "Chief Officer (Finance, Accounting & Legal)",
+    "grade_level": 15,
+    "min_salary": 500000.0,
+    "mid_salary": 650000.0,
+    "max_salary": 850000.0,
+    "is_exempt": true
+  }
+]

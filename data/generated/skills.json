@@ -1,0 +1,62 @@
+[
+  {
+    "skill_id": "SKL-PY-01",
+    "name": "Python & Data Engineering",
+    "category": "Software Engineering"
+  },
+  {
+    "skill_id": "SKL-TS-02",
+    "name": "TypeScript & Frontend Architecture",
+    "category": "Software Engineering"
+  },
+  {
+    "skill_id": "SKL-K8S-03",
+    "name": "Kubernetes & Cloud Infrastructure",
+    "category": "Cloud Architecture"
+  },
+  {
+    "skill_id": "SKL-DB-04",
+    "name": "Distributed SQL & PostgreSQL",
+    "category": "Data Engineering"
+  },
+  {
+    "skill_id": "SKL-ML-05",
+    "name": "Deep Learning & Neural Networks",
+    "category": "AI Research"
+  },
+  {
+    "skill_id": "SKL-NLP-06",
+    "name": "Large Language Models & NLP",
+    "category": "AI Research"
+  },
+  {
+    "skill_id": "SKL-PRD-07",
+    "name": "Product Strategy & Roadmapping",
+    "category": "Product Management"
+  },
+  {
+    "skill_id": "SKL-UX-08",
+    "name": "User Experience & Design Systems",
+    "category": "Design"
+  },
+  {
+    "skill_id": "SKL-ENT-09",
+    "name": "Enterprise B2B Deal Closing",
+    "category": "Sales"
+  },
+  {
+    "skill_id": "SKL-SOL-10",
+    "name": "Pre-Sales Solutions Engineering",
+    "category": "Sales Engineering"
+  },
+  {
+    "skill_id": "SKL-HR-11",
+    "name": "Talent Acquisition & Compensation Planning",
+    "category": "Human Resources"
+  },
+  {
+    "skill_id": "SKL-FIN-12",
+    "name": "Corporate Financial Modeling & GAAP",
+    "category": "Finance"
+  }
+]

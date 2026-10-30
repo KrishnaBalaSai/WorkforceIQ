@@ -1,0 +1,9 @@
+department_id,name,division,cost_center_code,annual_budget,role_prefix,head_employee_id
+DEP-ENG-01,Software Engineering,Product & Engineering,CC-ENG-101,12500000.0,SWE,EMP-000002
+DEP-AIR-02,AI & Machine Learning Research,Product & Engineering,CC-AIR-102,18000000.0,AIML,EMP-000003
+DEP-PRD-03,Product Management,Product & Engineering,CC-PRD-103,6500000.0,PRD,EMP-000004
+DEP-SAL-04,Enterprise Sales,Commercial & Revenue,CC-SAL-201,9500000.0,SAL,EMP-000005
+DEP-MKT-05,Growth & Product Marketing,Commercial & Revenue,CC-MKT-202,5200000.0,MKT,EMP-000006
+DEP-CUS-06,Customer Success & Services,Commercial & Revenue,CC-CUS-203,4800000.0,CSM,EMP-000007
+DEP-PPL-07,People Operations & HR,Corporate Operations,CC-PPL-301,3500000.0,PPL,EMP-000008
+DEP-FIN-08,"Finance, Accounting & Legal",Corporate Operations,CC-FIN-302,4200000.0,FIN,EMP-000009

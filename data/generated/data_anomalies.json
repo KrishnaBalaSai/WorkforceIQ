@@ -1,0 +1,1482 @@
+[
+  {
+    "anomaly_id": "2403a0b8-770c-4d9d-92c6-be455ca69159",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "engagement_surveys",
+    "entity_id": "4feb0fe7-ae30-4d83-bee0-1ac6dc35d45f",
+    "description": "Employee EMP-008366 submitted engagement survey on 2026-11-19, after separation date 2026-09-24.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "77d16360-51a9-441a-8bb8-2c79e8d4dcd8",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "project_assignments",
+    "entity_id": "8b19dc91-dd9d-4989-bb36-8de1192756d7",
+    "description": "Employee EMP-008972 recorded project assignment starting on 2025-01-16, after separation date 2024-12-03.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "3dd8cc6f-b3ff-4562-a7da-e3356b0b4e3f",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "project_assignments",
+    "entity_id": "61f0703d-5aa9-4547-8b0d-9e39d93de97a",
+    "description": "Employee EMP-009023 recorded project assignment starting on 2026-07-25, after separation date 2026-05-26.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "a9e0be7e-36dc-4dfa-b3c6-faaef4b0ae07",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "project_assignments",
+    "entity_id": "089bcdaa-0d3f-4702-8853-4f5017dd9fb5",
+    "description": "Employee EMP-008036 recorded project assignment starting on 2026-05-10, after separation date 2026-04-10.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "ddb1ffc4-41a7-4749-891d-5ce3d0813a04",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "engagement_surveys",
+    "entity_id": "9ca37174-b0fd-4888-92f6-cbb8bce647ce",
+    "description": "Employee EMP-009703 submitted engagement survey on 2026-05-17, after separation date 2026-03-25.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "bafe9907-29dc-41b3-b990-0ee9ebf1998e",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "project_assignments",
+    "entity_id": "41481910-f574-4cab-b5c9-71926dce4b2a",
+    "description": "Employee EMP-000226 recorded project assignment starting on 2026-05-30, after separation date 2026-05-09.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "1496980e-fa37-4844-9910-f138f1712958",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "project_assignments",
+    "entity_id": "2770e4f5-8de5-4f51-97bb-088daaf1e2e6",
+    "description": "Employee EMP-006408 recorded project assignment starting on 2025-09-01, after separation date 2025-08-09.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "3ecc73a2-8d80-4c4c-8e0f-a04a473abc5d",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "project_assignments",
+    "entity_id": "0f111003-1ec0-4c67-bc3e-0fdd2676e987",
+    "description": "Employee EMP-003665 recorded project assignment starting on 2026-03-31, after separation date 2026-02-25.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "8ab0e1bb-caf2-4ebb-b551-82ff23896b3d",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "engagement_surveys",
+    "entity_id": "7402d351-36bd-4b33-83c2-aba7924c639c",
+    "description": "Employee EMP-004196 submitted engagement survey on 2026-09-16, after separation date 2026-08-01.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "c58ffd5c-33b2-4229-97df-500f665b23af",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "engagement_surveys",
+    "entity_id": "3651b4c4-1a8b-46cd-8c0c-d7f258acf2be",
+    "description": "Employee EMP-005474 submitted engagement survey on 2026-09-13, after separation date 2026-08-03.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "3b6cd09f-14cf-422e-898e-329a7a34cc01",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "project_assignments",
+    "entity_id": "b08e9feb-26dc-4f00-a71f-18d643c149a3",
+    "description": "Employee EMP-005953 recorded project assignment starting on 2026-09-08, after separation date 2026-07-21.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "9cdb55bb-8d10-45ac-a3c9-22f0e72b0b66",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "project_assignments",
+    "entity_id": "984b356e-7b46-434a-add6-5b7203a4d47a",
+    "description": "Employee EMP-005511 recorded project assignment starting on 2026-09-17, after separation date 2026-07-19.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "1ad45ebd-3376-4793-b1d4-37fdec873f1f",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "engagement_surveys",
+    "entity_id": "d788a2c3-7d16-4fdd-8c0f-f787734481be",
+    "description": "Employee EMP-000111 submitted engagement survey on 2026-02-14, after separation date 2026-01-30.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "5d4294b1-44aa-4cc8-a9f3-a76619f6f33b",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "project_assignments",
+    "entity_id": "a746772d-5506-4a33-a367-664ada362ca6",
+    "description": "Employee EMP-008239 recorded project assignment starting on 2025-06-09, after separation date 2025-05-24.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "01efd5ad-983d-454d-89e3-2fb91b98a39d",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "engagement_surveys",
+    "entity_id": "5b734ce4-ed7a-4f10-9762-c166861cb1ca",
+    "description": "Employee EMP-004616 submitted engagement survey on 2026-08-19, after separation date 2026-07-10.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "f90a34f5-eb64-4afd-945a-ba6d40c94712",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "engagement_surveys",
+    "entity_id": "892411f5-c874-4d54-8c2b-a8ab37666259",
+    "description": "Employee EMP-009688 submitted engagement survey on 2025-03-15, after separation date 2025-01-27.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "7da14dfe-d025-4b38-a0f9-fc41cca79b8d",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "project_assignments",
+    "entity_id": "663d5dd7-ee40-4b60-8922-8abfb6e679dd",
+    "description": "Employee EMP-005618 recorded project assignment starting on 2026-06-03, after separation date 2026-04-04.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "91589a29-a262-4493-8d3c-45b5625f57c4",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "engagement_surveys",
+    "entity_id": "ec3264fc-9833-432b-902e-ceec10d1c799",
+    "description": "Employee EMP-005961 submitted engagement survey on 2025-04-10, after separation date 2025-03-09.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "f9b85374-8344-4fc5-a5f0-66fcc5f76db1",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "project_assignments",
+    "entity_id": "273969cf-e3e2-4fd2-bab1-87eeb64074a9",
+    "description": "Employee EMP-006337 recorded project assignment starting on 2025-02-21, after separation date 2025-01-20.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "4227a876-8862-46d6-a88e-97b80e8d5f3c",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "engagement_surveys",
+    "entity_id": "3d98f50d-331c-4e53-9ab8-2abfc909e6da",
+    "description": "Employee EMP-004148 submitted engagement survey on 2025-03-17, after separation date 2025-02-14.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "c2b8ae4e-7444-49e0-a237-100f86352b50",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "engagement_surveys",
+    "entity_id": "e559bd63-48da-40da-a282-b087f121df2b",
+    "description": "Employee EMP-008880 submitted engagement survey on 2026-04-01, after separation date 2026-02-05.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "4b73cc62-9376-4bce-a934-77c408f31101",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "engagement_surveys",
+    "entity_id": "aa05b176-81ce-4c59-9d21-63065c240782",
+    "description": "Employee EMP-006656 submitted engagement survey on 2025-05-01, after separation date 2025-04-03.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "6aef9753-d7a4-41e2-be5d-f0760b554a25",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "project_assignments",
+    "entity_id": "18804a9f-151e-4b39-8f9b-e25b013feea4",
+    "description": "Employee EMP-008415 recorded project assignment starting on 2026-12-14, after separation date 2026-10-21.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "7a7346e1-326a-4f90-8053-7f42d297cd14",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "project_assignments",
+    "entity_id": "5c740cf1-703f-4c17-9971-c808d8165bce",
+    "description": "Employee EMP-001948 recorded project assignment starting on 2026-04-25, after separation date 2026-04-05.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "ef7f3aa6-7488-4ff9-aef9-d1018b214cb3",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "engagement_surveys",
+    "entity_id": "869d21d3-5f16-471c-9e6a-cb474749c53d",
+    "description": "Employee EMP-004794 submitted engagement survey on 2025-07-22, after separation date 2025-06-02.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "6e4ec194-817e-4c4e-b2e5-4ec6d02f99a4",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "engagement_surveys",
+    "entity_id": "f18f0daa-3abb-4d7d-ae68-af3b85681b1d",
+    "description": "Employee EMP-008672 submitted engagement survey on 2025-09-01, after separation date 2025-07-26.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "c31cddff-46a2-497d-96a7-caa9ed24d00a",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "engagement_surveys",
+    "entity_id": "6437920a-961d-4ff7-bfe3-0555154f67a4",
+    "description": "Employee EMP-006178 submitted engagement survey on 2026-01-18, after separation date 2025-12-23.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "79c829f2-0044-4f63-b654-6714873117e9",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "project_assignments",
+    "entity_id": "7bbbd8f9-7d5f-48df-939b-99414a26ee1c",
+    "description": "Employee EMP-009965 recorded project assignment starting on 2026-11-26, after separation date 2026-10-02.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "5208e1bf-6c58-4bcc-baca-f55ce8e64e80",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "project_assignments",
+    "entity_id": "34da2f62-3a5e-42c7-84b4-989feaaea1a5",
+    "description": "Employee EMP-006271 recorded project assignment starting on 2026-08-21, after separation date 2026-07-12.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "029cdf17-eae0-49e5-8c9d-43377ab5df80",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "project_assignments",
+    "entity_id": "9fa7c527-9fd4-4928-82b2-46b56e5d23b0",
+    "description": "Employee EMP-004489 recorded project assignment starting on 2025-11-04, after separation date 2025-10-06.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "66c89e13-78ca-4a69-b7f0-72c174a3d7a6",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "engagement_surveys",
+    "entity_id": "4ed9bd41-653e-4667-ab09-7de2f9a1e69c",
+    "description": "Employee EMP-005940 submitted engagement survey on 2025-01-31, after separation date 2024-12-04.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "b67c128c-526d-4813-be0f-2f1e87bb8f23",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "project_assignments",
+    "entity_id": "5ff4740a-9469-4f8e-a710-3b57aa88a23e",
+    "description": "Employee EMP-007994 recorded project assignment starting on 2025-12-15, after separation date 2025-10-31.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "4f1775c2-3aab-44f1-876a-aa2ea4326a38",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "engagement_surveys",
+    "entity_id": "4d38b1be-fd3e-4287-9e3b-309576d35fe1",
+    "description": "Employee EMP-003146 submitted engagement survey on 2025-04-02, after separation date 2025-03-15.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "762a02b3-28b4-4f02-88f1-7ee5132e3394",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "project_assignments",
+    "entity_id": "3ca7254b-7bb7-4db0-a433-404877126680",
+    "description": "Employee EMP-003247 recorded project assignment starting on 2025-05-21, after separation date 2025-04-02.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "10e3e078-1576-47dd-be0c-b74294557b8a",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "engagement_surveys",
+    "entity_id": "714318b6-270b-4388-b9e4-d11b51304458",
+    "description": "Employee EMP-005908 submitted engagement survey on 2026-01-19, after separation date 2026-01-02.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "b1c57e2e-49e7-498f-9d4a-b69dc1e64f28",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "project_assignments",
+    "entity_id": "3e665fc4-02d6-493e-875c-f19b3ec27b12",
+    "description": "Employee EMP-004097 recorded project assignment starting on 2025-07-14, after separation date 2025-05-27.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "36b46e28-f355-4059-9f80-ba51ea466487",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "project_assignments",
+    "entity_id": "2a0d3645-7e25-4475-a329-eb556a38322c",
+    "description": "Employee EMP-009622 recorded project assignment starting on 2026-03-01, after separation date 2026-01-31.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "d989f002-bfb1-4adf-bf29-f1c611f968b4",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "project_assignments",
+    "entity_id": "1c2702bd-29f4-4934-9ed9-3cb807bfd0d6",
+    "description": "Employee EMP-002514 recorded project assignment starting on 2025-09-16, after separation date 2025-08-14.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "f0a2b2ad-a14d-4b0e-8e50-d005bf902f95",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "project_assignments",
+    "entity_id": "9b5eb995-12c8-438d-8f5b-d6bded6a8984",
+    "description": "Employee EMP-002098 recorded project assignment starting on 2026-11-19, after separation date 2026-10-19.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "8d8956e6-8403-4f13-92bb-a54807cd2938",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "project_assignments",
+    "entity_id": "66b2e5b2-e0ff-4cd5-97e7-f3b6931d524b",
+    "description": "Employee EMP-005045 recorded project assignment starting on 2025-04-15, after separation date 2025-03-26.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "13d73459-5ab5-49a3-be3a-e80f7bb568e7",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "project_assignments",
+    "entity_id": "618d0617-8023-4a9b-ac70-45acd60df1e8",
+    "description": "Employee EMP-005665 recorded project assignment starting on 2026-05-22, after separation date 2026-04-10.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "bf9a8848-5791-4f5f-b9cb-4949a3afc8af",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "project_assignments",
+    "entity_id": "e55eb7ae-e5f3-4fd5-8245-efd7710392d1",
+    "description": "Employee EMP-000517 recorded project assignment starting on 2025-01-30, after separation date 2025-01-10.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "6bcff8cd-4def-4d2f-9e50-cbc020084427",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "engagement_surveys",
+    "entity_id": "36bc5dd0-d273-4060-a88c-b6a0f9ba88e4",
+    "description": "Employee EMP-002809 submitted engagement survey on 2026-11-17, after separation date 2026-10-05.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "4fed9603-adb1-4794-afd9-460b68ab3323",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "project_assignments",
+    "entity_id": "81da0bf7-7a44-4666-8f42-45ea29e33be6",
+    "description": "Employee EMP-000229 recorded project assignment starting on 2025-09-27, after separation date 2025-08-19.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "d6a43143-8e46-4cc7-8acf-5f2afd844093",
+    "anomaly_type": "POST_TERMINATION_ACTIVITY",
+    "severity": "CRITICAL",
+    "entity_type": "engagement_surveys",
+    "entity_id": "c9af849e-fa48-4a67-8ead-f0637b3c8f5a",
+    "description": "Employee EMP-005308 submitted engagement survey on 2026-03-22, after separation date 2026-02-14.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "eecc8af8-7609-4b53-9ee9-f64ee824886b",
+    "anomaly_type": "CIRCULAR_HIERARCHY",
+    "severity": "HIGH",
+    "entity_type": "employees",
+    "entity_id": "EMP-000028",
+    "description": "Circular hierarchy loop injected: EMP-000028 -> EMP-007238 -> EMP-000196 -> EMP-000028.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "f26aba0a-d5cf-4e1d-baa7-920cc1e1a3f2",
+    "anomaly_type": "CIRCULAR_HIERARCHY",
+    "severity": "HIGH",
+    "entity_type": "employees",
+    "entity_id": "EMP-002722",
+    "description": "Employee EMP-002722 is self-reporting (manager_id == employee_id).",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "a4574556-ab3c-4ed5-9191-8360440c4b36",
+    "anomaly_type": "CIRCULAR_HIERARCHY",
+    "severity": "HIGH",
+    "entity_type": "employees",
+    "entity_id": "EMP-007611",
+    "description": "Active non-executive employee EMP-007611 has NULL manager_id.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "2ba2e279-194e-4429-8f2a-4c0f66b31f63",
+    "anomaly_type": "CIRCULAR_HIERARCHY",
+    "severity": "HIGH",
+    "entity_type": "employees",
+    "entity_id": "EMP-007803",
+    "description": "Active non-executive employee EMP-007803 has NULL manager_id.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "a179890e-47d2-4924-8125-beb10922ef6f",
+    "anomaly_type": "CIRCULAR_HIERARCHY",
+    "severity": "HIGH",
+    "entity_type": "employees",
+    "entity_id": "EMP-009859",
+    "description": "Active non-executive employee EMP-009859 has NULL manager_id.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "2c12f711-d540-4815-9a95-97226c9a09c8",
+    "anomaly_type": "CIRCULAR_HIERARCHY",
+    "severity": "HIGH",
+    "entity_type": "employees",
+    "entity_id": "EMP-005872",
+    "description": "Active non-executive employee EMP-005872 has NULL manager_id.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "86c8ea24-567d-48e7-9b02-422608015b7b",
+    "anomaly_type": "CIRCULAR_HIERARCHY",
+    "severity": "HIGH",
+    "entity_type": "employees",
+    "entity_id": "EMP-001080",
+    "description": "Employee EMP-001080 is self-reporting (manager_id == employee_id).",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "70d1df1b-00c3-48b0-9e53-16a3d4bf2430",
+    "anomaly_type": "CIRCULAR_HIERARCHY",
+    "severity": "HIGH",
+    "entity_type": "employees",
+    "entity_id": "EMP-001722",
+    "description": "Active non-executive employee EMP-001722 has NULL manager_id.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "f857a014-0367-493e-bad5-deac029443ea",
+    "anomaly_type": "CIRCULAR_HIERARCHY",
+    "severity": "HIGH",
+    "entity_type": "employees",
+    "entity_id": "EMP-005216",
+    "description": "Employee EMP-005216 is self-reporting (manager_id == employee_id).",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "f11e3190-e2fc-45ab-970e-0f17bdcbf9d8",
+    "anomaly_type": "CIRCULAR_HIERARCHY",
+    "severity": "HIGH",
+    "entity_type": "employees",
+    "entity_id": "EMP-005984",
+    "description": "Active non-executive employee EMP-005984 has NULL manager_id.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "9efdace4-0b18-4e8d-a914-a46700019230",
+    "anomaly_type": "CIRCULAR_HIERARCHY",
+    "severity": "HIGH",
+    "entity_type": "employees",
+    "entity_id": "EMP-003442",
+    "description": "Active non-executive employee EMP-003442 has NULL manager_id.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "81b7cb2e-b23c-45fe-96ec-5a401f573ec2",
+    "anomaly_type": "CIRCULAR_HIERARCHY",
+    "severity": "HIGH",
+    "entity_type": "employees",
+    "entity_id": "EMP-002038",
+    "description": "Active non-executive employee EMP-002038 has NULL manager_id.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "0e843f11-50ba-4caa-87a9-e32c11416db6",
+    "anomaly_type": "CIRCULAR_HIERARCHY",
+    "severity": "HIGH",
+    "entity_type": "employees",
+    "entity_id": "EMP-001975",
+    "description": "Employee EMP-001975 is self-reporting (manager_id == employee_id).",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "bc551df2-2985-4a61-8b06-65e876e14782",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "8b3c4fec-7a7b-4814-8964-74effa8d85c0",
+    "description": "Salary $363,912.51 for employee EMP-000219 exceeds grade 10 maximum of $345,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "ee2486df-6a58-4e47-bfc1-8d293d5d7c74",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "5e156b4c-f0ad-4775-ad1b-e5bd76555f29",
+    "description": "Salary $46,860.85 for employee EMP-005406 is below grade 2 minimum of $55,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "51ff628d-039a-4520-9579-dae1f24766e5",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "072da915-5204-4bb0-b35e-1780efab22cf",
+    "description": "Salary $108,140.57 for employee EMP-006947 exceeds grade 1 maximum of $65,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "158b6657-abb0-41a0-b769-d1f1b6f58851",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "75dc5e0b-976d-49cf-bf59-ff392a880e55",
+    "description": "Salary $130,532.23 for employee EMP-008613 is below grade 7 minimum of $145,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "7f6b9516-545f-4e88-8906-ae23e1f4a842",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "5efcf44c-d7f9-4523-b9a7-56e2305207de",
+    "description": "Salary $91,021.31 for employee EMP-006081 exceeds grade 1 maximum of $65,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "7953710f-c726-4e52-a967-70f82d4b69df",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "658672f8-8424-405d-9370-3668496fa1a6",
+    "description": "Salary $70,467.94 for employee EMP-006638 is below grade 4 minimum of $85,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "c1ede757-a95a-46c2-81f0-3deedd2ad365",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "f046dd0c-6c8e-4dfe-8bf8-ff3f8e46e911",
+    "description": "Salary $37,079.00 for employee EMP-001157 is below grade 1 minimum of $45,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "997aa994-01e7-4a68-9f2f-7ccbaa0a3de1",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "99806da1-3f0a-4507-9d92-a6a1164d9505",
+    "description": "Salary $111,992.79 for employee EMP-001204 exceeds grade 2 maximum of $80,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "33220f7e-3b2a-49bb-9a32-5aa6dbc935ce",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "f7b62ca5-0092-4594-b275-e5201cd43e6b",
+    "description": "Salary $35,150.09 for employee EMP-008584 is below grade 1 minimum of $45,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "8d990cc8-c470-49eb-8244-6f594672b8ff",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "1a94d57a-03da-4efb-bffa-7f43abe5d38b",
+    "description": "Salary $91,409.04 for employee EMP-008922 exceeds grade 1 maximum of $65,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "3ce2ea25-e2b6-49b6-a57d-5a75442f0dd6",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "e5379d5a-9e07-4183-b92c-07d85bbbb249",
+    "description": "Salary $117,440.96 for employee EMP-001546 exceeds grade 2 maximum of $80,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "eac43568-efbf-4d1f-99a9-98ec0431a9fd",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "a934c26e-5c48-48a9-a6cb-9e0d56eb3268",
+    "description": "Salary $40,896.13 for employee EMP-006027 is below grade 2 minimum of $55,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "3c39e8d4-5899-4185-9722-df8dcc34bbcb",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "474af631-90ff-4e37-9d40-a1211d9eaad1",
+    "description": "Salary $138,531.79 for employee EMP-009501 is below grade 7 minimum of $145,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "25a6e8e9-7b43-4ccb-8564-34fd9e4c9a3d",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "e710b22d-96a2-4129-9881-a88d45c986f8",
+    "description": "Salary $177,051.37 for employee EMP-009777 exceeds grade 5 maximum of $155,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "81bcc2cd-32a5-438d-a019-bdbb726bdfb8",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "22a5b31c-90af-498d-bc6c-d22953b98196",
+    "description": "Salary $42,501.79 for employee EMP-006311 is below grade 2 minimum of $55,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "46f52613-b436-4959-89d0-d6bb1f1c38c7",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "bbdb1aec-d960-4234-b758-772290398e33",
+    "description": "Salary $566,024.88 for employee EMP-000181 exceeds grade 13 maximum of $550,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "47f8a905-fc93-4718-882e-2ef293944428",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "4d2188c2-31e1-4a06-bce4-3df042c1cb87",
+    "description": "Salary $75,856.92 for employee EMP-006480 is below grade 4 minimum of $85,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "b200cc65-5028-408a-9d63-3fe6b43f03f2",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "851e5b2c-2f90-4a06-8848-726fb16f59d1",
+    "description": "Salary $83,037.45 for employee EMP-002234 exceeds grade 1 maximum of $65,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "fd4fbb51-a573-4c73-b9be-83397c45e0e5",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "03b68869-6e44-4258-8a7e-0987b284f546",
+    "description": "Salary $48,062.43 for employee EMP-008881 is below grade 2 minimum of $55,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "f204ff09-e994-4f1f-a2be-09d0040c528e",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "ee382c74-0a5d-4a8f-bf17-f9403fa7c81c",
+    "description": "Salary $178,091.34 for employee EMP-001531 exceeds grade 5 maximum of $155,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "ae30f939-941a-4d97-8910-d98d6d9ad3ac",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "380cdb29-36a6-4421-bbc4-86f19dccce8f",
+    "description": "Salary $99,207.87 for employee EMP-005382 exceeds grade 1 maximum of $65,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "e6df6217-a2dd-4d09-a179-bc191c6411f2",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "43d07073-08da-4ad5-a193-b7638bdae191",
+    "description": "Salary $57,241.72 for employee EMP-003186 is below grade 3 minimum of $70,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "9762c73f-5f87-45a8-a8e6-df715187a0a7",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "3ea2a6d7-47c2-464f-b374-8927ae494961",
+    "description": "Salary $56,902.16 for employee EMP-009122 is below grade 3 minimum of $70,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "f9499437-09a2-434e-831c-92bb16420b26",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "40bd3d24-6ff2-44d2-9eb9-43d051bff213",
+    "description": "Salary $64,830.03 for employee EMP-006859 is below grade 3 minimum of $70,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "65877b48-53f8-4d48-8e99-3d095c324516",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "47e7ade6-bf0a-4f17-aceb-0856ed178be4",
+    "description": "Salary $500,550.74 for employee EMP-000165 exceeds grade 12 maximum of $465,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "206a7125-d8c1-4027-9e16-9b581b5e50a9",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "c36a38b3-05d9-48aa-82fc-0b07f8b762ad",
+    "description": "Salary $55,474.70 for employee EMP-002516 is below grade 3 minimum of $70,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "49da937c-c9a7-4392-b546-3b2d553374a0",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "cf968ea0-11a3-43ce-aae7-8475e37c9b52",
+    "description": "Salary $74,207.83 for employee EMP-006564 is below grade 4 minimum of $85,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "1adb1dd6-4008-4b8b-a4c1-2d13ead3f4bf",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "3c209a78-62e4-44d5-bcb0-25412867a3e2",
+    "description": "Salary $199,593.64 for employee EMP-007245 exceeds grade 5 maximum of $155,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "e432c7f8-c098-4282-9203-35b30402c636",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "e5e0e7e8-8015-4e18-8110-105518d2f24e",
+    "description": "Salary $248,039.68 for employee EMP-000940 is below grade 11 minimum of $260,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "930398e2-67d0-42e1-a9bd-ccba1605fcee",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "0ce9285b-90cf-412c-b3ca-31b41f4883f0",
+    "description": "Salary $84,934.27 for employee EMP-004182 exceeds grade 1 maximum of $65,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "34739de4-4ce0-416f-a745-1057c8169c21",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "9651f812-8881-49d2-8713-0485adcae9e5",
+    "description": "Salary $92,446.11 for employee EMP-003874 exceeds grade 1 maximum of $65,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "5a73a438-d1f3-4ed2-a765-1299833c181c",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "68f78849-e15e-48e7-851b-3ad4db284995",
+    "description": "Salary $102,484.66 for employee EMP-006649 exceeds grade 1 maximum of $65,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "2b10c358-b250-4b95-838f-7366bf0401ad",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "96f7f9c9-4365-4698-bc1c-bf7338c6717e",
+    "description": "Salary $77,877.02 for employee EMP-007481 is below grade 4 minimum of $85,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "96fa4a8a-da85-494f-89cf-76e0e9c3558f",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "dc8d9588-16ca-4e0e-afda-0e48aaa67d99",
+    "description": "Salary $149,077.30 for employee EMP-005174 exceeds grade 4 maximum of $125,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "c4d4fd5c-87b5-473c-87b3-7b347ae047cd",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "24096ed4-3e28-43e2-8a5f-f82fd54cd0cf",
+    "description": "Salary $60,573.27 for employee EMP-005709 is below grade 3 minimum of $70,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "62cbae0e-6d97-4412-8b4e-3c36e0b59abd",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "ee1aefe6-ba92-473e-a523-de89d65b55c1",
+    "description": "Salary $30,658.79 for employee EMP-009784 is below grade 1 minimum of $45,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "6af0aa15-2cf3-4dfa-b060-8a46b0ed4249",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "db74c69b-44eb-459b-b397-0aaf0ddebf21",
+    "description": "Salary $60,379.34 for employee EMP-006548 is below grade 3 minimum of $70,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "cdda20f1-f6e6-4b20-b4cd-e2337a13fc93",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "7c3010be-4798-4208-81e9-a52792e59d7c",
+    "description": "Salary $423,460.24 for employee EMP-000907 exceeds grade 11 maximum of $400,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "0edaa21f-7479-444e-bb81-a8ca06deb536",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "272ff03c-44b8-4910-979c-4c90d9590578",
+    "description": "Salary $119,656.82 for employee EMP-009670 exceeds grade 2 maximum of $80,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "c2255e0b-d36e-4cac-b62f-33a527d82cb1",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "2fbab701-74ad-482e-a3bd-0c6353c873e5",
+    "description": "Salary $97,592.20 for employee EMP-007511 exceeds grade 2 maximum of $80,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "d4514ae6-3974-4c97-a54d-ce7fb8312325",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "a97062ec-c366-4273-b9b4-dee9964b007a",
+    "description": "Salary $161,244.85 for employee EMP-002662 exceeds grade 4 maximum of $125,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "edf06ffd-ae59-4856-847a-82be6decc245",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "f32a9d2d-1d8b-4014-8c49-b3fc2938b291",
+    "description": "Salary $99,893.54 for employee EMP-001964 exceeds grade 1 maximum of $65,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "dfad2712-391d-449c-a1f7-1a4d141e399c",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "975dc8b2-23c1-4167-bb96-d9c005fd9e9a",
+    "description": "Salary $498,814.98 for employee EMP-000174 exceeds grade 12 maximum of $465,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "b9126ba1-1afd-4308-80b2-b09c2a72f781",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "7637b7d6-6213-4fa3-8893-fd4a38754451",
+    "description": "Salary $40,428.91 for employee EMP-001031 is below grade 2 minimum of $55,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "6c1cbf7e-6f53-428d-b907-1115e01ef2d8",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "526a9617-b142-439b-9969-1dc44979fc2a",
+    "description": "Salary $59,244.64 for employee EMP-009989 is below grade 3 minimum of $70,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "04c9f803-c3cd-47be-a2fa-b540fb24593c",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "7da5d89f-e5f6-4431-af0f-f7172627b061",
+    "description": "Salary $119,953.65 for employee EMP-004272 is below grade 6 minimum of $125,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "e150b5e5-ce6d-4fbd-814f-3132760e4b53",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "a92f61c9-1e84-4a57-8a18-94fb3355be8f",
+    "description": "Salary $144,625.12 for employee EMP-001027 exceeds grade 3 maximum of $100,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "a0e8e099-3e9b-43c5-b441-84a21999b33c",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "84daa2ed-bd04-4eb7-8378-df36cb1c99cf",
+    "description": "Salary $136,592.46 for employee EMP-003843 exceeds grade 3 maximum of $100,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "91c75c4b-4851-4687-b76b-a851a7de82e3",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "dffd2f5c-2fc2-4807-9182-d5cc91057093",
+    "description": "Salary $151,680.80 for employee EMP-001096 exceeds grade 4 maximum of $125,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "3181c639-fa39-4c21-b669-20c0f20e640b",
+    "anomaly_type": "COMPENSATION_INVERSION",
+    "severity": "MEDIUM",
+    "entity_type": "compensation_records",
+    "entity_id": "1eb70e7f-bd70-4310-a4a1-163df067006a",
+    "description": "Salary $126,266.05 for employee EMP-008082 exceeds grade 3 maximum of $100,000.00.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "74fb708e-fe89-4719-a6c6-14cef8c43f95",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "453da9dc-d44a-4ebc-9473-ab1cda0140e8",
+    "description": "Employee EMP-004783 logged 45.0 hrs billable work overlapping with approved leave 2025-05-10 to 2025-05-12.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "80fc8cb7-f907-4457-a663-ddec534e9149",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "58e9b98d-27b7-4df5-b1eb-c018360e71c7",
+    "description": "Employee EMP-001247 logged 45.0 hrs billable work overlapping with approved leave 2026-08-03 to 2026-08-13.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "86eb3c0d-d47d-4743-97eb-8622ecfec171",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "5d069be9-9aac-4ab3-b41d-af9e01b66e84",
+    "description": "Employee EMP-005942 logged 45.0 hrs billable work overlapping with approved leave 2025-08-23 to 2025-08-28.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "c1ad12ba-1fa0-4176-89f9-e8958edbc067",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "4848afc6-d58b-4ab8-8083-deb391ed34e7",
+    "description": "Employee EMP-001480 logged 45.0 hrs billable work overlapping with approved leave 2026-05-06 to 2026-05-09.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "c174ada2-1df6-4f9e-a923-71dac2c05c94",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "bc362bec-16df-457d-87c3-b2088e69523a",
+    "description": "Employee EMP-004964 logged 45.0 hrs billable work overlapping with approved leave 2026-07-31 to 2026-08-02.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "ec6b13d3-a6d6-4368-85f2-32229a8a93a2",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "832c20cd-eb74-4d72-bfdc-282ff7b778f2",
+    "description": "Employee EMP-001904 logged 45.0 hrs billable work overlapping with approved leave 2026-08-19 to 2026-08-24.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "d733da29-3960-4436-b290-f69817b00c3e",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "89ba7378-0a6e-4fdf-b949-e520df0a759d",
+    "description": "Employee EMP-006429 logged 45.0 hrs billable work overlapping with approved leave 2026-02-07 to 2026-02-09.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "d34739d1-aabd-4778-87c8-325f2a21e0ae",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "c799b863-9825-4023-9f0f-43f74ec7a5bd",
+    "description": "Employee EMP-007530 logged 45.0 hrs billable work overlapping with approved leave 2025-08-24 to 2025-08-27.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "f98b7e9d-2abf-40af-b760-ec27b6bf1814",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "698f430b-83d2-4f9d-a243-3be133244d8c",
+    "description": "Employee EMP-001480 logged 45.0 hrs billable work overlapping with approved leave 2025-02-14 to 2025-02-19.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "ce7264ca-23ab-4110-ae14-e4153a47b15c",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "2bafaa09-57bf-44dc-8579-52de754c653c",
+    "description": "Employee EMP-006067 logged 45.0 hrs billable work overlapping with approved leave 2026-08-07 to 2026-08-12.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "88841441-23dc-4efc-a5d9-fea9d262d8a4",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "d53e9e44-9544-40ab-8b23-d9ec2d0640ab",
+    "description": "Employee EMP-000626 logged 45.0 hrs billable work overlapping with approved leave 2026-08-16 to 2026-08-19.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "d6d31298-1659-4ccb-87e6-d963a9b0de48",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "10196126-b535-4590-b334-b03e021a6f8b",
+    "description": "Employee EMP-004465 logged 45.0 hrs billable work overlapping with approved leave 2024-11-01 to 2024-11-02.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "7083908f-8f53-49e4-8d20-0b70987f9e47",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "86cfcb51-30aa-4932-b963-02d8d54b67f0",
+    "description": "Employee EMP-006846 logged 45.0 hrs billable work overlapping with approved leave 2026-04-27 to 2026-05-02.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "80877d10-cd76-4940-923c-32a9a8885a41",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "cf90e41c-96ad-4c25-85e4-fe0bd46ea051",
+    "description": "Employee EMP-005649 logged 45.0 hrs billable work overlapping with approved leave 2025-11-03 to 2025-11-04.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "aaacf0d5-8b8d-4ae3-aa7e-6b1409c00e66",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "fd07cc8a-d4c6-4571-ba36-7ad36f7e6abe",
+    "description": "Employee EMP-002391 logged 45.0 hrs billable work overlapping with approved leave 2025-08-11 to 2025-08-16.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "98382b06-7f05-41c0-ad14-2169e0a195c8",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "d0baa5c9-ae4c-426c-8619-c6cd74772ff6",
+    "description": "Employee EMP-001458 logged 45.0 hrs billable work overlapping with approved leave 2025-02-19 to 2025-02-20.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "bb3ea56c-7acd-4c8c-acef-bf8786324a17",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "90333086-c306-48fe-813e-6b969d5054e4",
+    "description": "Employee EMP-008220 logged 45.0 hrs billable work overlapping with approved leave 2024-11-05 to 2024-11-07.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "312a1225-33e9-4565-af15-f2e74a34a9d3",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "45a4b144-ab08-43c9-bdcb-2bbe2214a16e",
+    "description": "Employee EMP-000343 logged 45.0 hrs billable work overlapping with approved leave 2025-09-03 to 2025-09-04.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "a61a6859-5d5f-4618-b912-1f72713938f1",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "64a2feb8-516b-4c8b-bb36-e5896cde491f",
+    "description": "Employee EMP-005078 logged 45.0 hrs billable work overlapping with approved leave 2025-05-06 to 2025-05-08.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "3a571e02-dcda-49c5-b41a-9092bd21904b",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "774ca2cc-adf1-481d-96a7-0c9ae328b861",
+    "description": "Employee EMP-005102 logged 45.0 hrs billable work overlapping with approved leave 2025-08-07 to 2025-08-08.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "23712e41-f736-4d85-a123-d31110414892",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "fb20ed96-b24e-4b90-8883-2638f492d0b1",
+    "description": "Employee EMP-005328 logged 45.0 hrs billable work overlapping with approved leave 2026-07-28 to 2026-07-31.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "078a52e9-69f2-4db5-b763-d492f7ec62d1",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "3ce731b6-34a9-47b9-ac59-1e3ff776b6e2",
+    "description": "Employee EMP-008859 logged 45.0 hrs billable work overlapping with approved leave 2026-04-27 to 2026-04-28.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "6558798c-a179-4461-8308-6ebca95fb2d0",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "c2f4513c-f20c-48f3-9fd5-926c3e842723",
+    "description": "Employee EMP-008863 logged 45.0 hrs billable work overlapping with approved leave 2026-09-01 to 2026-09-04.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "25485879-9c36-4dcc-b842-9a1e3f5e88af",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "86070fee-7f55-4cf0-9333-b33bc0834030",
+    "description": "Employee EMP-000840 logged 45.0 hrs billable work overlapping with approved leave 2024-11-28 to 2024-12-08.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "5ae59325-1d9a-4fb6-acd1-d9bf4285453f",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "76136112-5a15-49e5-8a3e-147762166c25",
+    "description": "Employee EMP-002740 logged 45.0 hrs billable work overlapping with approved leave 2026-04-30 to 2026-05-02.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "b67c5b6f-676b-4175-a4bb-bef9fce73974",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "1040624a-80ad-47c9-a4f8-19f5ff17549d",
+    "description": "Employee EMP-006151 logged 45.0 hrs billable work overlapping with approved leave 2026-02-18 to 2026-02-19.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "8a46bfda-4625-4324-9493-affd0bbee260",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "2375e214-e8bd-4665-accc-4cf044b64b2f",
+    "description": "Employee EMP-005660 logged 45.0 hrs billable work overlapping with approved leave 2026-06-02 to 2026-06-03.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "04c2194a-b680-494b-83cc-6a124e7202c9",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "1d4091be-3a7e-435c-b89e-69988c3786be",
+    "description": "Employee EMP-003792 logged 45.0 hrs billable work overlapping with approved leave 2026-09-01 to 2026-09-06.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "e50d6c90-617f-4735-bb10-4874afde7614",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "38517afa-48fb-430d-a28f-dc689d9e1c53",
+    "description": "Employee EMP-004192 logged 45.0 hrs billable work overlapping with approved leave 2026-02-05 to 2026-02-06.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "2c90e5aa-1842-48f8-9a7b-c20b965df8d0",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "a645a437-ccf0-4ab7-88ce-bfa7518ff624",
+    "description": "Employee EMP-004906 logged 45.0 hrs billable work overlapping with approved leave 2025-08-13 to 2025-08-16.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "9271fbac-a03a-4f99-814d-cfb35f6e8dee",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "b31a650b-68be-4692-a0cb-f9240d46a23b",
+    "description": "Employee EMP-001131 logged 45.0 hrs billable work overlapping with approved leave 2025-04-29 to 2025-05-01.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "67213fb2-3627-479f-9541-840ecb265785",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "b3ee3f3c-cfc7-43ee-859d-61e935798a3d",
+    "description": "Employee EMP-006339 logged 45.0 hrs billable work overlapping with approved leave 2025-08-28 to 2025-09-02.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "241d2fc3-1ac2-438c-94c1-e97c216cc5a3",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "9f10aef4-f056-4ac2-b288-93fcbf95cdbe",
+    "description": "Employee EMP-005760 logged 45.0 hrs billable work overlapping with approved leave 2024-11-08 to 2024-11-18.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "d67eb2d5-7d58-4ad7-a3b0-2dea714af4bd",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "7da744c0-8c16-402e-a07a-68e44501a18d",
+    "description": "Employee EMP-001776 logged 45.0 hrs billable work overlapping with approved leave 2025-02-06 to 2025-02-16.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "0789f584-87c9-4b41-8b9a-38e82382a397",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "710bbf85-4fc7-4a77-86d8-814a810ea0db",
+    "description": "Employee EMP-001418 logged 45.0 hrs billable work overlapping with approved leave 2024-12-01 to 2024-12-11.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "147139da-7623-4f15-aedc-37633ad1f857",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "fe788f90-5827-4002-9353-f1f873946e5c",
+    "description": "Employee EMP-008963 logged 45.0 hrs billable work overlapping with approved leave 2024-11-28 to 2024-12-08.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "1d308534-de47-494a-b1cd-37cf5cb8e74d",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "bd21b17a-5c30-42a8-98af-c496ce3cff2a",
+    "description": "Employee EMP-001792 logged 45.0 hrs billable work overlapping with approved leave 2026-08-15 to 2026-08-17.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "d94af6ad-04f8-413f-b9b6-0ef507c81132",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "fdc3997b-7e8d-4692-a789-dbc34cf21b3e",
+    "description": "Employee EMP-007616 logged 45.0 hrs billable work overlapping with approved leave 2024-11-06 to 2024-11-09.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "0aa481c1-fde1-41ee-a42b-757058491f9c",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "69f9caec-66e6-4fcd-9866-c14544dbed70",
+    "description": "Employee EMP-000542 logged 45.0 hrs billable work overlapping with approved leave 2026-08-17 to 2026-08-19.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  },
+  {
+    "anomaly_id": "c68fab5f-2d86-447f-a4de-03bfa79f3add",
+    "anomaly_type": "LEAVE_HOUR_CONFLICT",
+    "severity": "HIGH",
+    "entity_type": "project_assignments",
+    "entity_id": "781fa17d-94c1-4be7-9b2a-75f97977e6ed",
+    "description": "Employee EMP-002116 logged 45.0 hrs billable work overlapping with approved leave 2025-09-05 to 2025-09-07.",
+    "detected_at": "2026-10-30T09:30:00Z",
+    "is_resolved": false
+  }
+]

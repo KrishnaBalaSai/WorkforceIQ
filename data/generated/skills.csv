@@ -1,0 +1,13 @@
+skill_id,name,category
+SKL-PY-01,Python & Data Engineering,Software Engineering
+SKL-TS-02,TypeScript & Frontend Architecture,Software Engineering
+SKL-K8S-03,Kubernetes & Cloud Infrastructure,Cloud Architecture
+SKL-DB-04,Distributed SQL & PostgreSQL,Data Engineering
+SKL-ML-05,Deep Learning & Neural Networks,AI Research
+SKL-NLP-06,Large Language Models & NLP,AI Research
+SKL-PRD-07,Product Strategy & Roadmapping,Product Management
+SKL-UX-08,User Experience & Design Systems,Design
+SKL-ENT-09,Enterprise B2B Deal Closing,Sales
+SKL-SOL-10,Pre-Sales Solutions Engineering,Sales Engineering
+SKL-HR-11,Talent Acquisition & Compensation Planning,Human Resources
+SKL-FIN-12,Corporate Financial Modeling & GAAP,Finance

@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-10-30T10:05:57.054698",
+  "total_employees": 10000,
+  "total_exit_records": 1187,
+  "total_anomalies_injected": 148,
+  "anomaly_breakdown": {
+    "COMPENSATION_INVERSION": 50,
+    "POST_TERMINATION_ACTIVITY": 45,
+    "LEAVE_HOUR_CONFLICT": 40,
+    "CIRCULAR_HIERARCHY": 13
+  },
+  "table_row_counts": {
+    "departments": 8,
+    "job_roles": 120,
+    "skills": 12,
+    "employees": 10000,
+    "employee_skills": 36534,
+    "employee_history": 10840,
+    "compensation_records": 10840,
+    "performance_evaluations": 34683,
+    "engagement_surveys": 65946,
+    "projects": 36,
+    "project_assignments": 57379,
+    "time_off_records": 17985,
+    "attrition_risk_scores": 71714,
+    "retention_interventions": 1695,
+    "exit_records": 1187,
+    "data_anomalies": 148
+  },
+  "exported_file_count": 36
+}

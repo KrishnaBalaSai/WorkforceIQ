@@ -1,0 +1,69 @@
+# ==============================================================================
+# WorkforceIQ – Multi-Container Deployment Orchestration
+# ==============================================================================
+version: "3.8"
+
+services:
+  # ── PostgreSQL 18 Relational Storage ───────────────────────────────────────
+  postgres:
+    image: postgres:18-alpine
+    container_name: workforceiq-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      POSTGRES_DB: ${POSTGRES_DB:-workforceiq}
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/01_schema.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-postgres} -d ${POSTGRES_DB:-workforceiq}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ── FastAPI Backend API Service ───────────────────────────────────────────
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: workforceiq-backend
+    restart: unless-stopped
+    environment:
+      DB_URL: postgresql+psycopg2://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@postgres:5432/${POSTGRES_DB:-workforceiq}
+      DB_POOL_SIZE: 10
+      DB_MAX_OVERFLOW: 20
+      API_HOST: 0.0.0.0
+      API_PORT: 8000
+      SECRET_KEY: ${SECRET_KEY:-dev-secret-key-change-in-production}
+      DATA_GENERATED_DIR: data/generated
+      DATA_GROUND_TRUTH_DIR: data/ground_truth
+      DATA_MANIFESTS_DIR: data/manifests
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  # ── Streamlit Analytics Dashboard ─────────────────────────────────────────
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile.dashboard
+    container_name: workforceiq-dashboard
+    restart: unless-stopped
+    environment:
+      BACKEND_API_URL: http://backend:8000
+      STREAMLIT_SERVER_PORT: 8501
+      STREAMLIT_SERVER_ADDRESS: 0.0.0.0
+    ports:
+      - "8501:8501"
+    depends_on:
+      backend:
+        condition: service_healthy
+
+volumes:
+  pgdata:
+    driver: local

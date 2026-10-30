@@ -1,0 +1,74 @@
+[
+  {
+    "department_id": "DEP-ENG-01",
+    "name": "Software Engineering",
+    "division": "Product & Engineering",
+    "cost_center_code": "CC-ENG-101",
+    "annual_budget": 12500000.0,
+    "role_prefix": "SWE",
+    "head_employee_id": "EMP-000002"
+  },
+  {
+    "department_id": "DEP-AIR-02",
+    "name": "AI & Machine Learning Research",
+    "division": "Product & Engineering",
+    "cost_center_code": "CC-AIR-102",
+    "annual_budget": 18000000.0,
+    "role_prefix": "AIML",
+    "head_employee_id": "EMP-000003"
+  },
+  {
+    "department_id": "DEP-PRD-03",
+    "name": "Product Management",
+    "division": "Product & Engineering",
+    "cost_center_code": "CC-PRD-103",
+    "annual_budget": 6500000.0,
+    "role_prefix": "PRD",
+    "head_employee_id": "EMP-000004"
+  },
+  {
+    "department_id": "DEP-SAL-04",
+    "name": "Enterprise Sales",
+    "division": "Commercial & Revenue",
+    "cost_center_code": "CC-SAL-201",
+    "annual_budget": 9500000.0,
+    "role_prefix": "SAL",
+    "head_employee_id": "EMP-000005"
+  },
+  {
+    "department_id": "DEP-MKT-05",
+    "name": "Growth & Product Marketing",
+    "division": "Commercial & Revenue",
+    "cost_center_code": "CC-MKT-202",
+    "annual_budget": 5200000.0,
+    "role_prefix": "MKT",
+    "head_employee_id": "EMP-000006"
+  },
+  {
+    "department_id": "DEP-CUS-06",
+    "name": "Customer Success & Services",
+    "division": "Commercial & Revenue",
+    "cost_center_code": "CC-CUS-203",
+    "annual_budget": 4800000.0,
+    "role_prefix": "CSM",
+    "head_employee_id": "EMP-000007"
+  },
+  {
+    "department_id": "DEP-PPL-07",
+    "name": "People Operations & HR",
+    "division": "Corporate Operations",
+    "cost_center_code": "CC-PPL-301",
+    "annual_budget": 3500000.0,
+    "role_prefix": "PPL",
+    "head_employee_id": "EMP-000008"
+  },
+  {
+    "department_id": "DEP-FIN-08",
+    "name": "Finance, Accounting & Legal",
+    "division": "Corporate Operations",
+    "cost_center_code": "CC-FIN-302",
+    "annual_budget": 4200000.0,
+    "role_prefix": "FIN",
+    "head_employee_id": "EMP-000009"
+  }
+]

@@ -1,0 +1,150 @@
+{
+  "dataset_root": "C:\\Users\\sai\\Desktop\\WorkforceIQ\\data",
+  "total_files": 36,
+  "files": {
+    "generated/attrition_risk_scores.csv": {
+      "size_bytes": 10927911,
+      "sha256": "99b43cc05c18ab3783cbd8f3cb029b5ae2aa98f6b87d9e0ad3112b30597522b8"
+    },
+    "generated/attrition_risk_scores.json": {
+      "size_bytes": 32728798,
+      "sha256": "f8c60afdc188ae0cae750bd9fe9edf66071f6690d41bb3ae7564170009d0a2c9"
+    },
+    "generated/compensation_records.csv": {
+      "size_bytes": 1029713,
+      "sha256": "986d8aa1bab4ce19753c6beb4f2b7a3d657728eb630f048a84543a45fa92f34b"
+    },
+    "generated/compensation_records.json": {
+      "size_bytes": 4050985,
+      "sha256": "a198173c8f4b9c383b78a5cc98332986369cc682b25b594409adb726149312f8"
+    },
+    "generated/data_anomalies.csv": {
+      "size_bytes": 36179,
+      "sha256": "caedc98e53b36a179b5cde386b55f6c14a11707af3b79c6003385720d5ec6c3c"
+    },
+    "generated/data_anomalies.json": {
+      "size_bytes": 63428,
+      "sha256": "5480deddb56efdf4c97e8f020b855bf9e8c020f1ade2510805290aab797d184e"
+    },
+    "generated/departments.csv": {
+      "size_bytes": 843,
+      "sha256": "a89dacac6b24d5b1116b423f35809827819c6fe6510e6b908f92480b526f11d1"
+    },
+    "generated/departments.json": {
+      "size_bytes": 2131,
+      "sha256": "a60ddcdc580d12c9b658145839e35075723c471e989c6d6692e1adde837069b1"
+    },
+    "generated/derived_workforce_features.csv": {
+      "size_bytes": 844445,
+      "sha256": "77621381d088c1d70940a22dcdba45ef6acc3ad15ae4a54e072a31326b672fc4"
+    },
+    "generated/employee_history.csv": {
+      "size_bytes": 1242798,
+      "sha256": "040139f2cab5c3904db17bbf6826d6380346665cf13ddf5350af87b245e5c797"
+    },
+    "generated/employee_history.json": {
+      "size_bytes": 4036459,
+      "sha256": "9236c7de8db46e7ccc348ffaa75f0dde4105c5751be33f51ba4f38e5ddcfaaf0"
+    },
+    "generated/employee_skills.csv": {
+      "size_bytes": 1099562,
+      "sha256": "a56558f293c9c6c2683181fb91b7540a3d02f8427d564552212112ad52a98249"
+    },
+    "generated/employee_skills.json": {
+      "size_bytes": 4862512,
+      "sha256": "5fb4c9db4c0638850e26b9352bea187d18c1903dd321862206fb165e18eae8ef"
+    },
+    "generated/employees.csv": {
+      "size_bytes": 1390065,
+      "sha256": "1f6edcdde4c11da192e35c39b817bafb38d72902363d462e2d1391adc44170fc"
+    },
+    "generated/employees.json": {
+      "size_bytes": 4600946,
+      "sha256": "b9b94f4ab77c96ea873d82e2781f44503fdc16d03cd2cfd564186798ec10f696"
+    },
+    "generated/engagement_surveys.csv": {
+      "size_bytes": 5283787,
+      "sha256": "af0972ae0ea981e39a150850edd3a690665b42fa039af2a9f14b7164146ebeae"
+    },
+    "generated/engagement_surveys.json": {
+      "size_bytes": 22165814,
+      "sha256": "fd661882c4581c6641830b88b0a99d4f1c1ed4017e3f92fdf7ed130dba044d3b"
+    },
+    "generated/job_roles.csv": {
+      "size_bytes": 10683,
+      "sha256": "2523e891242d18cca32fee4ed9607f121230d06f34fe0d343dc68fd5eb1f1d82"
+    },
+    "generated/job_roles.json": {
+      "size_bytes": 31248,
+      "sha256": "fb7d7cf320a268bd2ec6c0ed1a8e992d311e2f419bac2485be8182df9727e024"
+    },
+    "generated/performance_evaluations.csv": {
+      "size_bytes": 6405931,
+      "sha256": "7d51de8a72df2f8139adf7b4cf8878404c42d9bcd4015c3d4d819ce448716974"
+    },
+    "generated/performance_evaluations.json": {
+      "size_bytes": 15354004,
+      "sha256": "becf7f15d1b32f6128ed5ec0bc6a1f40d42a5abc2f5d07b90c5cf737bb5fac58"
+    },
+    "generated/project_assignments.csv": {
+      "size_bytes": 6003010,
+      "sha256": "ace73f50a11644453b23e953cbae59f6a4dc52992b6ef2ec9bf9c56bd3c98d1e"
+    },
+    "generated/project_assignments.json": {
+      "size_bytes": 17536083,
+      "sha256": "0bccf0bb1a9a61395f3cafb1ef0c9e8b4251770e780fc97e90914e964cadc4e1"
+    },
+    "generated/projects.csv": {
+      "size_bytes": 3410,
+      "sha256": "839e6cd471ac308d4912ca56f7089d15f189d0871e0d4f684a7a11c6fb79f4b1"
+    },
+    "generated/projects.json": {
+      "size_bytes": 8921,
+      "sha256": "1862ac060f0be54fd762e0ecdc09d5b3e4ec3470ed2326b1b11a80e265fef269"
+    },
+    "generated/retention_interventions.csv": {
+      "size_bytes": 359705,
+      "sha256": "fa9b91f443ef12b3b59b484794339c59a41074bd474e50cf4e8e5e380c4381fc"
+    },
+    "generated/retention_interventions.json": {
+      "size_bytes": 823989,
+      "sha256": "eb02b8f22ce278eab3af283483cc7ce9c550b65f47c38484a925c52cdebcf3ef"
+    },
+    "generated/skills.csv": {
+      "size_bytes": 725,
+      "sha256": "9f3d2e7da3283a90168b529d897404e2d85c27989e59b91b3dbc48ba96b2ddb0"
+    },
+    "generated/skills.json": {
+      "size_bytes": 1484,
+      "sha256": "c49a74ea10cf95b90a691c3502590a968e8fefe5ab746d9bd27c25e40a350322"
+    },
+    "generated/time_off_records.csv": {
+      "size_bytes": 1586444,
+      "sha256": "bcfe13d9504dfccf523fb646fd23be2936ab4d056136646c1ec6cec359edf7fd"
+    },
+    "generated/time_off_records.json": {
+      "size_bytes": 4410016,
+      "sha256": "4ac6d9f668fcee9c6de706ebf221d84ed908f79128b5355900c7bf37ca8c4b5f"
+    },
+    "ground_truth/attrition_labels.csv": {
+      "size_bytes": 275626,
+      "sha256": "d42aaf5825a190b504582f52a17b97d1cbf75f1765c8fc72526bb4693f0f00cb"
+    },
+    "ground_truth/exit_records.csv": {
+      "size_bytes": 160940,
+      "sha256": "558764a0745fc4634e60d3ec886357d61ae9915c818c8afde5c4057a71b218f4"
+    },
+    "ground_truth/exit_records.json": {
+      "size_bytes": 526992,
+      "sha256": "10ca7f5c083443bc9d1a6e034af756d880cc364b75400ffcf8b808ee863255fb"
+    },
+    "manifests/reproducibility_report.json": {
+      "size_bytes": 11584,
+      "sha256": "3f8c82b0a9c2b94e3691f807a5ddfdeefe8d68bcea70a623a7775cd151882500"
+    },
+    "manifests/validation_summary.json": {
+      "size_bytes": 2037,
+      "sha256": "fe0d0f5837fde235b00ad60d0f4d9e94634c729c8f3d7425a8e719cc0e38d856"
+    }
+  }
+}

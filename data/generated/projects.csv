@@ -1,0 +1,37 @@
+project_id,department_id,name,priority,start_date,end_date,is_billable
+PRJ-ENG-001,DEP-ENG-01,ENG - Global Revenue Expansion,MEDIUM,2023-11-11,2027-06-22,True
+PRJ-ENG-002,DEP-ENG-01,ENG - Enterprise Data Fabric,MEDIUM,2024-05-08,2027-05-29,True
+PRJ-ENG-003,DEP-ENG-01,ENG - Security Zero-Trust Overhaul,MEDIUM,2024-06-27,2027-02-28,True
+PRJ-ENG-004,DEP-ENG-01,ENG - Continuous CI/CD Delivery Pipeline,MEDIUM,2024-07-10,2027-05-08,True
+PRJ-ENG-005,DEP-ENG-01,ENG - Enterprise Data Fabric,MEDIUM,2023-11-05,2027-09-16,True
+PRJ-AIR-006,DEP-AIR-02,AIR - Autonomous Agents Framework,HIGH,2023-11-08,2027-07-26,True
+PRJ-AIR-007,DEP-AIR-02,AIR - Autonomous Agents Framework,MEDIUM,2024-06-19,2027-09-20,False
+PRJ-AIR-008,DEP-AIR-02,AIR - Continuous CI/CD Delivery Pipeline,CRITICAL,2024-05-11,2027-10-18,True
+PRJ-AIR-009,DEP-AIR-02,AIR - Autonomous Agents Framework,MEDIUM,2024-01-23,2027-08-30,True
+PRJ-PRD-010,DEP-PRD-03,PRD - Core Platform Modernization,CRITICAL,2024-06-30,2027-08-14,True
+PRJ-PRD-011,DEP-PRD-03,PRD - Core Platform Modernization,MEDIUM,2024-07-28,2027-08-06,True
+PRJ-PRD-012,DEP-PRD-03,PRD - Enterprise Data Fabric,MEDIUM,2024-08-31,2027-03-21,True
+PRJ-PRD-013,DEP-PRD-03,PRD - Continuous CI/CD Delivery Pipeline,CRITICAL,2023-12-28,2027-10-01,True
+PRJ-PRD-014,DEP-PRD-03,PRD - Security Zero-Trust Overhaul,MEDIUM,2024-08-03,2027-08-04,True
+PRJ-SAL-015,DEP-SAL-04,SAL - Strategic Partner Integrations,MEDIUM,2024-08-31,2027-10-01,True
+PRJ-SAL-016,DEP-SAL-04,SAL - Core Platform Modernization,CRITICAL,2024-06-12,2027-07-03,True
+PRJ-SAL-017,DEP-SAL-04,SAL - Security Zero-Trust Overhaul,HIGH,2024-02-26,2027-02-19,True
+PRJ-SAL-018,DEP-SAL-04,SAL - Next-Gen ML Inference Engine,CRITICAL,2024-08-18,2027-06-27,True
+PRJ-SAL-019,DEP-SAL-04,SAL - Core Platform Modernization,HIGH,2023-12-19,2027-02-05,True
+PRJ-MKT-020,DEP-MKT-05,MKT - Core Platform Modernization,CRITICAL,2024-01-11,2027-07-21,True
+PRJ-MKT-021,DEP-MKT-05,MKT - Global Revenue Expansion,CRITICAL,2023-11-22,2027-10-17,True
+PRJ-MKT-022,DEP-MKT-05,MKT - Customer Retention Analytics,HIGH,2024-04-12,2027-06-09,True
+PRJ-MKT-023,DEP-MKT-05,MKT - Strategic Partner Integrations,CRITICAL,2023-11-23,2027-07-29,True
+PRJ-CUS-024,DEP-CUS-06,CUS - Autonomous Agents Framework,MEDIUM,2024-06-17,2027-10-12,True
+PRJ-CUS-025,DEP-CUS-06,CUS - Cloud Cost Optimization,CRITICAL,2024-01-15,2027-04-16,False
+PRJ-CUS-026,DEP-CUS-06,CUS - Core Platform Modernization,CRITICAL,2024-01-11,2027-06-14,False
+PRJ-CUS-027,DEP-CUS-06,CUS - Security Zero-Trust Overhaul,CRITICAL,2024-05-08,2027-04-02,True
+PRJ-PPL-028,DEP-PPL-07,PPL - Strategic Partner Integrations,MEDIUM,2023-11-20,2027-04-14,True
+PRJ-PPL-029,DEP-PPL-07,PPL - Continuous CI/CD Delivery Pipeline,CRITICAL,2024-08-24,2027-09-06,True
+PRJ-PPL-030,DEP-PPL-07,PPL - Next-Gen ML Inference Engine,HIGH,2024-05-31,2027-08-24,True
+PRJ-PPL-031,DEP-PPL-07,PPL - Global Revenue Expansion,MEDIUM,2024-07-09,2027-05-09,True
+PRJ-FIN-032,DEP-FIN-08,FIN - Global Revenue Expansion,HIGH,2024-02-21,2027-10-28,True
+PRJ-FIN-033,DEP-FIN-08,FIN - Continuous CI/CD Delivery Pipeline,MEDIUM,2024-08-22,2027-04-17,True
+PRJ-FIN-034,DEP-FIN-08,FIN - Enterprise Data Fabric,MEDIUM,2024-02-09,2027-03-02,False
+PRJ-FIN-035,DEP-FIN-08,FIN - Customer Retention Analytics,HIGH,2024-05-04,2027-04-14,False
+PRJ-FIN-036,DEP-FIN-08,FIN - Global Revenue Expansion,HIGH,2024-05-30,2027-08-16,True

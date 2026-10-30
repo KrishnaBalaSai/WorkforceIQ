@@ -1,0 +1,177 @@
+{
+  "audit_name": "WorkforceIQ Prospective Feature Leakage & Fairness Audit",
+  "audit_version": "2.0.0",
+  "passed": true,
+  "selected_features": {
+    "numeric": [
+      "grade_level",
+      "tenure_months",
+      "base_salary",
+      "compa_ratio",
+      "promotions_count",
+      "avg_job_satisfaction",
+      "avg_work_life_balance",
+      "latest_burnout_risk",
+      "latest_sentiment_score",
+      "avg_weekly_logged_hours"
+    ],
+    "categorical": [
+      "department_id",
+      "work_location",
+      "employment_type"
+    ],
+    "total_count": 13
+  },
+  "excluded_columns": [
+    "has_attrited_voluntary",
+    "separation_date",
+    "separation_type",
+    "regret_status",
+    "exit_interview_notes",
+    "exit_id",
+    "status",
+    "is_active",
+    "is_successful",
+    "outcome_evaluated_date",
+    "action_date",
+    "employee_id",
+    "first_name",
+    "last_name",
+    "email",
+    "manager_id",
+    "probation_end_date",
+    "hire_date",
+    "actual_attrition"
+  ],
+  "checks": {
+    "no_prohibited_columns_in_features": {
+      "passed": true,
+      "violations": []
+    },
+    "employment_status_quarantined": {
+      "passed": true,
+      "reason": "is_active=False perfectly correlates with voluntary attrition; must remain excluded.",
+      "active_vs_attrition_distribution": {
+        "false": {
+          "false": 217,
+          "true": 8813
+        },
+        "true": {
+          "false": 970,
+          "true": 0
+        }
+      }
+    },
+    "no_perfect_proxy_features": {
+      "passed": true,
+      "sample_prediction_date": "2025-06-15",
+      "sample_active_count": 8201,
+      "sample_positive_exits_90d": 101,
+      "sample_positive_rate_pct": 1.23,
+      "correlations": {
+        "grade_level": 0.0001,
+        "tenure_months": -0.0244,
+        "base_salary": -0.0049,
+        "compa_ratio": -0.0045,
+        "promotions_count": -0.0161,
+        "avg_job_satisfaction": 0.0,
+        "avg_work_life_balance": 0.0,
+        "latest_burnout_risk": 0.0,
+        "latest_sentiment_score": 0.0,
+        "avg_weekly_logged_hours": 0.0
+      },
+      "violating_proxies": []
+    },
+    "department_fairness_audit": {
+      "passed": true,
+      "min_turnover_rate_pct": 7.32,
+      "max_turnover_rate_pct": 11.02,
+      "disparity_ratio": 1.51,
+      "department_distribution": [
+        {
+          "department_id": "DEP-AIR-02",
+          "count": 1969,
+          "sum": 215,
+          "mean": 0.10919248349415947,
+          "department_name": "AI & Machine Learning Research",
+          "attrition_rate_pct": 10.92
+        },
+        {
+          "department_id": "DEP-CUS-06",
+          "count": 601,
+          "sum": 44,
+          "mean": 0.07321131447587355,
+          "department_name": "Customer Success & Services",
+          "attrition_rate_pct": 7.32
+        },
+        {
+          "department_id": "DEP-ENG-01",
+          "count": 3538,
+          "sum": 319,
+          "mean": 0.09016393442622951,
+          "department_name": "Software Engineering",
+          "attrition_rate_pct": 9.02
+        },
+        {
+          "department_id": "DEP-FIN-08",
+          "count": 307,
+          "sum": 27,
+          "mean": 0.08794788273615635,
+          "department_name": "Finance, Accounting & Legal",
+          "attrition_rate_pct": 8.79
+        },
+        {
+          "department_id": "DEP-MKT-05",
+          "count": 766,
+          "sum": 65,
+          "mean": 0.08485639686684072,
+          "department_name": "Growth & Product Marketing",
+          "attrition_rate_pct": 8.49
+        },
+        {
+          "department_id": "DEP-PPL-07",
+          "count": 303,
+          "sum": 26,
+          "mean": 0.0858085808580858,
+          "department_name": "People Operations & HR",
+          "attrition_rate_pct": 8.58
+        },
+        {
+          "department_id": "DEP-PRD-03",
+          "count": 1037,
+          "sum": 111,
+          "mean": 0.10703953712632594,
+          "department_name": "Product Management",
+          "attrition_rate_pct": 10.7
+        },
+        {
+          "department_id": "DEP-SAL-04",
+          "count": 1479,
+          "sum": 163,
+          "mean": 0.11020960108181203,
+          "department_name": "Enterprise Sales",
+          "attrition_rate_pct": 11.02
+        }
+      ],
+      "safeguard": "SHAP feature attributions must reflect individual drivers (burnout, compa-ratio) rather than macro department stereotyping."
+    },
+    "prospective_split_specification": {
+      "training_periods": [
+        "2024-12-15",
+        "2025-03-15",
+        "2025-06-15",
+        "2025-09-15",
+        "2025-12-15"
+      ],
+      "validation_period": [
+        "2026-03-15"
+      ],
+      "test_period": [
+        "2026-06-15"
+      ],
+      "prediction_horizon_days": 90,
+      "non_overlapping_windows": true,
+      "preprocessing_isolation": "ColumnTransformer strictly fitted on Train only"
+    }
+  }
+}

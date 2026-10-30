@@ -1,0 +1,832 @@
+[
+  {
+    "employee_id": "EMP-004569",
+    "flight_risk_probability": 0.0758,
+    "raw_model_score": 0.7392,
+    "risk_tier": "CRITICAL",
+    "operational_threshold": 0.05,
+    "is_retention_alert": true,
+    "top_risk_drivers": [
+      {
+        "feature": "latest_sentiment_score",
+        "human_label": "Sentiment Score (Surveys & Feedback)",
+        "shap_value": 0.119161,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Sentiment Score (Surveys & Feedback) is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "avg_job_satisfaction",
+        "human_label": "Engagement (Average Job Satisfaction)",
+        "shap_value": 0.041359,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Engagement (Average Job Satisfaction) is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "tenure_months",
+        "human_label": "Tenure (Months)",
+        "shap_value": 0.032886,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Tenure (Months) is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "latest_burnout_risk",
+        "human_label": "Burnout Risk Index",
+        "shap_value": 0.021723,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Burnout Risk Index is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "avg_work_life_balance",
+        "human_label": "Well-Being (Work-Life Balance Score)",
+        "shap_value": 0.016692,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Well-Being (Work-Life Balance Score) is contributing positively to estimated flight risk."
+      }
+    ],
+    "top_protective_factors": [
+      {
+        "feature": "department_id_DEP-PRD-03",
+        "human_label": "Department: Product Management",
+        "shap_value": -0.004275,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Department: Product Management is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "base_salary",
+        "human_label": "Base Salary (USD)",
+        "shap_value": -0.002796,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Base Salary (USD) is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "compa_ratio",
+        "human_label": "Compa-Ratio (Salary vs. Market Midpoint)",
+        "shap_value": -0.002537,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Compa-Ratio (Salary vs. Market Midpoint) is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "department_id_DEP-AIR-02",
+        "human_label": "Department: AI Research",
+        "shap_value": -0.001858,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Department: AI Research is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "work_location_ONSITE",
+        "human_label": "Work Arrangement: On-Site",
+        "shap_value": -0.001132,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Work Arrangement: On-Site is acting as an active retention stabilizer."
+      }
+    ],
+    "responsible_ai_disclaimer": "This flight-risk score and SHAP explanation reflect statistical associations learned from historical organizational data. They do NOT imply causal attribution. These metrics are advisory signals designed exclusively to support human-led retention dialogues, workload rebalancing, and career coaching. Automated employment decisions based on this signal are strictly prohibited."
+  },
+  {
+    "employee_id": "EMP-002240",
+    "flight_risk_probability": 0.0885,
+    "raw_model_score": 0.77,
+    "risk_tier": "CRITICAL",
+    "operational_threshold": 0.05,
+    "is_retention_alert": true,
+    "top_risk_drivers": [
+      {
+        "feature": "latest_sentiment_score",
+        "human_label": "Sentiment Score (Surveys & Feedback)",
+        "shap_value": 0.102084,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Sentiment Score (Surveys & Feedback) is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "latest_burnout_risk",
+        "human_label": "Burnout Risk Index",
+        "shap_value": 0.047273,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Burnout Risk Index is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "avg_job_satisfaction",
+        "human_label": "Engagement (Average Job Satisfaction)",
+        "shap_value": 0.044611,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Engagement (Average Job Satisfaction) is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "tenure_months",
+        "human_label": "Tenure (Months)",
+        "shap_value": 0.035337,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Tenure (Months) is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "avg_work_life_balance",
+        "human_label": "Well-Being (Work-Life Balance Score)",
+        "shap_value": 0.022526,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Well-Being (Work-Life Balance Score) is contributing positively to estimated flight risk."
+      }
+    ],
+    "top_protective_factors": [
+      {
+        "feature": "compa_ratio",
+        "human_label": "Compa-Ratio (Salary vs. Market Midpoint)",
+        "shap_value": -0.004342,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Compa-Ratio (Salary vs. Market Midpoint) is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "base_salary",
+        "human_label": "Base Salary (USD)",
+        "shap_value": -0.003818,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Base Salary (USD) is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "work_location_ONSITE",
+        "human_label": "Work Arrangement: On-Site",
+        "shap_value": -0.001389,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Work Arrangement: On-Site is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "work_location_HYBRID",
+        "human_label": "Work Arrangement: Hybrid",
+        "shap_value": -0.000494,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Work Arrangement: Hybrid is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "grade_level",
+        "human_label": "Job Grade Level",
+        "shap_value": -0.000379,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Job Grade Level is acting as an active retention stabilizer."
+      }
+    ],
+    "responsible_ai_disclaimer": "This flight-risk score and SHAP explanation reflect statistical associations learned from historical organizational data. They do NOT imply causal attribution. These metrics are advisory signals designed exclusively to support human-led retention dialogues, workload rebalancing, and career coaching. Automated employment decisions based on this signal are strictly prohibited."
+  },
+  {
+    "employee_id": "EMP-002172",
+    "flight_risk_probability": 0.0727,
+    "raw_model_score": 0.7309,
+    "risk_tier": "CRITICAL",
+    "operational_threshold": 0.05,
+    "is_retention_alert": true,
+    "top_risk_drivers": [
+      {
+        "feature": "latest_sentiment_score",
+        "human_label": "Sentiment Score (Surveys & Feedback)",
+        "shap_value": 0.083503,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Sentiment Score (Surveys & Feedback) is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "latest_burnout_risk",
+        "human_label": "Burnout Risk Index",
+        "shap_value": 0.045978,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Burnout Risk Index is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "tenure_months",
+        "human_label": "Tenure (Months)",
+        "shap_value": 0.040897,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Tenure (Months) is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "avg_job_satisfaction",
+        "human_label": "Engagement (Average Job Satisfaction)",
+        "shap_value": 0.034985,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Engagement (Average Job Satisfaction) is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "avg_work_life_balance",
+        "human_label": "Well-Being (Work-Life Balance Score)",
+        "shap_value": 0.020346,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Well-Being (Work-Life Balance Score) is contributing positively to estimated flight risk."
+      }
+    ],
+    "top_protective_factors": [
+      {
+        "feature": "department_id_DEP-ENG-01",
+        "human_label": "Department: Engineering",
+        "shap_value": -0.007672,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Department: Engineering is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "base_salary",
+        "human_label": "Base Salary (USD)",
+        "shap_value": -0.006193,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Base Salary (USD) is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "department_id_DEP-AIR-02",
+        "human_label": "Department: AI Research",
+        "shap_value": -0.002961,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Department: AI Research is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "compa_ratio",
+        "human_label": "Compa-Ratio (Salary vs. Market Midpoint)",
+        "shap_value": -0.001839,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Compa-Ratio (Salary vs. Market Midpoint) is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "work_location_ONSITE",
+        "human_label": "Work Arrangement: On-Site",
+        "shap_value": -0.001489,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Work Arrangement: On-Site is acting as an active retention stabilizer."
+      }
+    ],
+    "responsible_ai_disclaimer": "This flight-risk score and SHAP explanation reflect statistical associations learned from historical organizational data. They do NOT imply causal attribution. These metrics are advisory signals designed exclusively to support human-led retention dialogues, workload rebalancing, and career coaching. Automated employment decisions based on this signal are strictly prohibited."
+  },
+  {
+    "employee_id": "EMP-008346",
+    "flight_risk_probability": 0.0596,
+    "raw_model_score": 0.6919,
+    "risk_tier": "HIGH",
+    "operational_threshold": 0.05,
+    "is_retention_alert": true,
+    "top_risk_drivers": [
+      {
+        "feature": "latest_sentiment_score",
+        "human_label": "Sentiment Score (Surveys & Feedback)",
+        "shap_value": 0.11751,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Sentiment Score (Surveys & Feedback) is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "avg_job_satisfaction",
+        "human_label": "Engagement (Average Job Satisfaction)",
+        "shap_value": 0.044911,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Engagement (Average Job Satisfaction) is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "tenure_months",
+        "human_label": "Tenure (Months)",
+        "shap_value": 0.025431,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Tenure (Months) is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "avg_work_life_balance",
+        "human_label": "Well-Being (Work-Life Balance Score)",
+        "shap_value": 0.01697,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Well-Being (Work-Life Balance Score) is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "latest_burnout_risk",
+        "human_label": "Burnout Risk Index",
+        "shap_value": 0.014707,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Burnout Risk Index is contributing positively to estimated flight risk."
+      }
+    ],
+    "top_protective_factors": [
+      {
+        "feature": "avg_weekly_logged_hours",
+        "human_label": "Workload Intensity (Average Weekly Hours)",
+        "shap_value": -0.020622,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Workload Intensity (Average Weekly Hours) is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "compa_ratio",
+        "human_label": "Compa-Ratio (Salary vs. Market Midpoint)",
+        "shap_value": -0.011463,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Compa-Ratio (Salary vs. Market Midpoint) is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "base_salary",
+        "human_label": "Base Salary (USD)",
+        "shap_value": -0.009346,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Base Salary (USD) is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "grade_level",
+        "human_label": "Job Grade Level",
+        "shap_value": -0.004703,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Job Grade Level is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "department_id_DEP-PPL-07",
+        "human_label": "Department: People & HR",
+        "shap_value": -0.000261,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Department: People & HR is acting as an active retention stabilizer."
+      }
+    ],
+    "responsible_ai_disclaimer": "This flight-risk score and SHAP explanation reflect statistical associations learned from historical organizational data. They do NOT imply causal attribution. These metrics are advisory signals designed exclusively to support human-led retention dialogues, workload rebalancing, and career coaching. Automated employment decisions based on this signal are strictly prohibited."
+  },
+  {
+    "employee_id": "EMP-002183",
+    "flight_risk_probability": 0.0584,
+    "raw_model_score": 0.6878,
+    "risk_tier": "HIGH",
+    "operational_threshold": 0.05,
+    "is_retention_alert": true,
+    "top_risk_drivers": [
+      {
+        "feature": "latest_sentiment_score",
+        "human_label": "Sentiment Score (Surveys & Feedback)",
+        "shap_value": 0.119052,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Sentiment Score (Surveys & Feedback) is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "tenure_months",
+        "human_label": "Tenure (Months)",
+        "shap_value": 0.035326,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Tenure (Months) is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "avg_job_satisfaction",
+        "human_label": "Engagement (Average Job Satisfaction)",
+        "shap_value": 0.034126,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Engagement (Average Job Satisfaction) is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "avg_work_life_balance",
+        "human_label": "Well-Being (Work-Life Balance Score)",
+        "shap_value": 0.018419,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Well-Being (Work-Life Balance Score) is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "latest_burnout_risk",
+        "human_label": "Burnout Risk Index",
+        "shap_value": 0.011586,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Burnout Risk Index is contributing positively to estimated flight risk."
+      }
+    ],
+    "top_protective_factors": [
+      {
+        "feature": "employment_type_FULL_TIME",
+        "human_label": "Employment: Full-Time",
+        "shap_value": -0.011425,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Employment: Full-Time is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "employment_type_PART_TIME",
+        "human_label": "Employment: Part-Time",
+        "shap_value": -0.010432,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Employment: Part-Time is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "department_id_DEP-ENG-01",
+        "human_label": "Department: Engineering",
+        "shap_value": -0.006686,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Department: Engineering is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "base_salary",
+        "human_label": "Base Salary (USD)",
+        "shap_value": -0.003389,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Base Salary (USD) is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "department_id_DEP-AIR-02",
+        "human_label": "Department: AI Research",
+        "shap_value": -0.001709,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Department: AI Research is acting as an active retention stabilizer."
+      }
+    ],
+    "responsible_ai_disclaimer": "This flight-risk score and SHAP explanation reflect statistical associations learned from historical organizational data. They do NOT imply causal attribution. These metrics are advisory signals designed exclusively to support human-led retention dialogues, workload rebalancing, and career coaching. Automated employment decisions based on this signal are strictly prohibited."
+  },
+  {
+    "employee_id": "EMP-002980",
+    "flight_risk_probability": 0.0572,
+    "raw_model_score": 0.6841,
+    "risk_tier": "HIGH",
+    "operational_threshold": 0.05,
+    "is_retention_alert": true,
+    "top_risk_drivers": [
+      {
+        "feature": "latest_sentiment_score",
+        "human_label": "Sentiment Score (Surveys & Feedback)",
+        "shap_value": 0.13932,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Sentiment Score (Surveys & Feedback) is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "avg_job_satisfaction",
+        "human_label": "Engagement (Average Job Satisfaction)",
+        "shap_value": 0.047583,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Engagement (Average Job Satisfaction) is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "avg_work_life_balance",
+        "human_label": "Well-Being (Work-Life Balance Score)",
+        "shap_value": 0.014974,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Well-Being (Work-Life Balance Score) is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "latest_burnout_risk",
+        "human_label": "Burnout Risk Index",
+        "shap_value": 0.010657,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Burnout Risk Index is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "department_id_DEP-AIR-02",
+        "human_label": "Department: AI Research",
+        "shap_value": 0.006348,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Department: AI Research is contributing positively to estimated flight risk."
+      }
+    ],
+    "top_protective_factors": [
+      {
+        "feature": "tenure_months",
+        "human_label": "Tenure (Months)",
+        "shap_value": -0.031501,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Tenure (Months) is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "avg_weekly_logged_hours_missing_indicator",
+        "human_label": "Weekly Hours (Missingness Indicator)",
+        "shap_value": -0.008293,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Weekly Hours (Missingness Indicator) is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "base_salary",
+        "human_label": "Base Salary (USD)",
+        "shap_value": -0.003567,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Base Salary (USD) is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "work_location_ONSITE",
+        "human_label": "Work Arrangement: On-Site",
+        "shap_value": -0.003047,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Work Arrangement: On-Site is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "work_location_HYBRID",
+        "human_label": "Work Arrangement: Hybrid",
+        "shap_value": -0.001634,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Work Arrangement: Hybrid is acting as an active retention stabilizer."
+      }
+    ],
+    "responsible_ai_disclaimer": "This flight-risk score and SHAP explanation reflect statistical associations learned from historical organizational data. They do NOT imply causal attribution. These metrics are advisory signals designed exclusively to support human-led retention dialogues, workload rebalancing, and career coaching. Automated employment decisions based on this signal are strictly prohibited."
+  },
+  {
+    "employee_id": "EMP-002887",
+    "flight_risk_probability": 0.044,
+    "raw_model_score": 0.6335,
+    "risk_tier": "MEDIUM",
+    "operational_threshold": 0.05,
+    "is_retention_alert": false,
+    "top_risk_drivers": [
+      {
+        "feature": "latest_sentiment_score",
+        "human_label": "Sentiment Score (Surveys & Feedback)",
+        "shap_value": 0.118709,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Sentiment Score (Surveys & Feedback) is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "avg_job_satisfaction",
+        "human_label": "Engagement (Average Job Satisfaction)",
+        "shap_value": 0.043705,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Engagement (Average Job Satisfaction) is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "latest_burnout_risk",
+        "human_label": "Burnout Risk Index",
+        "shap_value": 0.022656,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Burnout Risk Index is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "avg_work_life_balance",
+        "human_label": "Well-Being (Work-Life Balance Score)",
+        "shap_value": 0.015774,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Well-Being (Work-Life Balance Score) is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "department_id_DEP-ENG-01",
+        "human_label": "Department: Engineering",
+        "shap_value": 0.002468,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Department: Engineering is contributing positively to estimated flight risk."
+      }
+    ],
+    "top_protective_factors": [
+      {
+        "feature": "tenure_months",
+        "human_label": "Tenure (Months)",
+        "shap_value": -0.025273,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Tenure (Months) is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "work_location_REMOTE",
+        "human_label": "Work Arrangement: Remote",
+        "shap_value": -0.018107,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Work Arrangement: Remote is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "base_salary",
+        "human_label": "Base Salary (USD)",
+        "shap_value": -0.011117,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Base Salary (USD) is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "department_id_DEP-PRD-03",
+        "human_label": "Department: Product Management",
+        "shap_value": -0.010796,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Department: Product Management is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "department_id_DEP-AIR-02",
+        "human_label": "Department: AI Research",
+        "shap_value": -0.003465,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Department: AI Research is acting as an active retention stabilizer."
+      }
+    ],
+    "responsible_ai_disclaimer": "This flight-risk score and SHAP explanation reflect statistical associations learned from historical organizational data. They do NOT imply causal attribution. These metrics are advisory signals designed exclusively to support human-led retention dialogues, workload rebalancing, and career coaching. Automated employment decisions based on this signal are strictly prohibited."
+  },
+  {
+    "employee_id": "EMP-003196",
+    "flight_risk_probability": 0.0418,
+    "raw_model_score": 0.6235,
+    "risk_tier": "MEDIUM",
+    "operational_threshold": 0.05,
+    "is_retention_alert": false,
+    "top_risk_drivers": [
+      {
+        "feature": "latest_sentiment_score",
+        "human_label": "Sentiment Score (Surveys & Feedback)",
+        "shap_value": 0.048628,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Sentiment Score (Surveys & Feedback) is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "avg_job_satisfaction",
+        "human_label": "Engagement (Average Job Satisfaction)",
+        "shap_value": 0.043768,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Engagement (Average Job Satisfaction) is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "tenure_months",
+        "human_label": "Tenure (Months)",
+        "shap_value": 0.030185,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Tenure (Months) is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "latest_burnout_risk",
+        "human_label": "Burnout Risk Index",
+        "shap_value": 0.017454,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Burnout Risk Index is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "avg_weekly_logged_hours",
+        "human_label": "Workload Intensity (Average Weekly Hours)",
+        "shap_value": 0.012978,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Workload Intensity (Average Weekly Hours) is contributing positively to estimated flight risk."
+      }
+    ],
+    "top_protective_factors": [
+      {
+        "feature": "department_id_DEP-CUS-06",
+        "human_label": "Department: Customer Success",
+        "shap_value": -0.02034,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Department: Customer Success is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "base_salary",
+        "human_label": "Base Salary (USD)",
+        "shap_value": -0.004165,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Base Salary (USD) is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "avg_work_life_balance",
+        "human_label": "Well-Being (Work-Life Balance Score)",
+        "shap_value": -0.003936,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Well-Being (Work-Life Balance Score) is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "department_id_DEP-AIR-02",
+        "human_label": "Department: AI Research",
+        "shap_value": -0.003181,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Department: AI Research is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "work_location_HYBRID",
+        "human_label": "Work Arrangement: Hybrid",
+        "shap_value": -0.002731,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Work Arrangement: Hybrid is acting as an active retention stabilizer."
+      }
+    ],
+    "responsible_ai_disclaimer": "This flight-risk score and SHAP explanation reflect statistical associations learned from historical organizational data. They do NOT imply causal attribution. These metrics are advisory signals designed exclusively to support human-led retention dialogues, workload rebalancing, and career coaching. Automated employment decisions based on this signal are strictly prohibited."
+  },
+  {
+    "employee_id": "EMP-006678",
+    "flight_risk_probability": 0.0173,
+    "raw_model_score": 0.4577,
+    "risk_tier": "LOW",
+    "operational_threshold": 0.05,
+    "is_retention_alert": false,
+    "top_risk_drivers": [
+      {
+        "feature": "tenure_months",
+        "human_label": "Tenure (Months)",
+        "shap_value": 0.034236,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Tenure (Months) is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "avg_job_satisfaction",
+        "human_label": "Engagement (Average Job Satisfaction)",
+        "shap_value": 0.028144,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Engagement (Average Job Satisfaction) is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "latest_burnout_risk",
+        "human_label": "Burnout Risk Index",
+        "shap_value": 0.022586,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Burnout Risk Index is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "avg_work_life_balance",
+        "human_label": "Well-Being (Work-Life Balance Score)",
+        "shap_value": 0.015848,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Well-Being (Work-Life Balance Score) is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "department_id_DEP-ENG-01",
+        "human_label": "Department: Engineering",
+        "shap_value": 0.003246,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Department: Engineering is contributing positively to estimated flight risk."
+      }
+    ],
+    "top_protective_factors": [
+      {
+        "feature": "latest_sentiment_score",
+        "human_label": "Sentiment Score (Surveys & Feedback)",
+        "shap_value": -0.107966,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Sentiment Score (Surveys & Feedback) is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "compa_ratio",
+        "human_label": "Compa-Ratio (Salary vs. Market Midpoint)",
+        "shap_value": -0.016999,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Compa-Ratio (Salary vs. Market Midpoint) is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "avg_weekly_logged_hours_missing_indicator",
+        "human_label": "Weekly Hours (Missingness Indicator)",
+        "shap_value": -0.015278,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Weekly Hours (Missingness Indicator) is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "base_salary",
+        "human_label": "Base Salary (USD)",
+        "shap_value": -0.006863,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Base Salary (USD) is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "avg_weekly_logged_hours",
+        "human_label": "Workload Intensity (Average Weekly Hours)",
+        "shap_value": -0.002179,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Workload Intensity (Average Weekly Hours) is acting as an active retention stabilizer."
+      }
+    ],
+    "responsible_ai_disclaimer": "This flight-risk score and SHAP explanation reflect statistical associations learned from historical organizational data. They do NOT imply causal attribution. These metrics are advisory signals designed exclusively to support human-led retention dialogues, workload rebalancing, and career coaching. Automated employment decisions based on this signal are strictly prohibited."
+  },
+  {
+    "employee_id": "EMP-007454",
+    "flight_risk_probability": 0.0018,
+    "raw_model_score": 0.0415,
+    "risk_tier": "LOW",
+    "operational_threshold": 0.05,
+    "is_retention_alert": false,
+    "top_risk_drivers": [
+      {
+        "feature": "promotions_count",
+        "human_label": "Career Velocity (Promotion Count)",
+        "shap_value": 0.00072,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Career Velocity (Promotion Count) is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "department_id_DEP-MKT-05",
+        "human_label": "Department: Marketing & Growth",
+        "shap_value": 0.0007,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Department: Marketing & Growth is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "work_location_REMOTE",
+        "human_label": "Work Arrangement: Remote",
+        "shap_value": 0.000538,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Work Arrangement: Remote is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "department_id_DEP-CUS-06",
+        "human_label": "Department: Customer Success",
+        "shap_value": 0.000431,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Department: Customer Success is contributing positively to estimated flight risk."
+      },
+      {
+        "feature": "work_location_ONSITE",
+        "human_label": "Work Arrangement: On-Site",
+        "shap_value": 0.000408,
+        "direction": "INCREASES_RISK",
+        "interpretation": "Work Arrangement: On-Site is contributing positively to estimated flight risk."
+      }
+    ],
+    "top_protective_factors": [
+      {
+        "feature": "latest_sentiment_score",
+        "human_label": "Sentiment Score (Surveys & Feedback)",
+        "shap_value": -0.22259,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Sentiment Score (Surveys & Feedback) is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "avg_job_satisfaction",
+        "human_label": "Engagement (Average Job Satisfaction)",
+        "shap_value": -0.070273,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Engagement (Average Job Satisfaction) is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "latest_burnout_risk",
+        "human_label": "Burnout Risk Index",
+        "shap_value": -0.047231,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Burnout Risk Index is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "avg_work_life_balance",
+        "human_label": "Well-Being (Work-Life Balance Score)",
+        "shap_value": -0.046455,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Well-Being (Work-Life Balance Score) is acting as an active retention stabilizer."
+      },
+      {
+        "feature": "tenure_months",
+        "human_label": "Tenure (Months)",
+        "shap_value": -0.02994,
+        "direction": "DECREASES_RISK",
+        "interpretation": "Tenure (Months) is acting as an active retention stabilizer."
+      }
+    ],
+    "responsible_ai_disclaimer": "This flight-risk score and SHAP explanation reflect statistical associations learned from historical organizational data. They do NOT imply causal attribution. These metrics are advisory signals designed exclusively to support human-led retention dialogues, workload rebalancing, and career coaching. Automated employment decisions based on this signal are strictly prohibited."
+  }
+]

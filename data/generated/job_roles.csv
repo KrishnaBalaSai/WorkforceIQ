@@ -1,0 +1,121 @@
+role_id,department_id,title,min_salary,mid_salary,max_salary,is_exempt
+ROLE-SWE-01,DEP-ENG-01,Associate Software Engineer,45000.0,55000.0,65000.0,False
+ROLE-SWE-02,DEP-ENG-01,Junior Software Engineer,55000.0,68000.0,80000.0,False
+ROLE-SWE-03,DEP-ENG-01,Mid-Level Software Engineer,70000.0,85000.0,100000.0,True
+ROLE-SWE-04,DEP-ENG-01,Senior I Software Engineer,85000.0,105000.0,125000.0,True
+ROLE-SWE-05,DEP-ENG-01,Senior II Software Engineer,105000.0,130000.0,155000.0,True
+ROLE-SWE-06,DEP-ENG-01,Lead / Staff Software Engineer,125000.0,155000.0,185000.0,True
+ROLE-SWE-07,DEP-ENG-01,Senior Staff Software Engineer,145000.0,180000.0,215000.0,True
+ROLE-SWE-08,DEP-ENG-01,Principal Software Engineer,170000.0,210000.0,255000.0,True
+ROLE-SWE-09,DEP-ENG-01,Senior Principal Software Engineer,195000.0,245000.0,295000.0,True
+ROLE-SWE-10,DEP-ENG-01,"Manager, Software Engineer",225000.0,285000.0,345000.0,True
+ROLE-SWE-11,DEP-ENG-01,"Senior Manager, Software Engineer",260000.0,330000.0,400000.0,True
+ROLE-SWE-12,DEP-ENG-01,Director of Software Engineering,300000.0,380000.0,465000.0,True
+ROLE-SWE-13,DEP-ENG-01,"Senior Director, Software Engineering",350000.0,450000.0,550000.0,True
+ROLE-SWE-14,DEP-ENG-01,Vice President of Software Engineering,420000.0,540000.0,660000.0,True
+ROLE-SWE-15,DEP-ENG-01,Chief Software Officer,500000.0,650000.0,850000.0,True
+ROLE-AIML-01,DEP-AIR-02,Associate AI Research Scientist,45000.0,55000.0,65000.0,False
+ROLE-AIML-02,DEP-AIR-02,Junior AI Research Scientist,55000.0,68000.0,80000.0,False
+ROLE-AIML-03,DEP-AIR-02,Mid-Level AI Research Scientist,70000.0,85000.0,100000.0,True
+ROLE-AIML-04,DEP-AIR-02,Senior I AI Research Scientist,85000.0,105000.0,125000.0,True
+ROLE-AIML-05,DEP-AIR-02,Senior II AI Research Scientist,105000.0,130000.0,155000.0,True
+ROLE-AIML-06,DEP-AIR-02,Lead / Staff AI Research Scientist,125000.0,155000.0,185000.0,True
+ROLE-AIML-07,DEP-AIR-02,Senior Staff AI Research Scientist,145000.0,180000.0,215000.0,True
+ROLE-AIML-08,DEP-AIR-02,Principal AI Research Scientist,170000.0,210000.0,255000.0,True
+ROLE-AIML-09,DEP-AIR-02,Senior Principal AI Research Scientist,195000.0,245000.0,295000.0,True
+ROLE-AIML-10,DEP-AIR-02,"Manager, AI Research Scientist",225000.0,285000.0,345000.0,True
+ROLE-AIML-11,DEP-AIR-02,"Senior Manager, AI Research Scientist",260000.0,330000.0,400000.0,True
+ROLE-AIML-12,DEP-AIR-02,Director of AI & Machine Learning Research,300000.0,380000.0,465000.0,True
+ROLE-AIML-13,DEP-AIR-02,"Senior Director, AI & Machine Learning Research",350000.0,450000.0,550000.0,True
+ROLE-AIML-14,DEP-AIR-02,Vice President of AI & Machine Learning Research,420000.0,540000.0,660000.0,True
+ROLE-AIML-15,DEP-AIR-02,Chief AI Officer,500000.0,650000.0,850000.0,True
+ROLE-PRD-01,DEP-PRD-03,Associate Product Manager,45000.0,55000.0,65000.0,False
+ROLE-PRD-02,DEP-PRD-03,Junior Product Manager,55000.0,68000.0,80000.0,False
+ROLE-PRD-03,DEP-PRD-03,Mid-Level Product Manager,70000.0,85000.0,100000.0,True
+ROLE-PRD-04,DEP-PRD-03,Senior I Product Manager,85000.0,105000.0,125000.0,True
+ROLE-PRD-05,DEP-PRD-03,Senior II Product Manager,105000.0,130000.0,155000.0,True
+ROLE-PRD-06,DEP-PRD-03,Lead / Staff Product Manager,125000.0,155000.0,185000.0,True
+ROLE-PRD-07,DEP-PRD-03,Senior Staff Product Manager,145000.0,180000.0,215000.0,True
+ROLE-PRD-08,DEP-PRD-03,Principal Product Manager,170000.0,210000.0,255000.0,True
+ROLE-PRD-09,DEP-PRD-03,Senior Principal Product Manager,195000.0,245000.0,295000.0,True
+ROLE-PRD-10,DEP-PRD-03,"Manager, Product Manager",225000.0,285000.0,345000.0,True
+ROLE-PRD-11,DEP-PRD-03,"Senior Manager, Product Manager",260000.0,330000.0,400000.0,True
+ROLE-PRD-12,DEP-PRD-03,Director of Product Management,300000.0,380000.0,465000.0,True
+ROLE-PRD-13,DEP-PRD-03,"Senior Director, Product Management",350000.0,450000.0,550000.0,True
+ROLE-PRD-14,DEP-PRD-03,Vice President of Product Management,420000.0,540000.0,660000.0,True
+ROLE-PRD-15,DEP-PRD-03,Chief Officer (Product Management),500000.0,650000.0,850000.0,True
+ROLE-SAL-01,DEP-SAL-04,Associate Account Executive,45000.0,55000.0,65000.0,False
+ROLE-SAL-02,DEP-SAL-04,Junior Account Executive,55000.0,68000.0,80000.0,False
+ROLE-SAL-03,DEP-SAL-04,Mid-Level Account Executive,70000.0,85000.0,100000.0,True
+ROLE-SAL-04,DEP-SAL-04,Senior I Account Executive,85000.0,105000.0,125000.0,True
+ROLE-SAL-05,DEP-SAL-04,Senior II Account Executive,105000.0,130000.0,155000.0,True
+ROLE-SAL-06,DEP-SAL-04,Lead / Staff Account Executive,125000.0,155000.0,185000.0,True
+ROLE-SAL-07,DEP-SAL-04,Senior Staff Account Executive,145000.0,180000.0,215000.0,True
+ROLE-SAL-08,DEP-SAL-04,Principal Account Executive,170000.0,210000.0,255000.0,True
+ROLE-SAL-09,DEP-SAL-04,Senior Principal Account Executive,195000.0,245000.0,295000.0,True
+ROLE-SAL-10,DEP-SAL-04,"Manager, Account Executive",225000.0,285000.0,345000.0,True
+ROLE-SAL-11,DEP-SAL-04,"Senior Manager, Account Executive",260000.0,330000.0,400000.0,True
+ROLE-SAL-12,DEP-SAL-04,Director of Enterprise Sales,300000.0,380000.0,465000.0,True
+ROLE-SAL-13,DEP-SAL-04,"Senior Director, Enterprise Sales",350000.0,450000.0,550000.0,True
+ROLE-SAL-14,DEP-SAL-04,Vice President of Enterprise Sales,420000.0,540000.0,660000.0,True
+ROLE-SAL-15,DEP-SAL-04,Chief Officer (Enterprise Sales),500000.0,650000.0,850000.0,True
+ROLE-MKT-01,DEP-MKT-05,Associate Marketing Manager,45000.0,55000.0,65000.0,False
+ROLE-MKT-02,DEP-MKT-05,Junior Marketing Manager,55000.0,68000.0,80000.0,False
+ROLE-MKT-03,DEP-MKT-05,Mid-Level Marketing Manager,70000.0,85000.0,100000.0,True
+ROLE-MKT-04,DEP-MKT-05,Senior I Marketing Manager,85000.0,105000.0,125000.0,True
+ROLE-MKT-05,DEP-MKT-05,Senior II Marketing Manager,105000.0,130000.0,155000.0,True
+ROLE-MKT-06,DEP-MKT-05,Lead / Staff Marketing Manager,125000.0,155000.0,185000.0,True
+ROLE-MKT-07,DEP-MKT-05,Senior Staff Marketing Manager,145000.0,180000.0,215000.0,True
+ROLE-MKT-08,DEP-MKT-05,Principal Marketing Manager,170000.0,210000.0,255000.0,True
+ROLE-MKT-09,DEP-MKT-05,Senior Principal Marketing Manager,195000.0,245000.0,295000.0,True
+ROLE-MKT-10,DEP-MKT-05,"Manager, Marketing Manager",225000.0,285000.0,345000.0,True
+ROLE-MKT-11,DEP-MKT-05,"Senior Manager, Marketing Manager",260000.0,330000.0,400000.0,True
+ROLE-MKT-12,DEP-MKT-05,Director of Growth & Product Marketing,300000.0,380000.0,465000.0,True
+ROLE-MKT-13,DEP-MKT-05,"Senior Director, Growth & Product Marketing",350000.0,450000.0,550000.0,True
+ROLE-MKT-14,DEP-MKT-05,Vice President of Growth & Product Marketing,420000.0,540000.0,660000.0,True
+ROLE-MKT-15,DEP-MKT-05,Chief Officer (Growth & Product Marketing),500000.0,650000.0,850000.0,True
+ROLE-CSM-01,DEP-CUS-06,Associate Customer Success Manager,45000.0,55000.0,65000.0,False
+ROLE-CSM-02,DEP-CUS-06,Junior Customer Success Manager,55000.0,68000.0,80000.0,False
+ROLE-CSM-03,DEP-CUS-06,Mid-Level Customer Success Manager,70000.0,85000.0,100000.0,True
+ROLE-CSM-04,DEP-CUS-06,Senior I Customer Success Manager,85000.0,105000.0,125000.0,True
+ROLE-CSM-05,DEP-CUS-06,Senior II Customer Success Manager,105000.0,130000.0,155000.0,True
+ROLE-CSM-06,DEP-CUS-06,Lead / Staff Customer Success Manager,125000.0,155000.0,185000.0,True
+ROLE-CSM-07,DEP-CUS-06,Senior Staff Customer Success Manager,145000.0,180000.0,215000.0,True
+ROLE-CSM-08,DEP-CUS-06,Principal Customer Success Manager,170000.0,210000.0,255000.0,True
+ROLE-CSM-09,DEP-CUS-06,Senior Principal Customer Success Manager,195000.0,245000.0,295000.0,True
+ROLE-CSM-10,DEP-CUS-06,"Manager, Customer Success Manager",225000.0,285000.0,345000.0,True
+ROLE-CSM-11,DEP-CUS-06,"Senior Manager, Customer Success Manager",260000.0,330000.0,400000.0,True
+ROLE-CSM-12,DEP-CUS-06,Director of Customer Success & Services,300000.0,380000.0,465000.0,True
+ROLE-CSM-13,DEP-CUS-06,"Senior Director, Customer Success & Services",350000.0,450000.0,550000.0,True
+ROLE-CSM-14,DEP-CUS-06,Vice President of Customer Success & Services,420000.0,540000.0,660000.0,True
+ROLE-CSM-15,DEP-CUS-06,Chief Officer (Customer Success & Services),500000.0,650000.0,850000.0,True
+ROLE-PPL-01,DEP-PPL-07,Associate People Partner,45000.0,55000.0,65000.0,False
+ROLE-PPL-02,DEP-PPL-07,Junior People Partner,55000.0,68000.0,80000.0,False
+ROLE-PPL-03,DEP-PPL-07,Mid-Level People Partner,70000.0,85000.0,100000.0,True
+ROLE-PPL-04,DEP-PPL-07,Senior I People Partner,85000.0,105000.0,125000.0,True
+ROLE-PPL-05,DEP-PPL-07,Senior II People Partner,105000.0,130000.0,155000.0,True
+ROLE-PPL-06,DEP-PPL-07,Lead / Staff People Partner,125000.0,155000.0,185000.0,True
+ROLE-PPL-07,DEP-PPL-07,Senior Staff People Partner,145000.0,180000.0,215000.0,True
+ROLE-PPL-08,DEP-PPL-07,Principal People Partner,170000.0,210000.0,255000.0,True
+ROLE-PPL-09,DEP-PPL-07,Senior Principal People Partner,195000.0,245000.0,295000.0,True
+ROLE-PPL-10,DEP-PPL-07,"Manager, People Partner",225000.0,285000.0,345000.0,True
+ROLE-PPL-11,DEP-PPL-07,"Senior Manager, People Partner",260000.0,330000.0,400000.0,True
+ROLE-PPL-12,DEP-PPL-07,Director of People Operations & HR,300000.0,380000.0,465000.0,True
+ROLE-PPL-13,DEP-PPL-07,"Senior Director, People Operations & HR",350000.0,450000.0,550000.0,True
+ROLE-PPL-14,DEP-PPL-07,Vice President of People Operations & HR,420000.0,540000.0,660000.0,True
+ROLE-PPL-15,DEP-PPL-07,Chief Officer (People Operations & HR),500000.0,650000.0,850000.0,True
+ROLE-FIN-01,DEP-FIN-08,Associate Financial Analyst,45000.0,55000.0,65000.0,False
+ROLE-FIN-02,DEP-FIN-08,Junior Financial Analyst,55000.0,68000.0,80000.0,False
+ROLE-FIN-03,DEP-FIN-08,Mid-Level Financial Analyst,70000.0,85000.0,100000.0,True
+ROLE-FIN-04,DEP-FIN-08,Senior I Financial Analyst,85000.0,105000.0,125000.0,True
+ROLE-FIN-05,DEP-FIN-08,Senior II Financial Analyst,105000.0,130000.0,155000.0,True
+ROLE-FIN-06,DEP-FIN-08,Lead / Staff Financial Analyst,125000.0,155000.0,185000.0,True
+ROLE-FIN-07,DEP-FIN-08,Senior Staff Financial Analyst,145000.0,180000.0,215000.0,True
+ROLE-FIN-08,DEP-FIN-08,Principal Financial Analyst,170000.0,210000.0,255000.0,True
+ROLE-FIN-09,DEP-FIN-08,Senior Principal Financial Analyst,195000.0,245000.0,295000.0,True
+ROLE-FIN-10,DEP-FIN-08,"Manager, Financial Analyst",225000.0,285000.0,345000.0,True
+ROLE-FIN-11,DEP-FIN-08,"Senior Manager, Financial Analyst",260000.0,330000.0,400000.0,True
+ROLE-FIN-12,DEP-FIN-08,"Director of Finance, Accounting & Legal",300000.0,380000.0,465000.0,True
+ROLE-FIN-13,DEP-FIN-08,"Senior Director, Finance, Accounting & Legal",350000.0,450000.0,550000.0,True
+ROLE-FIN-14,DEP-FIN-08,"Vice President of Finance, Accounting & Legal",420000.0,540000.0,660000.0,True
+ROLE-FIN-15,DEP-FIN-08,"Chief Officer (Finance, Accounting & Legal)",500000.0,650000.0,850000.0,True

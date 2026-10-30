@@ -1,0 +1,422 @@
+{
+  "model_version": "v2.0.0-prospective",
+  "algorithm": "RandomForest",
+  "selected_algorithm": "RandomForestClassifier",
+  "trained_timestamp": "2026-10-30T16:39:45Z",
+  "training_periods": [
+    "2024-12-15",
+    "2025-03-15",
+    "2025-06-15",
+    "2025-09-15",
+    "2025-12-15"
+  ],
+  "validation_period": "2026-03-15",
+  "test_period": "2026-06-15",
+  "horizon_days": 90,
+  "sample_counts": {
+    "training": 40960,
+    "validation": 8660,
+    "test": 8796
+  },
+  "positive_event_counts": {
+    "training": 549,
+    "validation": 128,
+    "test": 147
+  },
+  "time_aware_cv_metrics": {
+    "LogisticRegression": {
+      "fold_pr_auc": [
+        0.0306,
+        0.0318,
+        0.055,
+        0.0554
+      ],
+      "fold_roc_auc": [
+        0.7534,
+        0.7539,
+        0.8063,
+        0.8199
+      ],
+      "mean_pr_auc": 0.0432,
+      "mean_roc_auc": 0.7834
+    },
+    "RandomForest": {
+      "fold_pr_auc": [
+        0.0316,
+        0.029,
+        0.0409,
+        0.053
+      ],
+      "fold_roc_auc": [
+        0.7559,
+        0.7453,
+        0.7985,
+        0.8012
+      ],
+      "mean_pr_auc": 0.0386,
+      "mean_roc_auc": 0.7752
+    },
+    "HistGradientBoosting": {
+      "fold_pr_auc": [
+        0.0239,
+        0.0302,
+        0.0346,
+        0.0415
+      ],
+      "fold_roc_auc": [
+        0.7019,
+        0.7508,
+        0.7584,
+        0.7834
+      ],
+      "mean_pr_auc": 0.0326,
+      "mean_roc_auc": 0.7486
+    }
+  },
+  "validation_comparison": {
+    "LogisticRegression": {
+      "roc_auc": 0.8412,
+      "pr_auc": 0.0507,
+      "brier_score": 0.19459,
+      "operational_threshold": 0.05,
+      "precision": 0.0163,
+      "recall": 1.0,
+      "f1": 0.0321,
+      "confusion_matrix": {
+        "true_negatives": 807,
+        "false_positives": 7725,
+        "false_negatives": 0,
+        "true_positives": 128
+      }
+    },
+    "RandomForest": {
+      "roc_auc": 0.8481,
+      "pr_auc": 0.0766,
+      "brier_score": 0.13804,
+      "operational_threshold": 0.05,
+      "precision": 0.0159,
+      "recall": 1.0,
+      "f1": 0.0313,
+      "confusion_matrix": {
+        "true_negatives": 604,
+        "false_positives": 7928,
+        "false_negatives": 0,
+        "true_positives": 128
+      }
+    },
+    "HistGradientBoosting": {
+      "roc_auc": 0.8281,
+      "pr_auc": 0.0727,
+      "brier_score": 0.14589,
+      "operational_threshold": 0.05,
+      "precision": 0.0203,
+      "recall": 1.0,
+      "f1": 0.0398,
+      "confusion_matrix": {
+        "true_negatives": 2351,
+        "false_positives": 6181,
+        "false_negatives": 0,
+        "true_positives": 128
+      }
+    }
+  },
+  "threshold_optimization": {
+    "validation_base_rate": 0.0148,
+    "peak_f1_threshold": 0.056,
+    "peak_f1_value": 0.1386,
+    "selected_operational_threshold": 0.05,
+    "selection_rationale": "Selected operational threshold 0.050 balances detection power and HR intervention capacity. At 0.050, the platform flags ~5-7% of the workforce per quarter, achieving >5.5x enrichment over the random baseline while maintaining an actionable workload for proactive stay interviews and retention initiatives.",
+    "summary_sweep": [
+      {
+        "threshold": 0.01,
+        "flagged_count": 3258,
+        "workforce_percentage": 37.62,
+        "true_positives": 118,
+        "false_positives": 3140,
+        "false_negatives": 10,
+        "true_negatives": 5392,
+        "precision": 0.0362,
+        "recall": 0.9219,
+        "f1_score": 0.0697,
+        "enrichment_ratio": 2.45
+      },
+      {
+        "threshold": 0.02,
+        "flagged_count": 2263,
+        "workforce_percentage": 26.13,
+        "true_positives": 98,
+        "false_positives": 2165,
+        "false_negatives": 30,
+        "true_negatives": 6367,
+        "precision": 0.0433,
+        "recall": 0.7656,
+        "f1_score": 0.082,
+        "enrichment_ratio": 2.93
+      },
+      {
+        "threshold": 0.03,
+        "flagged_count": 1619,
+        "workforce_percentage": 18.7,
+        "true_positives": 82,
+        "false_positives": 1537,
+        "false_negatives": 46,
+        "true_negatives": 6995,
+        "precision": 0.0506,
+        "recall": 0.6406,
+        "f1_score": 0.0939,
+        "enrichment_ratio": 3.43
+      },
+      {
+        "threshold": 0.04,
+        "flagged_count": 981,
+        "workforce_percentage": 11.33,
+        "true_positives": 62,
+        "false_positives": 919,
+        "false_negatives": 66,
+        "true_negatives": 7613,
+        "precision": 0.0632,
+        "recall": 0.4844,
+        "f1_score": 0.1118,
+        "enrichment_ratio": 4.28
+      },
+      {
+        "threshold": 0.05,
+        "flagged_count": 548,
+        "workforce_percentage": 6.33,
+        "true_positives": 46,
+        "false_positives": 502,
+        "false_negatives": 82,
+        "true_negatives": 8030,
+        "precision": 0.0839,
+        "recall": 0.3594,
+        "f1_score": 0.1361,
+        "enrichment_ratio": 5.68
+      },
+      {
+        "threshold": 0.06,
+        "flagged_count": 292,
+        "workforce_percentage": 3.37,
+        "true_positives": 28,
+        "false_positives": 264,
+        "false_negatives": 100,
+        "true_negatives": 8268,
+        "precision": 0.0959,
+        "recall": 0.2188,
+        "f1_score": 0.1333,
+        "enrichment_ratio": 6.49
+      },
+      {
+        "threshold": 0.07,
+        "flagged_count": 110,
+        "workforce_percentage": 1.27,
+        "true_positives": 12,
+        "false_positives": 98,
+        "false_negatives": 116,
+        "true_negatives": 8434,
+        "precision": 0.1091,
+        "recall": 0.0938,
+        "f1_score": 0.1008,
+        "enrichment_ratio": 7.38
+      },
+      {
+        "threshold": 0.08,
+        "flagged_count": 22,
+        "workforce_percentage": 0.25,
+        "true_positives": 2,
+        "false_positives": 20,
+        "false_negatives": 126,
+        "true_negatives": 8512,
+        "precision": 0.0909,
+        "recall": 0.0156,
+        "f1_score": 0.0267,
+        "enrichment_ratio": 6.15
+      }
+    ]
+  },
+  "calibrated_validation_metrics": {
+    "roc_auc": 0.8481,
+    "pr_auc": 0.0766,
+    "brier_score": 0.01412,
+    "operational_threshold": 0.05,
+    "precision": 0.0839,
+    "recall": 0.3594,
+    "f1": 0.1361,
+    "confusion_matrix": {
+      "true_negatives": 8030,
+      "false_positives": 502,
+      "false_negatives": 82,
+      "true_positives": 46
+    }
+  },
+  "final_test_metrics": {
+    "roc_auc": 0.8798,
+    "pr_auc": 0.0887,
+    "brier_score": 0.01579,
+    "operational_threshold": 0.05,
+    "precision": 0.0942,
+    "recall": 0.3537,
+    "f1": 0.1488,
+    "confusion_matrix": {
+      "true_negatives": 8149,
+      "false_positives": 500,
+      "false_negatives": 95,
+      "true_positives": 52
+    }
+  },
+  "calibration_quality": {
+    "validation": {
+      "base_rate": 0.0148,
+      "dummy_prior_brier": 0.01456,
+      "raw_model_brier": 0.13804,
+      "calibrated_brier": 0.01412,
+      "brier_improvement_vs_dummy": 0.00044,
+      "brier_improvement_vs_raw": 0.12392,
+      "ece": 0.0025,
+      "mce": 0.0334,
+      "beats_dummy_baseline": true,
+      "reliability_bins": [
+        {
+          "bin_range": "[0.0000, 0.0181]",
+          "sample_count": 6241,
+          "mean_predicted_prob": 0.0054,
+          "observed_event_rate": 0.0038,
+          "absolute_calibration_gap": 0.0015
+        },
+        {
+          "bin_range": "[0.0181, 0.0363]",
+          "sample_count": 1217,
+          "mean_predicted_prob": 0.027,
+          "observed_event_rate": 0.0271,
+          "absolute_calibration_gap": 0.0002
+        },
+        {
+          "bin_range": "[0.0363, 0.0544]",
+          "sample_count": 784,
+          "mean_predicted_prob": 0.044,
+          "observed_event_rate": 0.0421,
+          "absolute_calibration_gap": 0.0019
+        },
+        {
+          "bin_range": "[0.0544, 0.0726]",
+          "sample_count": 337,
+          "mean_predicted_prob": 0.0625,
+          "observed_event_rate": 0.0861,
+          "absolute_calibration_gap": 0.0236
+        },
+        {
+          "bin_range": "[0.0726, 0.0907]",
+          "sample_count": 81,
+          "mean_predicted_prob": 0.0777,
+          "observed_event_rate": 0.1111,
+          "absolute_calibration_gap": 0.0334
+        }
+      ],
+      "assessment": "Calibrated Brier (0.01412) strictly beats dummy prior (0.01456). ECE is 0.0025 (0.25%), confirming probability alignment."
+    },
+    "test": {
+      "base_rate": 0.0167,
+      "dummy_prior_brier": 0.01643,
+      "raw_model_brier": 0.13612,
+      "calibrated_brier": 0.01579,
+      "brier_improvement_vs_dummy": 0.00065,
+      "brier_improvement_vs_raw": 0.12034,
+      "ece": 0.0056,
+      "mce": 0.0493,
+      "beats_dummy_baseline": true,
+      "reliability_bins": [
+        {
+          "bin_range": "[0.0000, 0.0178]",
+          "sample_count": 6347,
+          "mean_predicted_prob": 0.0053,
+          "observed_event_rate": 0.0028,
+          "absolute_calibration_gap": 0.0025
+        },
+        {
+          "bin_range": "[0.0178, 0.0356]",
+          "sample_count": 1207,
+          "mean_predicted_prob": 0.0265,
+          "observed_event_rate": 0.0307,
+          "absolute_calibration_gap": 0.0041
+        },
+        {
+          "bin_range": "[0.0356, 0.0534]",
+          "sample_count": 788,
+          "mean_predicted_prob": 0.0432,
+          "observed_event_rate": 0.0584,
+          "absolute_calibration_gap": 0.0152
+        },
+        {
+          "bin_range": "[0.0534, 0.0712]",
+          "sample_count": 351,
+          "mean_predicted_prob": 0.0611,
+          "observed_event_rate": 0.094,
+          "absolute_calibration_gap": 0.0329
+        },
+        {
+          "bin_range": "[0.0712, 0.0890]",
+          "sample_count": 103,
+          "mean_predicted_prob": 0.0769,
+          "observed_event_rate": 0.1262,
+          "absolute_calibration_gap": 0.0493
+        }
+      ],
+      "assessment": "Calibrated Brier (0.01579) strictly beats dummy prior (0.01643). ECE is 0.0056 (0.56%), confirming probability alignment."
+    }
+  },
+  "raw_features": {
+    "numeric": [
+      "grade_level",
+      "tenure_months",
+      "base_salary",
+      "compa_ratio",
+      "promotions_count",
+      "avg_job_satisfaction",
+      "avg_work_life_balance",
+      "latest_burnout_risk",
+      "latest_sentiment_score",
+      "avg_weekly_logged_hours"
+    ],
+    "categorical": [
+      "department_id",
+      "work_location",
+      "employment_type"
+    ]
+  },
+  "transformed_feature_names": [
+    "grade_level",
+    "tenure_months",
+    "base_salary",
+    "compa_ratio",
+    "promotions_count",
+    "avg_job_satisfaction",
+    "avg_work_life_balance",
+    "latest_burnout_risk",
+    "latest_sentiment_score",
+    "avg_weekly_logged_hours",
+    "avg_job_satisfaction_missing_indicator",
+    "avg_work_life_balance_missing_indicator",
+    "latest_burnout_risk_missing_indicator",
+    "latest_sentiment_score_missing_indicator",
+    "avg_weekly_logged_hours_missing_indicator",
+    "department_id_DEP-AIR-02",
+    "department_id_DEP-CUS-06",
+    "department_id_DEP-ENG-01",
+    "department_id_DEP-FIN-08",
+    "department_id_DEP-MKT-05",
+    "department_id_DEP-PPL-07",
+    "department_id_DEP-PRD-03",
+    "department_id_DEP-SAL-04",
+    "work_location_HYBRID",
+    "work_location_ONSITE",
+    "work_location_REMOTE",
+    "employment_type_CONTRACTOR",
+    "employment_type_FULL_TIME",
+    "employment_type_INTERN",
+    "employment_type_PART_TIME"
+  ],
+  "governance": {
+    "competing_risks_censored": true,
+    "prohibited_status_quarantined": true,
+    "automated_decisions_prohibited": true
+  }
+}

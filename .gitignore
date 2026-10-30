@@ -1,0 +1,46 @@
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python cache & artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Environment Variables & Secrets (NEVER COMMIT)
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+credentials.json
+
+# Scratch & Temporary Testing Directories
+scratch/
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+*.log
+
+# IDE & OS files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Sensitive ground-truth data - do not publish
+data/ground_truth/attrition_labels.csv
+data/ground_truth/anomaly_manifest.csv
+
+# Sensitive ground-truth data - do not publish
+data/ground_truth/

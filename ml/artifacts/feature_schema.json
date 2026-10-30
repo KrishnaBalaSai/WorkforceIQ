@@ -1,0 +1,52 @@
+{
+  "numeric_features": [
+    "grade_level",
+    "tenure_months",
+    "base_salary",
+    "compa_ratio",
+    "promotions_count",
+    "avg_job_satisfaction",
+    "avg_work_life_balance",
+    "latest_burnout_risk",
+    "latest_sentiment_score",
+    "avg_weekly_logged_hours"
+  ],
+  "categorical_features": [
+    "department_id",
+    "work_location",
+    "employment_type"
+  ],
+  "transformed_feature_names": [
+    "grade_level",
+    "tenure_months",
+    "base_salary",
+    "compa_ratio",
+    "promotions_count",
+    "avg_job_satisfaction",
+    "avg_work_life_balance",
+    "latest_burnout_risk",
+    "latest_sentiment_score",
+    "avg_weekly_logged_hours",
+    "avg_job_satisfaction_missing_indicator",
+    "avg_work_life_balance_missing_indicator",
+    "latest_burnout_risk_missing_indicator",
+    "latest_sentiment_score_missing_indicator",
+    "avg_weekly_logged_hours_missing_indicator",
+    "department_id_DEP-AIR-02",
+    "department_id_DEP-CUS-06",
+    "department_id_DEP-ENG-01",
+    "department_id_DEP-FIN-08",
+    "department_id_DEP-MKT-05",
+    "department_id_DEP-PPL-07",
+    "department_id_DEP-PRD-03",
+    "department_id_DEP-SAL-04",
+    "work_location_HYBRID",
+    "work_location_ONSITE",
+    "work_location_REMOTE",
+    "employment_type_CONTRACTOR",
+    "employment_type_FULL_TIME",
+    "employment_type_INTERN",
+    "employment_type_PART_TIME"
+  ],
+  "selected_operational_threshold": 0.05
+}
