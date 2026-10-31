@@ -342,5 +342,8 @@ WorkforceIQ/
 
 ## 12. License & Acknowledgments
 
-This platform was developed as part of the **YottaFlex.ai Associate AI Forward Deployed Engineer Challenge**.
-All synthetic employee data is generated deterministically using seed `20261022` and contains zero real individual identifiable information.
+WorkforceIQ was developed as part of the **YottaFlex.ai Associate AI Forward Deployed Engineer Challenge**.
+
+All employee records used in this project are synthetically generated using the deterministic seed `20261022`. The dataset does not contain real employee records or real personally identifiable information.
+
+The project acknowledges the use of AI development tools, including ChatGPT and Google Antigravity. Further details are available in the [`ai-disclosure/`](ai-disclosure/) directory.
