@@ -334,7 +334,7 @@ WorkforceIQ/
 ├── Dockerfile.backend        # FastAPI Backend Production Containerfile
 ├── Dockerfile.dashboard      # Streamlit Dashboard Production Containerfile
 ├── pytest.ini                # Pytest Configuration
-├── README.md                 # Master Project Documentation (This File)
+├── README.md                 # Master Project Documentation
 └── requirements.txt          # Pinned Production & Testing Dependencies
 ```
 
