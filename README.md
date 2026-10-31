@@ -4,14 +4,14 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.162.0-009688.svg?logo=fastapi)](https://fastapi.tiangolo.com)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.66.1-FF4B4B.svg?logo=streamlit)](https://streamlit.io)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-18.6-336791.svg?logo=postgresql)](https://www.postgresql.org)
-[![Tests Passing](https://img.shields.io/badge/tests-221%20passed-brightgreen.svg)](https://pytest.org)
+[![Tests Passing](https://img.shields.io/badge/tests-223%20passed-brightgreen.svg)](https://pytest.org)
 [![Responsible AI](https://img.shields.io/badge/Responsible%20AI-NIST%20AI%20RMF-success.svg)](docs/RESPONSIBLE_AI.md)
 
-**Platform:** WorkforceIQ – Enterprise Retention Intelligence Platform  
-**Challenge:** YottaFlex.ai Associate AI Forward Deployed Engineer 72-Hour Coding Challenge  
-**Model Version:** `v2.0.0-prospective` (Calibrated Random Forest + Platt Sigmoid Scaler)  
-**Verification Status:** **221 / 221 Automated Tests Passing (100% Pass Rate)**  
-**Deterministic Seed:** `20261022`  
+**Platform:** WorkforceIQ – Enterprise Retention Intelligence Platform
+**Challenge:** YottaFlex.ai Associate AI Forward Deployed Engineer 72-Hour Coding Challenge
+**Model Version:** `v2.0.0-prospective` (Calibrated Random Forest + Platt Sigmoid Scaler)
+**Verification Status:** **223 / 223 Automated Tests Passing (100% Pass Rate)**
+**Deterministic Seed:** `20261022`
 
 ---
 
@@ -48,7 +48,7 @@ flowchart TB
         SVC_INT[Intervention Lifecycle Service]
         SVC_VAL[12-Pillar Validation Service]
         SVC_EXP[Data Export & SHA-256 Packaging Engine]
-        
+
         ROUTER --> MW
         MW --> SVC_EMP & SVC_ML & SVC_INT & SVC_VAL & SVC_EXP
     end
@@ -58,7 +58,7 @@ flowchart TB
         RF[Random Forest Classifier]
         PLATT[Platt Sigmoid Calibrator]
         SHAP_ENG[TreeSHAP Explainer Engine]
-        
+
         FE --> RF --> PLATT --> SHAP_ENG
     end
 
@@ -210,7 +210,7 @@ For full details, review [docs/RESPONSIBLE_AI.md](docs/RESPONSIBLE_AI.md).
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/<your-org>/WorkforceIQ.git
+   git clone https://github.com/KrishnaBalaSai/WorkforceIQ.git
    cd WorkforceIQ
    ```
 
@@ -342,5 +342,5 @@ WorkforceIQ/
 
 ## 12. License & Acknowledgments
 
-This platform was developed as part of the **YottaFlex.ai Associate AI Forward Deployed Engineer Challenge**.  
+This platform was developed as part of the **YottaFlex.ai Associate AI Forward Deployed Engineer Challenge**.
 All synthetic employee data is generated deterministically using seed `20261022` and contains zero real individual identifiable information.
