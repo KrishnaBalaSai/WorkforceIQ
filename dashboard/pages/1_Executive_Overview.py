@@ -129,7 +129,7 @@ with c3:
         title="Retention Alerts",
         value=f"{alerts_total:,}",
         subtitle=f"{crit_count} Critical | {high_count} High → {alert_pct:.1f}% of workforce",
-        delta="≥ 5.0% risk threshold",
+        delta="Synthetic risk-tier classification",
         delta_style="warning",
     )
 
@@ -161,7 +161,7 @@ col_left, col_right = st.columns(2)
 
 with col_left:
     st.subheader("🎯 Current Prospective Risk Tier Distribution")
-    st.caption("Forecasted probability of voluntary departure over next 90 days (Platt Calibrated).")
+    st.caption("Synthetic operational risk-tier distribution from the latest workforce snapshot.")
 
     # Risk tier breakdown
     tier_data = attrition_summary.get("retention_risk_breakdown", [])

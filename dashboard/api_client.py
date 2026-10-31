@@ -14,7 +14,6 @@ import logging
 import os
 from pathlib import Path
 from typing import Any, Dict, List, Optional
-from altair.datasets import data
 import httpx
 
 logger = logging.getLogger("workforceiq.dashboard_client")
@@ -37,47 +36,113 @@ class DashboardAPIClient:
         self.base_url = base_url.rstrip("/")
         self.timeout = timeout
 
-    def _get(self, endpoint: str, params: Optional[Dict[str, Any]] = None, headers: Optional[Dict[str, str]] = None) -> Optional[Dict[str, Any]]:
-        """Executes an HTTP GET request with error handling."""
+
+    def _get(
+        self,
+        endpoint: str,
+        params: Optional[Dict[str, Any]] = None,
+        headers: Optional[Dict[str, str]] = None,
+    ) -> Optional[Dict[str, Any]]:
+        """Execute GET; never hide authorization failures behind a fallback."""
         try:
             url = f"{self.base_url}{endpoint}"
             with httpx.Client(timeout=self.timeout) as client:
                 res = client.get(url, params=params, headers=headers)
+
                 if res.status_code == 200:
                     return res.json()
-                logger.warning(f"API GET {endpoint} returned {res.status_code}: {res.text}")
+
+                if res.status_code in (401, 403):
+                    raise PermissionError(
+                        f"API GET {endpoint} rejected authorization "
+                        f"(HTTP {res.status_code})."
+                    )
+
+                logger.warning(
+                    "API GET %s returned HTTP %s.",
+                    endpoint,
+                    res.status_code,
+                )
                 return None
-        except Exception as exc:
-            logger.debug(f"Direct HTTP call failed for {endpoint} ({exc}); falling back to service layer.")
+
+        except httpx.RequestError as exc:
+            logger.warning("API GET %s connection failed: %s", endpoint, exc)
             return None
 
-    def _post(self, endpoint: str, json_data: Dict[str, Any], headers: Optional[Dict[str, str]] = None) -> Optional[Dict[str, Any]]:
-        """Executes an HTTP POST request with error handling."""
+    def _post(
+        self,
+        endpoint: str,
+        json_data: Dict[str, Any],
+        headers: Optional[Dict[str, str]] = None,
+    ) -> Optional[Dict[str, Any]]:
+        """Execute POST and return None on HTTP/network failure."""
         try:
             url = f"{self.base_url}{endpoint}"
             with httpx.Client(timeout=self.timeout) as client:
                 res = client.post(url, json=json_data, headers=headers)
-                if res.status_code in [200, 201]:
+
+                if res.status_code in (200, 201):
                     return res.json()
-                logger.warning(f"API POST {endpoint} returned {res.status_code}: {res.text}")
+
+                if res.status_code in (401, 403):
+                    raise PermissionError(
+                        f"API POST {endpoint} rejected authorization "
+                        f"(HTTP {res.status_code})."
+                    )
+
+                logger.warning(
+                    "API POST %s returned HTTP %s.",
+                    endpoint,
+                    res.status_code,
+                )
                 return None
-        except Exception as exc:
-            logger.debug(f"Direct HTTP POST failed for {endpoint} ({exc}); falling back to service layer.")
+
+        except httpx.RequestError as exc:
+            logger.warning("API POST %s connection failed: %s", endpoint, exc)
             return None
 
-    def _patch(self, endpoint: str, json_data: Dict[str, Any], headers: Optional[Dict[str, str]] = None) -> Optional[Dict[str, Any]]:
-        """Executes an HTTP PATCH request with error handling."""
+    def _patch(
+        self,
+        endpoint: str,
+        json_data: Dict[str, Any],
+        headers: Optional[Dict[str, str]] = None,
+    ) -> Optional[Dict[str, Any]]:
+        """Execute PATCH and return None on HTTP/network failure."""
         try:
             url = f"{self.base_url}{endpoint}"
             with httpx.Client(timeout=self.timeout) as client:
                 res = client.patch(url, json=json_data, headers=headers)
+
                 if res.status_code == 200:
                     return res.json()
-                logger.warning(f"API PATCH {endpoint} returned {res.status_code}: {res.text}")
+
+                if res.status_code in (401, 403):
+                    raise PermissionError(
+                        f"API PATCH {endpoint} rejected authorization "
+                        f"(HTTP {res.status_code})."
+                    )
+
+                logger.warning(
+                    "API PATCH %s returned HTTP %s.",
+                    endpoint,
+                    res.status_code,
+                )
                 return None
-        except Exception as exc:
-            logger.debug(f"Direct HTTP PATCH failed for {endpoint} ({exc}); falling back to service layer.")
+
+        except httpx.RequestError as exc:
+            logger.warning("API PATCH %s connection failed: %s", endpoint, exc)
             return None
+
+    def _hr_auth_headers(self) -> Dict[str, str]:
+        """Return the configured HR API authorization header."""
+        if not HR_ANALYTICS_TOKEN:
+            raise RuntimeError(
+                "HR_ANALYTICS_TOKEN is not configured. "
+                "Check the WorkforceIQ .env configuration."
+            )
+
+        return {"X-HR-Analytics-Token": HR_ANALYTICS_TOKEN}
+
 
     # -----------------------------------------------------------------------
     # System Health
@@ -208,6 +273,8 @@ class DashboardAPIClient:
         search: Optional[str] = None,
         sort_by: str = "employee_id",
         sort_order: str = "asc",
+        min_risk_probability: Optional[float] = None,
+        max_risk_probability: Optional[float] = None,
     ) -> Dict[str, Any]:
         params = {
             "page": page,
@@ -225,6 +292,10 @@ class DashboardAPIClient:
             params["work_location"] = work_location
         if risk_tier:
             params["risk_tier"] = risk_tier
+        if min_risk_probability is not None:
+            params["min_risk_probability"] = min_risk_probability
+        if max_risk_probability is not None:
+            params["max_risk_probability"] = max_risk_probability
         if search:
             params["search"] = search
 
@@ -247,6 +318,8 @@ class DashboardAPIClient:
                 status=status,
                 work_location=work_location,
                 risk_tier=risk_tier,
+                min_risk_probability=min_risk_probability,
+                max_risk_probability=max_risk_probability,
                 search=search,
                 sort_by=sort_by,
                 sort_order=sort_order,
@@ -394,7 +467,11 @@ class DashboardAPIClient:
         department_id: Optional[str] = None,
         intervention_type: Optional[str] = None,
     ) -> Dict[str, Any]:
-        params = {"page": page, "page_size": page_size}
+        params = {
+            "page": page,
+            "page_size": page_size,
+        }
+
         if status:
             params["status"] = status
         if employee_id:
@@ -404,46 +481,33 @@ class DashboardAPIClient:
         if intervention_type:
             params["intervention_type"] = intervention_type
 
-        data = self._get("/api/v1/interventions", params=params)
-        if data:
-            if "data" in data and "items" not in data:
-                data["items"] = data["data"]
-            return data
+        data = self._get(
+            "/api/v1/interventions",
+            params=params,
+            headers=self._hr_auth_headers(),
+        )
 
-        from backend.database import get_session
-        from backend.services.intervention_service import get_interventions
-        session = next(get_session())
-        try:
-            res = get_interventions(
-                session,
-                page=page,
-                page_size=page_size,
-                status=status,
-                employee_id=employee_id,
-                department_id=department_id,
-                intervention_type=intervention_type,
+        if data is None:
+            raise RuntimeError(
+                "Unable to retrieve interventions from the backend API. "
+                "Check backend availability and server logs."
             )
-            out = res.model_dump() if hasattr(res, "model_dump") else res.dict()
-            if "data" in out and "items" not in out:
-                out["items"] = out["data"]
-            return out
-        finally:
-            session.close()
 
-    def propose_intervention(self, data: Dict[str, Any]) -> Optional[Dict[str, Any]]:
-        res = self._post("/api/v1/interventions", json_data=data)
-        if res:
-            return res
-        from backend.database import get_session
-        from backend.schemas.interventions import InterventionCreate
-        from backend.services.intervention_service import propose_intervention
-        session = next(get_session())
-        try:
-            obj = InterventionCreate(**data)
-            created = propose_intervention(session, obj)
-            return created.model_dump() if hasattr(created, "model_dump") else created.dict()
-        finally:
-            session.close()
+        if "data" in data and "items" not in data:
+            data["items"] = data["data"]
+
+        return data
+
+    def propose_intervention(
+        self,
+        data: Dict[str, Any],
+    ) -> Optional[Dict[str, Any]]:
+        return self._post(
+            "/api/v1/interventions",
+            json_data=data,
+            headers=self._hr_auth_headers(),
+        )
+
 
     def transition_intervention(
         self,
@@ -452,26 +516,35 @@ class DashboardAPIClient:
         reason: str,
         actor_id: str = "USR-HR-LEAD",
         notes: Optional[str] = None,
+        action_date: Optional[date] = None,
+        outcome_evaluated_date: Optional[date] = None,
+        is_successful: Optional[bool] = None,
     ) -> Optional[Dict[str, Any]]:
+
         payload = {
             "target_status": target_status,
-            "reason": reason,
             "actor_id": actor_id,
-            "notes": notes,
+            "reviewer_notes": notes or reason,
+            "action_date": str(action_date) if action_date else None,
+            "outcome_evaluated_date": (
+                str(outcome_evaluated_date)
+                if outcome_evaluated_date else None
+            ),
+            "is_successful": is_successful,
         }
-        res = self._patch(f"/api/v1/interventions/{intervention_id}/status", json_data=payload)
-        if res:
-            return res
-        from backend.database import get_session
-        from backend.schemas.interventions import InterventionStatusPatch
-        from backend.services.intervention_service import transition_intervention_status
-        session = next(get_session())
-        try:
-            patch_obj = InterventionStatusPatch(**payload)
-            updated = transition_intervention_status(session, intervention_id, patch_obj)
-            return updated.model_dump() if hasattr(updated, "model_dump") else updated.dict()
-        finally:
-            session.close()
+
+        payload = {
+            key: value
+            for key, value in payload.items()
+            if value is not None
+        }
+
+        return self._patch(
+            f"/api/v1/interventions/{intervention_id}/status",
+            json_data=payload,
+            headers=self._hr_auth_headers(),
+        )
+
 
     # -----------------------------------------------------------------------
     # Data Quality, Validation & Anomalies

@@ -37,23 +37,33 @@ try:
     meta = api_client.get_model_metrics()
     model_version = meta.get("model_version", "v2.0.0-prospective")
     algorithm = meta.get("algorithm", "RandomForest")
-    threshold = meta.get("threshold_optimization", {}).get("selected_operational_threshold", 0.050)
-    pred_date = meta.get("test_period", "2026-06-15")
+    threshold = meta.get("threshold_optimization", {}).get(
+        "selected_operational_threshold", 0.050
+    )
+    test_period = meta.get("test_period", "Not available")
+
 except Exception:
     model_version = "v2.0.0-prospective"
     algorithm = "RandomForest"
     threshold = 0.050
-    pred_date = "2026-06-15"
+    test_period = "Not available"
 
 st.markdown(
     f"""
-    <div style="background-color: #f1f5f9; border: 1px solid #cbd5e1; border-radius: 6px; padding: 10px 16px; margin-bottom: 20px;">
-        <span style="color: #0f172a; font-weight: 700;">Active Model:</span> {algorithm} (<code>{model_version}</code>) &nbsp;|&nbsp;
-        <span style="color: #0f172a; font-weight: 700;">Calibration:</span> Platt Sigmoid &nbsp;|&nbsp;
-        <span style="color: #0f172a; font-weight: 700;">Operational Threshold:</span> <code>{threshold:.3f}</code> &nbsp;|&nbsp;
-        <span style="color: #0f172a; font-weight: 700;">Snapshot Horizon:</span> Disjoint 90 Days ({pred_date})
-    </div>
-    """,
+<div style="background-color:#1e293b; border:1px solid #475569;
+border-radius:8px; padding:14px 18px; margin-bottom:20px;
+color:#f8fafc; line-height:2;">
+<strong>Active Model:</strong> {algorithm}
+<code style="color:#86efac;">{model_version}</code>
+&nbsp; | &nbsp;
+<strong>Calibration:</strong> Platt Sigmoid
+&nbsp; | &nbsp;
+<strong>Operational Threshold:</strong>
+<code style="color:#86efac;">{threshold:.3f}</code>
+&nbsp; | &nbsp;
+<strong>Model Test Period:</strong> {test_period}
+</div>
+""",
     unsafe_allow_html=True,
 )
 
@@ -76,16 +86,41 @@ with col_f2:
 
 with col_f3:
     prob_min, prob_max = st.slider(
-        "Calibrated Probability Range",
+        "Operational Risk Probability Range",
         min_value=0.0,
-        max_value=0.10,
-        value=(0.0, 0.10),
-        step=0.005,
-        format="%.3f",
+        max_value=1.0,
+        value=(0.0, 1.0),
+        step=0.01,
+        format="%.2f",
     )
 
 with col_f4:
     search_query = st.text_input("Search Employee ID or Name", placeholder="e.g. EMP-000001 or Jane")
+
+# Fetch shared workforce risk summary from the API
+attrition_summary = api_client.get_attrition_summary()
+
+# Fetch Phase 6 model calibration report
+try:
+    calibration_report = api_client.get_model_calibration() or {}
+    test_calibration = calibration_report.get("test_calibration", {})
+    calibration_ece = test_calibration.get("ece")
+    reliability_bins = test_calibration.get("reliability_bins", [])
+except Exception:
+    calibration_ece = None
+    reliability_bins = []
+
+total_active = attrition_summary.get("total_active_workforce", 0)
+high_count = attrition_summary.get("high_risk_count", 0)
+critical_count = attrition_summary.get("critical_risk_count", 0)
+
+alerts_total = high_count + critical_count
+
+alert_pct = (
+    alerts_total / total_active * 100
+    if total_active > 0
+    else 0.0
+)
 
 # ---------------------------------------------------------------------------
 # Fetch Employee Flight-Risk Population
@@ -96,62 +131,97 @@ employees_res = api_client.get_employees(
     page_size=page_size,
     department_id=dept_filter_id,
     risk_tier=tier_filter,
+    min_risk_probability=prob_min,
+    max_risk_probability=prob_max,
     search=search_query if search_query else None,
 )
 
 emp_items = employees_res.get("items", [])
 total_matched = employees_res.get("total", len(emp_items))
 
+
+# ---------------------------------------------------------------------------
+# Build Employee Risk Table
+# ---------------------------------------------------------------------------
+table_rows = []
+
+for employee in emp_items:
+    first_name = employee.get("first_name") or ""
+    last_name = employee.get("last_name") or ""
+
+    risk_probability = employee.get("latest_flight_risk")
+
+    table_rows.append({
+        "Employee ID": employee.get("employee_id", "N/A"),
+        "Employee Name": f"{first_name} {last_name}".strip(),
+        "Department": employee.get("department_name") or "N/A",
+        "Job Role": employee.get("role_title") or "N/A",
+        "Latest Risk Probability": (
+            f"{float(risk_probability):.1%}"
+            if risk_probability is not None
+            else "N/A"
+        ),
+        "Risk Tier": employee.get("latest_risk_tier") or "N/A",
+        "Employment Status": employee.get("status") or "N/A",
+        "Active": "Yes" if employee.get("is_active") else "No",
+    })
+
+df_table = pd.DataFrame(table_rows)
+
+# ---------------------------------------------------------------------------
 # Metrics Summary Bar
+# ---------------------------------------------------------------------------
 c1, c2, c3, c4 = st.columns(4)
+
 with c1:
-    render_metric_card("Filtered Population", f"{total_matched:,}", subtitle=f"Page 1 of {max(1, (total_matched // page_size) + 1)}")
+    render_metric_card(
+        "Filtered Population",
+        f"{total_matched:,}",
+        subtitle=f"Page 1 of {max(1, (total_matched + page_size - 1) // page_size)}"
+    )
+
 with c2:
-    render_metric_card("Alert Threshold", f"{threshold:.3f}", subtitle="Flagging top ~6% risk", delta="Active Alert")
+    render_metric_card(
+        "Phase 6 ML Threshold",
+        f"{threshold:.3f}",
+        subtitle="Calibrated model probability",
+        delta="90-day prediction"
+    )
+
 with c3:
-    render_metric_card("Retention Alerts", "548", subtitle="Exceeds operational threshold", delta="~6.1% workforce")
+    render_metric_card(
+        "Synthetic Workforce Alerts",
+        f"{alerts_total:,}",
+        subtitle=f"{critical_count} Critical | {high_count} High",
+        delta=f"{alert_pct:.2f}% of active workforce"
+    )
+
 with c4:
-    render_metric_card("Calibration ECE", "0.0056", subtitle="Expected calibration error < 0.6%", delta="High Reliability")
+    render_metric_card(
+        "Calibration ECE",
+        f"{calibration_ece:.4f}" if calibration_ece is not None else "N/A",
+        subtitle="Holdout test expected calibration error",
+        delta="Phase 6 calibrated model"
+    )
 
-st.markdown("<div class='wiq-section-header'>Prioritized Employee Retention Queue</div>", unsafe_allow_html=True)
+# ---------------------------------------------------------------------------
+# Employee Risk Table
+# ---------------------------------------------------------------------------
+st.markdown("### Employee Risk Prioritization")
+st.caption(
+    "Latest synthetic operational risk scores from the employee database. "
+    "These scores are separate from Phase 6 calibrated ML predictions."
+)
 
-if not emp_items:
-    st.info("No employee records match the selected filter criteria.")
-else:
-    table_rows = []
-    for emp in emp_items:
-        eid = emp.get("employee_id")
-        name = f"{emp.get('first_name', '')} {emp.get('last_name', '')}".strip()
-        dept = emp.get("department_name", emp.get("department_id", "N/A"))
-        role = emp.get("role_title", "N/A")
-        tier = emp.get("risk_tier", "LOW")
-        prob = emp.get("flight_risk_prob", 0.015)
-        is_alert = prob >= threshold
-
-        table_rows.append({
-            "Employee ID": eid,
-            "Name": name,
-            "Department": dept,
-            "Role": role,
-            "Calibrated Flight Risk": f"{prob * 100:.2f}%",
-            "Risk Tier": tier,
-            "Retention Alert": "🚨 ALERT" if is_alert else "—",
-        })
-
-    df_table = pd.DataFrame(table_rows)
-
-    # Style table
+if not df_table.empty:
     st.dataframe(
         df_table,
         use_container_width=True,
         hide_index=True,
-        column_config={
-            "Calibrated Flight Risk": st.column_config.TextColumn("Flight Risk Probability (90d)"),
-            "Retention Alert": st.column_config.TextColumn("Action Threshold (>=0.050)"),
-        },
     )
+else:
+    st.info("No employees found for the selected filters.")
 
-st.markdown("<hr style='margin: 20px 0; border: none; border-top: 1px solid #e2e8f0;'>", unsafe_allow_html=True)
 
 # ---------------------------------------------------------------------------
 # Department Flight Risk Breakdown Chart
@@ -160,7 +230,7 @@ col_c1, col_c2 = st.columns(2)
 
 with col_c1:
     st.subheader("📊 High & Critical Risk Count by Department")
-    dept_risk = api_client.get_attrition_summary().get("department_risk_breakdown", [])
+    dept_risk = attrition_summary.get("department_risk_breakdown", [])
     if dept_risk:
         d_df = pd.DataFrame(dept_risk)
         fig_r = create_plotly_figure()
@@ -174,26 +244,100 @@ with col_c1:
         fig_r.update_layout(height=300, xaxis_tickangle=-30, yaxis_title="Alert Count")
         st.plotly_chart(fig_r, use_container_width=True)
 
+
 with col_c2:
-    st.subheader("📈 Probability Distribution vs. Baseline")
-    st.caption("Distribution of calibrated probabilities. Average rate: 1.48%.")
-    probs = [0.005] * 6200 + [0.025] * 1800 + [0.045] * 550 + [0.065] * 350 + [0.080] * 130
-    fig_hist = create_plotly_figure()
-    fig_hist.add_trace(go.Histogram(
-        x=probs,
-        nbinsx=20,
-        marker_color=COLORS["primary"],
-    ))
-    fig_hist.add_vline(
-        x=threshold,
-        line_width=2,
-        line_dash="dash",
-        line_color=COLORS["risk_critical"],
-        annotation_text=f"Threshold ({threshold:.3f})",
-        annotation_position="top right",
+    st.subheader("Model Calibration Reliability")
+
+    st.caption(
+        "Compares predicted probabilities with observed event rates "
+        "on the Phase 6 holdout test cohort."
     )
-    fig_hist.update_layout(height=300, xaxis_title="Calibrated Probability", yaxis_title="Employees")
-    st.plotly_chart(fig_hist, use_container_width=True)
+
+    if reliability_bins:
+        calibration_df = pd.DataFrame(reliability_bins)
+
+        required_columns = [
+            "mean_predicted_prob",
+            "observed_event_rate",
+            "bin_range",
+            "sample_count",
+        ]
+
+        if all(column in calibration_df.columns for column in required_columns):
+
+            # Create a Plotly figure using the existing theme helper.
+            fig = create_plotly_figure()
+
+            fig.add_trace(
+                go.Scatter(
+                    x=calibration_df["mean_predicted_prob"],
+                    y=calibration_df["observed_event_rate"],
+                    mode="lines+markers",
+                    name="Observed calibration",
+                    customdata=calibration_df[
+                        ["bin_range", "sample_count"]
+                    ],
+                    hovertemplate=(
+                        "Predicted: %{x:.2%}<br>"
+                        "Observed: %{y:.2%}<br>"
+                        "Bin: %{customdata[0]}<br>"
+                        "Samples: %{customdata[1]:,}"
+                        "<extra></extra>"
+                    ),
+                )
+            )
+
+            max_value = max(
+                calibration_df["mean_predicted_prob"].max(),
+                calibration_df["observed_event_rate"].max(),
+            ) * 1.15
+
+            fig.add_trace(
+                go.Scatter(
+                    x=[0, max_value],
+                    y=[0, max_value],
+                    mode="lines",
+                    name="Perfect calibration",
+                    line=dict(dash="dash"),
+                )
+            )
+
+            fig.update_layout(
+                title="Holdout Test Calibration",
+                xaxis_title="Mean Predicted Probability",
+                yaxis_title="Observed Event Rate",
+                xaxis=dict(
+                    tickformat=".0%",
+                    range=[0, max_value],
+                ),
+                yaxis=dict(
+                    tickformat=".0%",
+                    range=[0, max_value],
+                ),
+                height=420,
+                hovermode="closest",
+                legend=dict(
+                    orientation="h",
+                    y=-0.2,
+                ),
+            )
+
+            # IMPORTANT: Do not pass fig to create_plotly_figure().
+            st.plotly_chart(
+                fig,
+                use_container_width=True,
+            )
+
+        else:
+            st.warning(
+                "Calibration report is missing required reliability fields."
+            )
+
+    else:
+        st.info(
+            "Calibration reliability data is unavailable."
+        )
+
 
 # ---------------------------------------------------------------------------
 # Download Retention Risk Forecast (Phase 8 Export)

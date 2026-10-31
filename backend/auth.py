@@ -6,7 +6,7 @@ WorkforceIQ - HR Analytics Authorization Helper.
 import hmac
 import logging
 import os
-
+from fastapi import Header, HTTPException, Request
 logger = logging.getLogger("workforceiq.auth")
 
 _HR_ANALYTICS_TOKEN = os.environ.get("HR_ANALYTICS_TOKEN", "")
@@ -40,3 +40,21 @@ def verify_hr_token(provided_token: str, request_path: str = "") -> bool:
         logger.warning("HR access denied: token mismatch. Path: %s", request_path)
 
     return authorized
+
+def require_hr_analytics_token(
+    request: Request,
+    x_hr_analytics_token: str = Header(
+        default="",
+        alias="X-HR-Analytics-Token",
+    ),
+) -> None:
+    """Require a valid HR analytics token for protected endpoints."""
+
+    if not verify_hr_token(
+        x_hr_analytics_token,
+        request_path=request.url.path,
+    ):
+        raise HTTPException(
+            status_code=403,
+            detail="Access denied. Valid HR Analytics authorization is required.",
+        )

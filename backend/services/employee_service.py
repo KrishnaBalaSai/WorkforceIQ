@@ -46,6 +46,8 @@ def get_employees(
     work_location: Optional[str] = None,
     search: Optional[str] = None,
     risk_tier: Optional[str] = None,
+    min_risk_probability: Optional[float] = None,
+    max_risk_probability: Optional[float] = None,
     sort_by: str = "employee_id",
     sort_order: str = "asc",
 ) -> PaginatedResponse[EmployeeSummary]:
@@ -54,6 +56,14 @@ def get_employees(
     """
     page = max(1, page)
     page_size = min(max(1, page_size), 200)
+    if (
+        min_risk_probability is not None
+        and max_risk_probability is not None
+        and min_risk_probability > max_risk_probability
+    ):
+        raise ValueError(
+            "Minimum risk probability cannot exceed maximum risk probability."
+        )
 
     # Subquery to find the latest prediction date for each employee
     latest_score_subq = (
@@ -117,6 +127,15 @@ def get_employees(
         query = query.where(Employee.work_location == work_location)
     if risk_tier:
         query = query.where(latest_risk_subq.c.risk_tier == risk_tier)
+    if min_risk_probability is not None:
+        query = query.where(
+            latest_risk_subq.c.flight_risk_prob >= min_risk_probability
+            )
+
+    if max_risk_probability is not None:
+        query = query.where(
+            latest_risk_subq.c.flight_risk_prob <= max_risk_probability
+        )
     if search:
         search_pattern = f"%{search.strip()}%"
         query = query.where(

@@ -272,9 +272,23 @@ def test_workload_analytics_endpoint(client: TestClient):
     assert data["average_weekly_hours"] > 0
 
 
+
 # ---------------------------------------------------------------------------
 # 6. Human-in-the-Loop Retention Interventions & Governance
 # ---------------------------------------------------------------------------
+
+def test_interventions_reject_missing_token(client: TestClient):
+    response = client.get("/api/v1/interventions")
+    assert response.status_code == 403
+
+
+def test_interventions_reject_invalid_token(client: TestClient):
+    response = client.get(
+        "/api/v1/interventions",
+        headers={"X-HR-Analytics-Token": "invalid-test-token"},
+    )
+    assert response.status_code == 403
+
 
 def test_intervention_crud_and_lifecycle(client: TestClient):
     # Step 1: Propose intervention (CREATED)
@@ -284,15 +298,24 @@ def test_intervention_crud_and_lifecycle(client: TestClient):
         "cost_usd": 1500.0,
         "hr_notes": "Identified high flight risk. Supportive conversation recommended.",
     }
-    create_res = client.post("/api/v1/interventions?actor_id=HR_SPECIALIST_01", json=create_payload)
+
+    create_res = client.post(
+        "/api/v1/interventions?actor_id=HR_SPECIALIST_01",
+        json=create_payload,
+        headers=HR_AUTH_HEADERS,
+    )
     assert create_res.status_code == 201
+
     intv = create_res.json()
     intv_id = intv["intervention_id"]
     assert intv["status"] == "CREATED"
     assert intv["employee_id"] == "EMP-000001"
 
     # Step 2: Retrieve detail
-    detail_res = client.get(f"/api/v1/interventions/{intv_id}")
+    detail_res = client.get(
+        f"/api/v1/interventions/{intv_id}",
+        headers=HR_AUTH_HEADERS,
+    )
     assert detail_res.status_code == 200
     assert detail_res.json()["intervention_id"] == intv_id
     assert len(detail_res.json()["events"]) >= 1
@@ -303,37 +326,60 @@ def test_intervention_crud_and_lifecycle(client: TestClient):
         "actor_id": "HR_SPECIALIST_01",
         "reviewer_notes": "Submitted for leadership review.",
     }
-    review_res = client.patch(f"/api/v1/interventions/{intv_id}/status", json=patch_review)
+
+    review_res = client.patch(
+        f"/api/v1/interventions/{intv_id}/status",
+        json=patch_review,
+        headers=HR_AUTH_HEADERS,
+    )
     assert review_res.status_code == 200
     assert review_res.json()["status"] == "PENDING_REVIEW"
 
-    # Step 4: Responsible AI Guardrail – Automated SYSTEM approval MUST be rejected
+    # Step 4: Reject automated SYSTEM approval
     auto_approve = {
         "target_status": "APPROVED",
         "actor_id": "SYSTEM",
         "reviewer_notes": "Automated pipeline approval.",
     }
-    auto_res = client.patch(f"/api/v1/interventions/{intv_id}/status", json=auto_approve)
+
+    auto_res = client.patch(
+        f"/api/v1/interventions/{intv_id}/status",
+        json=auto_approve,
+        headers=HR_AUTH_HEADERS,
+    )
     assert auto_res.status_code == 422
     assert "responsible ai violation" in auto_res.json()["detail"].lower()
 
-    # Step 5: Responsible AI Guardrail – Approval without notes MUST be rejected
+    # Step 5: Reject approval without reviewer notes
     no_notes_approve = {
         "target_status": "APPROVED",
         "actor_id": "HR_DIRECTOR_JANE",
         "reviewer_notes": "",
     }
-    no_notes_res = client.patch(f"/api/v1/interventions/{intv_id}/status", json=no_notes_approve)
+
+    no_notes_res = client.patch(
+        f"/api/v1/interventions/{intv_id}/status",
+        json=no_notes_approve,
+        headers=HR_AUTH_HEADERS,
+    )
     assert no_notes_res.status_code == 422
     assert "mandatory" in no_notes_res.json()["detail"].lower()
 
-    # Step 6: Valid Human Approval
+    # Step 6: Valid human approval
     human_approve = {
         "target_status": "APPROVED",
         "actor_id": "HR_DIRECTOR_JANE",
-        "reviewer_notes": "Approved after reviewing employee career trajectory and retention impact.",
+        "reviewer_notes": (
+            "Approved after reviewing employee career trajectory "
+            "and retention impact."
+        ),
     }
-    approve_res = client.patch(f"/api/v1/interventions/{intv_id}/status", json=human_approve)
+
+    approve_res = client.patch(
+        f"/api/v1/interventions/{intv_id}/status",
+        json=human_approve,
+        headers=HR_AUTH_HEADERS,
+    )
     assert approve_res.status_code == 200
     assert approve_res.json()["status"] == "APPROVED"
 
@@ -343,23 +389,34 @@ def test_intervention_crud_and_lifecycle(client: TestClient):
         "actor_id": "HR_BUSINESS_PARTNER",
         "reviewer_notes": "Mentoring sessions scheduled with VP of Engineering.",
     }
-    progress_res = client.patch(f"/api/v1/interventions/{intv_id}/status", json=progress_patch)
+
+    progress_res = client.patch(
+        f"/api/v1/interventions/{intv_id}/status",
+        json=progress_patch,
+        headers=HR_AUTH_HEADERS,
+    )
     assert progress_res.status_code == 200
     assert progress_res.json()["status"] == "IN_PROGRESS"
 
-    # Step 8: Complete Intervention
+    # Step 8: Complete intervention
     complete_patch = {
         "target_status": "COMPLETED",
         "actor_id": "HR_BUSINESS_PARTNER",
         "reviewer_notes": "All sessions completed; employee engagement renewed.",
         "is_successful": True,
     }
-    complete_res = client.patch(f"/api/v1/interventions/{intv_id}/status", json=complete_patch)
+
+    complete_res = client.patch(
+        f"/api/v1/interventions/{intv_id}/status",
+        json=complete_patch,
+        headers=HR_AUTH_HEADERS,
+    )
     assert complete_res.status_code == 200
+
     final_intv = complete_res.json()
     assert final_intv["status"] == "COMPLETED"
     assert final_intv["is_successful"] is True
-    assert len(final_intv["events"]) == 5  # CREATED, PENDING_REVIEW, APPROVED, IN_PROGRESS, COMPLETED
+    assert len(final_intv["events"]) == 5
 
 
 def test_intervention_invalid_state_transition(client: TestClient):
@@ -367,17 +424,27 @@ def test_intervention_invalid_state_transition(client: TestClient):
         "employee_id": "EMP-000002",
         "intervention_type": "Flexible Work Schedule",
     }
-    create_res = client.post("/api/v1/interventions", json=create_payload)
+
+    create_res = client.post(
+        "/api/v1/interventions",
+        json=create_payload,
+        headers=HR_AUTH_HEADERS,
+    )
     assert create_res.status_code == 201
+
     intv_id = create_res.json()["intervention_id"]
 
-    # Attempting to jump directly from CREATED to COMPLETED must fail
     invalid_patch = {
         "target_status": "COMPLETED",
         "actor_id": "HR_ANALYST",
         "reviewer_notes": "Trying to skip review.",
     }
-    res = client.patch(f"/api/v1/interventions/{intv_id}/status", json=invalid_patch)
+
+    res = client.patch(
+        f"/api/v1/interventions/{intv_id}/status",
+        json=invalid_patch,
+        headers=HR_AUTH_HEADERS,
+    )
     assert res.status_code == 422
     assert "invalid lifecycle transition" in res.json()["detail"].lower()
 

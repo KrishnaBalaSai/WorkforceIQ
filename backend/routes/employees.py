@@ -1,3 +1,4 @@
+
 """
 WorkforceIQ – Employee Routes.
 
@@ -26,7 +27,8 @@ router = APIRouter(prefix="/api/v1/employees", tags=["Employees"])
     description=(
         "Returns a paginated, filtered, and sortable list of employees. "
         "Supports search by name, email, or employee ID. "
-        "Risk tier filter requires latest ML prediction cycle data."
+        "Risk tier and operational risk probability filters use the latest "
+        "synthetic workforce risk scores."
     ),
 )
 def list_employees(
@@ -34,14 +36,53 @@ def list_employees(
     page_size: int = Query(50, ge=1, le=200, description="Records per page"),
     department_id: Optional[str] = Query(None, description="Filter by department ID"),
     role_id: Optional[str] = Query(None, description="Filter by job role ID"),
-    status: Optional[str] = Query(None, description="Filter by employment status (ACTIVE, ON_LEAVE, TERMINATED)"),
-    work_location: Optional[str] = Query(None, description="Filter by work location (REMOTE, ONSITE, HYBRID)"),
-    risk_tier: Optional[str] = Query(None, description="Filter by latest ML risk tier (LOW, MEDIUM, HIGH, CRITICAL)"),
-    search: Optional[str] = Query(None, min_length=2, description="Full-text search: employee ID, name, or email"),
+    status: Optional[str] = Query(
+        None,
+        description="Filter by employment status (ACTIVE, ON_LEAVE, TERMINATED)",
+    ),
+    work_location: Optional[str] = Query(
+        None,
+        description="Filter by work location (REMOTE, ONSITE, HYBRID)",
+    ),
+    risk_tier: Optional[str] = Query(
+        None,
+        description="Filter by latest operational risk tier",
+    ),
+    min_risk_probability: Optional[float] = Query(
+        None,
+        ge=0.0,
+        le=1.0,
+        description="Minimum operational risk probability",
+    ),
+    max_risk_probability: Optional[float] = Query(
+        None,
+        ge=0.0,
+        le=1.0,
+        description="Maximum operational risk probability",
+    ),
+    search: Optional[str] = Query(
+        None,
+        min_length=2,
+        description="Full-text search: employee ID, name, or email",
+    ),
     sort_by: str = Query("employee_id", description="Sort column"),
-    sort_order: str = Query("asc", pattern="^(asc|desc)$", description="Sort direction"),
+    sort_order: str = Query(
+        "asc",
+        pattern="^(asc|desc)$",
+        description="Sort direction",
+    ),
     session: Session = Depends(get_session),
 ):
+    if (
+        min_risk_probability is not None
+        and max_risk_probability is not None
+        and min_risk_probability > max_risk_probability
+    ):
+        raise HTTPException(
+            status_code=422,
+            detail="Minimum risk probability cannot exceed maximum risk probability.",
+        )
+
     return get_employees(
         session,
         page=page,
@@ -52,6 +93,8 @@ def list_employees(
         work_location=work_location,
         search=search,
         risk_tier=risk_tier,
+        min_risk_probability=min_risk_probability,
+        max_risk_probability=max_risk_probability,
         sort_by=sort_by,
         sort_order=sort_order,
     )
@@ -73,5 +116,8 @@ def get_employee(
 ):
     profile = get_employee_detail(session, employee_id)
     if not profile:
-        raise HTTPException(status_code=404, detail=f"Employee '{employee_id}' not found.")
+        raise HTTPException(
+            status_code=404,
+            detail=f"Employee '{employee_id}' not found.",
+        )
     return profile

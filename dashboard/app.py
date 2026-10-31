@@ -174,7 +174,7 @@ with col3:
         title="Retention Alerts",
         value=f"{alerts_total:,}",
         subtitle=f"{crit_count} Critical | {high_count} High → {alert_pct:.1f}% of workforce",
-        delta="≥ 5.0% risk threshold",
+        delta="Synthetic risk-tier classification",
         delta_style="warning",
     )
 

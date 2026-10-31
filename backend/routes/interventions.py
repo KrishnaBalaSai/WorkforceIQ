@@ -14,6 +14,8 @@ Endpoints:
 
 from typing import Optional
 
+from backend.auth import require_hr_analytics_token
+
 from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy.orm import Session
 
@@ -50,6 +52,7 @@ def list_interventions(
     employee_id: Optional[str] = Query(None, description="Filter by employee ID"),
     department_id: Optional[str] = Query(None, description="Filter by department ID"),
     intervention_type: Optional[str] = Query(None, description="Filter by intervention type"),
+    _: None = Depends(require_hr_analytics_token),
     session: Session = Depends(get_session),
 ):
     return get_interventions(
@@ -77,6 +80,7 @@ def list_interventions(
 def create_intervention(
     body: InterventionCreate,
     actor_id: str = Query("HR_ANALYST_01", description="HR analyst creating the recommendation"),
+    _: None = Depends(require_hr_analytics_token),
     session: Session = Depends(get_session),
 ):
     try:
@@ -91,7 +95,9 @@ def create_intervention(
     summary="Get intervention detail",
     description="Returns the full lifecycle record for a single retention intervention including immutable event history.",
 )
-def get_intervention(intervention_id: str, session: Session = Depends(get_session)):
+def get_intervention(intervention_id: str,
+    _: None = Depends(require_hr_analytics_token),
+    session: Session = Depends(get_session)):
     record = get_intervention_detail(session, intervention_id)
     if not record:
         raise HTTPException(status_code=404, detail=f"Intervention '{intervention_id}' not found.")
@@ -112,9 +118,11 @@ def get_intervention(intervention_id: str, session: Session = Depends(get_sessio
 def patch_intervention_status(
     intervention_id: str,
     patch: InterventionStatusPatch,
+    _: None = Depends(require_hr_analytics_token),
     session: Session = Depends(get_session),
 ):
     try:
         return transition_intervention_status(session, intervention_id=intervention_id, patch=patch)
     except ValueError as exc:
+
         raise HTTPException(status_code=422, detail=str(exc))
