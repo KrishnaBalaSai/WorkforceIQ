@@ -86,7 +86,7 @@ flowchart TB
 | **Machine Learning** | Scikit-Learn, SHAP, Joblib, SciPy | 1.9.1, 0.54.1, 1.6.0, 1.18.1 | Prospective Random Forest, Platt scaling, TreeSHAP explainability |
 | **Data Generation** | Faker, NumPy, Pandas | 40.44.0, 2.5.4, 3.1.0 | Deterministic synthetic longitudinal HR ecosystem simulation |
 | **Analytics UI** | Streamlit, Plotly, Altair | 1.66.1, 7.1.0, 6.3.0 | Multi-page executive dashboard with interactive dark enterprise theme |
-| **Testing & Quality** | Pytest, HTTPX, AnyIO | 9.2.0, 0.28.1, 4.15.1 | 221 automated tests across 11 test modules |
+| **Testing & Quality** | Pytest, HTTPX, AnyIO | 9.2.0, 0.28.1, 4.15.1 | 223 automated tests across 11 test modules |
 | **Containerization** | Docker, Docker Compose | Multi-container | Orchestration of PostgreSQL, Backend, and Dashboard |
 
 ---
@@ -183,7 +183,7 @@ The interactive analytics dashboard is accessible at `http://localhost:8501`:
 WorkforceIQ provides **20 dedicated REST export endpoints** under `/api/v1/exports/` supporting CSV and JSON formats:
 
 - **Operational Datasets:** `employees`, `departments`, `retention-risk`, `interventions`, `engagement`, `workload`, `validation`, and `model-metrics`.
-- **Restricted Ground-Truth Protection:** Historical separation records (`historical-separations.csv` and `.json`) require `X-HR-Authorization: true`. Requests without this header are rejected with **`HTTP 403 Forbidden`**.
+- **Restricted Ground-Truth Protection:** Historical separation records (`historical-separations.csv` and `.json`) require `X-HR-Analytics-Token: <your configured token>`. Requests without this header are rejected with **`HTTP 403 Forbidden`**.
 - **SHA-256 Tamper Detection:** Every JSON export is sealed inside an `ExportEnvelope` containing record counts, UTC timestamps, sensitivity classification, applied query parameters, and a SHA-256 hash digest of payload bytes.
 
 ---
@@ -261,7 +261,7 @@ Execute the full regression test suite across all 11 test modules:
 python -m pytest tests/ -v --tb=short
 ```
 
-### Full Regression Test Summary (221 / 221 Passing):
+### Full Regression Test Summary (223 / 223 Passing):
 ```text
 tests/test_anomaly_verification.py ........                              [  3%]
 tests/test_api.py .............................                          [ 16%]
@@ -275,7 +275,7 @@ tests/test_schema.py ........                                            [ 70%]
 tests/test_services.py .....................                             [ 80%]
 tests/test_validation.py ..........................................      [100%]
 
-======================= 221 passed in 146.35s (0:02:26) =======================
+======================= 223 passed in 107.44s (0:01:47) =======================
 ```
 
 ---
@@ -314,9 +314,9 @@ WorkforceIQ/
 │   ├── evaluate.py           # Prospective Model Evaluation & Metrics
 │   ├── features.py           # Point-in-Time Preprocessor & Feature Pipelines
 │   └── train.py              # Prospective RF Training & Platt Calibration
-├── tests/                    # Comprehensive Automated Test Suite (221 Tests)
+├── tests/                    # Comprehensive Automated Test Suite (223 Tests)
 │   ├── test_anomaly_verification.py  # 8 Anomaly Scenario Tests
-│   ├── test_api.py                   # 29 API Integration Tests
+│   ├── test_api.py                   # 31 API Integration Tests
 │   ├── test_dashboard.py             # 28 UI Component & Contract Tests
 │   ├── test_data_generator.py        # 7 Synthetic Generation Tests
 │   ├── test_exports.py               # 11 Export & Security Gate Tests
