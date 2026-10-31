@@ -12,15 +12,15 @@
 
 
 
-| AI Tool | Purpose |
+ChatGPT
 
-|---|---|
-
-| ChatGPT | Technical guidance, debugging, architecture discussions, code review, testing support, and documentation |
-
-| Google Antigravity | AI-assisted development, implementation support, debugging, and project refinement |
+Purpose: Technical guidance, debugging, architecture discussions, code review, testing support, and documentation.
 
 
+
+Google Antigravity
+
+Purpose: AI-assisted development, implementation support, debugging, and project refinement.
 
 ## 2\. Prompt History
 
@@ -138,6 +138,4 @@ The use of multiple accounts and the resulting prompt-record limitation are disc
 
 
 Where original prompt records are accessible, they can be retained as supplementary evidence.
-
-
 
